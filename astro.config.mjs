@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Docs with Tailwind',
+			title: 'Voyage Momento',
 			logo: {
 				src: './src/assets/logo-128x128.png',
 			},
