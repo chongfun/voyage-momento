@@ -7,6 +7,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Docs with Tailwind',
+			logo: {
+				src: './src/assets/logo-128x128.png',
+			},
 			favicon: '/favicon.ico',
 			head: [
 			  {
