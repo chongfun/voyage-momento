@@ -12,10 +12,15 @@ hero:
 ---
 import { Image } from 'astro:assets';
 import beryl from '../../assets/character_select/beryl.png';
+import col from '../../assets/character_select/col.png';
 
 <div class="image-grid container m-auto grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-1">
     <a href="characters/beryl" class="no-underline text-center">
         <Image src={beryl} alt="Beryl" />
         <span class="bg-accent-200 text-accent-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-accent-900 dark:text-accent-300">Beryl</span>
+    </a>
+    <a href="characters/col" class="no-underline text-center">
+        <Image src={col} alt="Col" />
+        <span class="bg-accent-200 text-accent-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-accent-900 dark:text-accent-300">Col</span>
     </a>
 </div>
