@@ -52,9 +52,16 @@ export default defineConfig({
 				{
 					label: 'Inventory',
 					autogenerate: { directory: 'inventory' },
+				},
+				{
+					label: 'Characters',
+					autogenerate: { directory: 'characters' },
 				}
 			],
-			customCss: ['./src/tailwind.css'],
+			customCss: ['./src/tailwind.css','./src/styles/custom.css'],
+			components: {
+				PageTitle: './src/components/PageTitle.astro',
+			},
 		}),
 		tailwind({ applyBaseStyles: false }),
 	],

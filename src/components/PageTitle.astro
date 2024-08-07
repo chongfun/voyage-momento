@@ -1,0 +1,21 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+const { title } = Astro.props.entry.data
+const { titleImage } = Astro.props.entry.data
+const { titleImageAlt } = Astro.props.entry.data
+const { rarity } = Astro.props.entry.data
+const { role } = Astro.props.entry.data
+
+import rarity_legendary from '../assets/characters/rarity_legendary.webp';
+import role_destroyer from '../assets/characters/role_destroyer.webp';
+---
+{ titleImage && <Image src={titleImage} alt={titleImageAlt} height="64" class="float-right" /> }
+{ role && role === 'Destroyer' && <Image src={role_destroyer} alt={role} height="30" class="float-right" /> }
+{ rarity && rarity === 'Legendary' && <Image src={rarity_legendary} alt={rarity} height="30" class="float-right" /> }
+<Default {...Astro.props}>
+  <slot />
+</Default>

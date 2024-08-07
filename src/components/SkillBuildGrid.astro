@@ -1,0 +1,11 @@
+---
+const { grid } = Astro.props;
+---
+<div
+  class:list={[
+    "image-grid grid gap-4",
+    grid || "grid-cols-6"
+  ]}
+>
+  <slot />
+</div>
