@@ -1,0 +1,7 @@
+---
+const props = Astro.props;
+---
+
+<div {...props} class="flex flex-col border rounded-lg md:flex-row dark:border-gray-700 dark:bg-gray-800">
+  <slot />
+</div>
