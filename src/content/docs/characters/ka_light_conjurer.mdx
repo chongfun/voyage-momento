@@ -1,0 +1,77 @@
+---
+title: K.A. Light Conjurer
+description: Sword of Convallaria K.A. Light Conjurer Build
+titleImage: '../../../assets/characters/ka_light_conjurer/sprite.png'
+titleImageAlt: K.A. Light Conjurer
+rarity: Rare
+role: Watcher
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/ka_light_conjurer_left_1.png';
+import skill_l2 from '../../../assets/skills/ka_light_conjurer_left_2.png';
+import skill_l3 from '../../../assets/skills/ka_light_conjurer_left_3.png';
+import skill_l4 from '../../../assets/skills/ka_light_conjurer_left_4.png';
+import skill_r1 from '../../../assets/skills/ka_light_conjurer_right_1.png';
+import skill_r2 from '../../../assets/skills/ka_light_conjurer_right_2.png';
+import skill_r3 from '../../../assets/skills/ka_light_conjurer_right_3.png';
+import skill_r4 from '../../../assets/skills/ka_light_conjurer_right_4.png';
+import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
+import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriestess.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-4">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%80%E5%8C%96" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="净化" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%84%88%E5%90%88" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="愈合" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%98%B2%E5%BE%A1%E8%80%85" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="防御者" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%80%E5%8C%96%E4%B9%8B%E5%85%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="净化之光" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%88%B6%E8%A3%81" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="制裁" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%94%BB%E5%87%BB%E5%BC%BA%E5%8C%96" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="攻击强化" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BF%8D%E8%80%90" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="忍耐" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%90%8C%E8%A2%8D%E7%9A%84%E9%81%97%E5%BF%97" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="同袍的遗志" width="100" class="rounded-full" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_empress} alt="Elegance of the Empress" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Elegance of the Empress</h5>
+        <p>After casting a skill on an ally, convert <span class="text-orange-500">1</span> [debuff] on the target into [<span class="text-yellow-500">Level 1 Buff</span>] that lasts for <span class="text-orange-500">2</span> turns.</p>
+        <p>Exclusive effect: Converts <span class="text-orange-500">2</span> [debuff] instead of <span class="text-orange-500">1</span> [debuff].</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_highpriestess} alt="Mercy of The High Priestess" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Mercy of The High Priestess</h5>
+        <p>Increases healing effect by <span class="text-green-500">15%</span>.</p>
+        <p>Exclusive effect: Increases healing effect by an additional <span class="text-green-500">15%</span>. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect is increased by an additional <span class="text-green-500">15%</span> (for a total of <span class="text-green-500">45%</span>).</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [aMagicJo - Beginner Quick Guides For Non-Legendary Healer Units](https://youtu.be/hhavGO0y_a8?si=eWE2aOnpEQziRIpR&t=275)
+- [角色图鉴库/王国军光术师 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8E%8B%E5%9B%BD%E5%86%9B%E5%85%89%E6%9C%AF%E5%B8%88)
