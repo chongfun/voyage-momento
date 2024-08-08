@@ -1,0 +1,98 @@
+---
+title: Momo
+description: Sword of Convallaria Momo Build
+titleImage: '../../../assets/characters/momo/sprite.png'
+titleImageAlt: Momo
+rarity: Legendary
+role: Destroyer
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+
+import skill_l1 from '../../../assets/skills/momo_left_1.png';
+import skill_l2 from '../../../assets/skills/momo_left_2.png';
+import skill_l3 from '../../../assets/skills/momo_left_3.png';
+import skill_l4 from '../../../assets/skills/momo_left_4.png';
+import skill_l5 from '../../../assets/skills/momo_left_5.png';
+import skill_l6 from '../../../assets/skills/momo_left_6.png';
+import skill_r1 from '../../../assets/skills/momo_right_1.png';
+import skill_r2 from '../../../assets/skills/momo_right_2.png';
+import skill_r3 from '../../../assets/skills/momo_right_3.png';
+import skill_r4 from '../../../assets/skills/momo_right_4.png';
+import skill_r5 from '../../../assets/skills/momo_right_5.png';
+import skill_r6 from '../../../assets/skills/momo_right_6.png';
+import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%81%9A%E8%83%BD%E5%B0%84%E7%BA%BF" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l1} alt="聚能射线" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BC%82%E8%83%BD%E4%BE%B5%E8%9A%80" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l2} alt="异能侵蚀" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BE%B5%E8%9A%80%E5%8A%9B%E5%9C%BA" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l3} alt="侵蚀力场" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9E%81%E6%9A%97%E6%B3%A2%E5%8A%A8" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l4} alt="极暗波动" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E8%83%BD%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l5} alt="回能击（杖）" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8E%84%E8%BF%90%E8%8B%8F%E9%86%92" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l6} alt="厄运苏醒" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8A%9B%E5%9C%BA" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r1} alt="力场" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%96%A5%E5%8A%9B%E8%BF%90%E7%94%A8" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r2} alt="斥力运用" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%98%B2%E5%BE%A1%E7%AE%AD%E7%9F%A2" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r3} alt="防御箭矢" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BC%BA%E9%9F%A7" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r4} alt="强韧" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%82%AC%E7%9C%A0%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r5} alt="催眠击（杖）" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%94%9F%E5%91%BD%E5%90%9E%E5%99%AC" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r6} alt="生命吞噬" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    </a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Dream of The Magician</h5>
+        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
+        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Destruction of The Tower</h5>
+        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
+        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [Celion Journey's Pocket Guide for Momo](https://www.patreon.com/posts/pocket-guide-for-109707123)
+- [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
+- [角色图鉴库/茉茉 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%8C%89%E8%8C%89)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/607413.html)
