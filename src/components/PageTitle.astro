@@ -11,12 +11,14 @@ const { rarity } = Astro.props.entry.data
 const { role } = Astro.props.entry.data
 
 import rarity_legendary from '../assets/characters/rarity_legendary.webp';
+import role_breaker from '../assets/characters/role_breaker.webp';
 import role_seeker from '../assets/characters/role_seeker.webp';
 import role_defender from '../assets/characters/role_defender.webp';
 import role_destroyer from '../assets/characters/role_destroyer.webp';
 import role_watcher from '../assets/characters/role_watcher.webp';
 ---
 { titleImage && <Image src={titleImage} alt={titleImageAlt} height="64" class="float-right" /> }
+{ role && role === 'Breaker' && <Image src={role_breaker} alt={role} height="30" class="float-right" /> }
 { role && role === 'Seeker' && <Image src={role_seeker} alt={role} height="30" class="float-right" /> }
 { role && role === 'Defender' && <Image src={role_defender} alt={role} height="30" class="float-right" /> }
 { role && role === 'Destroyer' && <Image src={role_destroyer} alt={role} height="30" class="float-right" /> }
