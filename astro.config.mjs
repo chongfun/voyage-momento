@@ -5,7 +5,7 @@ import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://www.voyagemomento.com',
+	site: 'https://voyagemomento.com',
 	integrations: [
 		starlight({
 			title: 'Voyage Momento',
