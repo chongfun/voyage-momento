@@ -1,0 +1,86 @@
+---
+title: Candlelight
+description: Sword of Convallaria Candlelight Build
+titleImage: '../../../assets/characters/candlelight/sprite.png'
+titleImageAlt: H.M. Intelligence Officer
+rarity: Epic
+role: Watcher
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/candlelight_left_1.png';
+import skill_l2 from '../../../assets/skills/candlelight_left_2.png';
+import skill_l3 from '../../../assets/skills/candlelight_left_3.png';
+import skill_l4 from '../../../assets/skills/candlelight_left_4.png';
+import skill_l5 from '../../../assets/skills/candlelight_left_5.png';
+import skill_r1 from '../../../assets/skills/candlelight_right_1.png';
+import skill_r2 from '../../../assets/skills/candlelight_right_2.png';
+import skill_r3 from '../../../assets/skills/candlelight_right_3.png';
+import skill_r4 from '../../../assets/skills/candlelight_right_4.png';
+import skill_r5 from '../../../assets/skills/candlelight_right_5.png';
+import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
+import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriestess.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-5">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BF%83%E7%81%B5%E6%8A%9A%E6%85%B0" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="心灵抚慰" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BD%9C%E8%83%BD%E6%BF%80%E5%8F%91" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="潜能激发" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BF%8D%E7%97%9B" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="忍痛" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%80%9A%E7%BC%89%E4%BB%A4" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="通缉令" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%B0%81%E5%8D%B0%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="封印击（杖）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%89%A9%E9%98%B2%E6%8C%87%E6%8C%A5" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="物防指挥" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BF%83%E7%81%B5%E4%B9%8B%E5%85%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="心灵之光" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E8%83%BD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="回能" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%89%B9%E6%AE%8A%E4%BD%BF%E5%91%BD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="特殊使命" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%82%E7%83%AD%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="狂热击（杖）" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_empress} alt="Elegance of the Empress" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Elegance of the Empress</h5>
+        <p>After casting a skill on an ally, convert <span class="text-orange-500">1</span> [debuff] on the target into [<span class="text-yellow-500">Level 1 Buff</span>] that lasts for <span class="text-orange-500">2</span> turns.</p>
+        <p>Exclusive effect: Converts <span class="text-orange-500">2</span> [debuff] instead of <span class="text-orange-500">1</span> [debuff].</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_highpriestess} alt="Mercy of The High Priestess" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Mercy of The High Priestess</h5>
+        <p>Increases healing effect by <span class="text-green-500">15%</span>.</p>
+        <p>Exclusive effect: Increases healing effect by an additional <span class="text-green-500">15%</span>. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect is increased by an additional <span class="text-green-500">15%</span> (for a total of <span class="text-green-500">45%</span>).</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [角色图鉴库/倒吊人“烛火” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%80%92%E5%90%8A%E4%BA%BA%E2%80%9C%E7%83%9B%E7%81%AB%E2%80%9D)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/599401.html)
