@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
+import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
@@ -47,6 +48,19 @@ export default defineConfig({
 				  href: '/site.webmanifest',
 				},
 			  },
+			  {
+				tag: 'script',
+				attrs: {
+				  src: 'https://www.googletagmanager.com/gtag/js?id=G-4JSTJYBDHH',
+				  async: true,
+				  type: "text/partytown"
+				},
+			  },
+			  {
+				tag: 'script',
+				attrs: { type: "text/partytown" },
+				content: "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-4JSTJYBDHH');"
+			  },
 			],
 			sidebar: [
 				{
@@ -64,5 +78,10 @@ export default defineConfig({
 			},
 		}),
 		tailwind({ applyBaseStyles: false }),
+		partytown({
+            config: {
+              forward: ["dataLayer.push"],
+            },
+        }),
 	],
 });
