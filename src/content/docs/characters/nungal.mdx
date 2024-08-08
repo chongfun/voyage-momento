@@ -1,0 +1,98 @@
+---
+title: Nungal
+description: Sword of Convallaria Nungal Build
+titleImage: '../../../assets/characters/nungal/sprite.png'
+titleImageAlt: Nungal
+rarity: Legendary
+role: Destroyer
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+
+import skill_l1 from '../../../assets/skills/nungal_left_1.png';
+import skill_l2 from '../../../assets/skills/nungal_left_2.png';
+import skill_l3 from '../../../assets/skills/nungal_left_3.png';
+import skill_l4 from '../../../assets/skills/nungal_left_4.png';
+import skill_l5 from '../../../assets/skills/nungal_left_5.png';
+import skill_l6 from '../../../assets/skills/nungal_left_6.png';
+import skill_r1 from '../../../assets/skills/nungal_right_1.png';
+import skill_r2 from '../../../assets/skills/nungal_right_2.png';
+import skill_r3 from '../../../assets/skills/nungal_right_3.png';
+import skill_r4 from '../../../assets/skills/nungal_right_4.png';
+import skill_r5 from '../../../assets/skills/nungal_right_5.png';
+import skill_r6 from '../../../assets/skills/nungal_right_6.png';
+import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
+import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%9D%E7%A5%9E" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l1} alt="凝神" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%B4%E5%91%BD%E5%87%86%E6%98%9F" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l2} alt="致命准星" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%99%E5%87%BB%E6%89%8B%E7%9A%84%E7%9B%B4%E8%A7%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l3} alt="狙击手的直觉" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%87%8D%E7%A0%B4%E7%94%B2%E7%9F%A2" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l4} alt="重破甲矢" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%B4%E5%91%BD%E5%87%BB%EF%BC%88%E5%BC%A9%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l5} alt="致命击（弩）" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BF%AB%E9%80%9F%E8%A3%85%E5%A1%AB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l6} alt="快速装填" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BB%A1%E5%BC%93" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r1} alt="满弓" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%99%E5%87%BB%E5%A7%BF%E6%80%81" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r2} alt="狙击姿态" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%AB%98%E5%9C%B0%E4%BC%98%E5%8A%BF" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r3} alt="高地优势" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BD%BF%E5%91%BD%E6%84%9F" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r4} alt="使命感" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%A0%87%E8%AE%B0%E5%BC%B9" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r5} alt="标记弹" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%9B%84%E9%B9%B0%E4%B9%8B%E7%9C%BC" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r6} alt="雄鹰之眼" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Verdict of Justice</h5>
+        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
+        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Destruction of The Tower</h5>
+        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
+        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [Celion Journey's Pocket Guide for Nungal](https://www.patreon.com/posts/pocket-guide-for-109333080)
+- [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
+- [角色图鉴库/伦伽勒 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BC%A6%E4%BC%BD%E5%8B%92)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/606559.html)
