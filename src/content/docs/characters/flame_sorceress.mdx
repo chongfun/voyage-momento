@@ -1,0 +1,78 @@
+---
+title: Flame Sorceress
+description: Sword of Convallaria Flame Sorceress Build
+titleImage: '../../../assets/characters/flame_sorceress/sprite.png'
+titleImageAlt: Recruited Fire Conjurer
+rarity: Epic
+role: Destroyer
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/flame_sorceress_left_1.png';
+import skill_l2 from '../../../assets/skills/flame_sorceress_left_2.png';
+import skill_l3 from '../../../assets/skills/flame_sorceress_left_3.png';
+import skill_l4 from '../../../assets/skills/flame_sorceress_left_4.png';
+import skill_l5 from '../../../assets/skills/flame_sorceress_left_5.png';
+import skill_r1 from '../../../assets/skills/flame_sorceress_right_1.png';
+import skill_r2 from '../../../assets/skills/flame_sorceress_right_2.png';
+import skill_r3 from '../../../assets/skills/flame_sorceress_right_3.png';
+import skill_r4 from '../../../assets/skills/flame_sorceress_right_4.png';
+import skill_r5 from '../../../assets/skills/flame_sorceress_right_5.png';
+import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-5">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%81%AB%E6%9F%B1%E6%9C%AF" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="火柱术" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%82%99%E7%83%AD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="炙热" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B5%B4%E7%81%AB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="浴火" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%84%9A%E7%82%8E%E4%B9%8B%E9%98%B5" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="焚炎之阵" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%93%84%E5%8A%BF%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="蓄势击（杖）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%AB%98%E6%98%82" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="高昂" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%BF%85%E6%8D%B7%E5%A6%82%E9%A3%8E" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="迅捷如风" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%98%B2%E5%BE%A1%E7%AE%AD%E7%9F%A2" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="防御箭矢" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%82%8E%E7%88%86%E6%9C%AF" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="炎爆术" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%81%BC%E7%83%A7%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="灼烧击（杖）" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Dream of The Magician</h5>
+        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
+        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [aMagicJo - Beginner Quick Guides For Non-Legendary Mages Units](https://youtu.be/gobQxEWYuOY?si=vnhJORcO-Hzaqz6G&t=123)
+- [Apsih - Tower of Conquest 8-5 (Season 2)](https://youtu.be/xZbalLJlzAw?si=V8224yqL5ADTvHrU&t=172)
+- [角色图鉴库/佣兵“炎之魔女” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BD%A3%E5%85%B5%E2%80%9C%E7%82%8E%E4%B9%8B%E9%AD%94%E5%A5%B3%E2%80%9D)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/599499.html)
