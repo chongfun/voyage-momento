@@ -1,0 +1,108 @@
+---
+title: Faycal
+description: Sword of Convallaria Faycal Build
+titleImage: '../../../assets/characters/faycal/sprite.png'
+titleImageAlt: Mercenary Boy
+rarity: Legendary
+role: Watcher
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+
+import skill_l1 from '../../../assets/skills/faycal_left_1.png';
+import skill_l2 from '../../../assets/skills/faycal_left_2.png';
+import skill_l3 from '../../../assets/skills/faycal_left_3.png';
+import skill_l4 from '../../../assets/skills/faycal_left_4.png';
+import skill_l5 from '../../../assets/skills/faycal_left_5.png';
+import skill_l6 from '../../../assets/skills/faycal_left_6.png';
+import skill_r1 from '../../../assets/skills/faycal_right_1.png';
+import skill_r2 from '../../../assets/skills/faycal_right_2.png';
+import skill_r3 from '../../../assets/skills/faycal_right_3.png';
+import skill_r4 from '../../../assets/skills/faycal_right_4.png';
+import skill_r5 from '../../../assets/skills/faycal_right_5.png';
+import skill_r6 from '../../../assets/skills/faycal_right_6.png';
+import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
+import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%9D%E7%A5%9E" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l1} alt="凝神" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%B2%BE%E7%A1%AE%E5%B0%84%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l2} alt="精确射击" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BB%A5%E7%9C%BC%E8%BF%98%E7%9C%BC" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l3} alt="以眼还眼" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A9%BF%E4%BA%91%E7%AE%AD" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l4} alt="穿云箭" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%BF%9E%E5%B0%84" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l5} alt="连射" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%96%BE%E9%A3%8E%E6%80%92%E6%B6%9B%E4%B9%B1%E5%B0%84" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l6} alt="疾风怒涛乱射" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%94%80%E5%B2%A9" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r1} alt="攀岩" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%AE%88%E6%8A%A4%E9%93%83%E5%85%B0%E4%B9%8B%E7%AE%AD" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r2} alt="守护铃兰之箭" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%84%B1%E5%85%94" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r3} alt="脱兔" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%AD%A6%E6%88%92%E5%B0%84%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r4} alt="警戒射击" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%B4%E5%91%BD%E5%87%BB%EF%BC%88%E7%AE%AD%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r5} alt="致命击（箭）" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%AD%A6%E6%88%92%E4%B9%8B%E5%BF%83" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r6} alt="警戒之心" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    </a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Verdict of Justice</h5>
+        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
+        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Dream of The Magician</h5>
+        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
+        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Destruction of The Tower</h5>
+        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
+        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [Celion Journey's Pocket Guide for Faycal](https://www.patreon.com/posts/pocket-guide-for-109318529)
+- [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
+- [角色图鉴库/法卡尔 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B3%95%E5%8D%A1%E5%B0%94)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/596864.html)
