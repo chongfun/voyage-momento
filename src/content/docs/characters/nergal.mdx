@@ -1,0 +1,85 @@
+---
+title: Nergal
+description: Sword of Convallaria Nergal Build
+titleImage: '../../../assets/characters/nergal/sprite.png'
+titleImageAlt: Nergal
+rarity: Legendary
+role: Defender
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+
+import skill_l1 from '../../../assets/skills/nergal_left_1.png';
+import skill_l2 from '../../../assets/skills/nergal_left_2.png';
+import skill_l3 from '../../../assets/skills/nergal_left_3.png';
+import skill_l4 from '../../../assets/skills/nergal_left_4.png';
+import skill_l5 from '../../../assets/skills/nergal_left_5.png';
+import skill_l6 from '../../../assets/skills/nergal_left_6.png';
+import skill_r1 from '../../../assets/skills/nergal_right_1.png';
+import skill_r2 from '../../../assets/skills/nergal_right_2.png';
+import skill_r3 from '../../../assets/skills/nergal_right_3.png';
+import skill_r4 from '../../../assets/skills/nergal_right_4.png';
+import skill_r5 from '../../../assets/skills/nergal_right_5.png';
+import skill_r6 from '../../../assets/skills/nergal_right_6.png';
+import tarot_judgement from '../../../assets/tarot_whispers/tarot_judgement.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BF%AB%E9%80%9F%E6%8E%A9%E6%8A%A4" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l1} alt="快速掩护" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%A0%87%E8%AE%B0%E7%85%A7%E5%B0%84" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l2} alt="标记照射" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%B4%A7%E6%80%A5%E9%81%BF%E9%99%A9%E6%A8%A1%E7%BB%84" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l3} alt="紧急避险模组" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%94%90%E7%96%BE%E5%A6%82%E9%A3%8E" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l4} alt="锐疾如风" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B2%89%E9%BB%98%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l5} alt="沉默击（剑）" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%BB%9D%E5%AF%B9%E9%A2%86%E5%9F%9F" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l6} alt="绝对领域" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%85%B9%E9%83%A8%E7%8C%9B%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r1} alt="腹部猛击" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%85%E8%83%BD%E5%88%BA%E5%88%80" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r2} alt="充能刺刀" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r3} alt="回击" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A0%B4%E9%87%9C%E6%B2%89%E8%88%9F" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r4} alt="破釜沉舟" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%B4%E5%91%BD%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r5} alt="致命击（剑）" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%9B%B6%E8%B7%9D%E7%A6%BB%E5%85%A8%E5%8A%9B%E6%94%BE%E5%B0%84" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r6} alt="零距离全力放射" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+</SkillBuildGrid>
+---
+<Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_judgement} alt="Redemption of The Judgment" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Redemption of The Judgment</h5>
+        <p>At the end of the turn, dispels <span class="text-orange-500">2</span> [<span class="text-yellow-500">Attribute Buff</span>]s from <span class="text-orange-500">1</span> random enemy within <span class="text-orange-500">2</span> tiles around the character.</p>
+        <p>Exclusive effect: Applies [<span class="text-yellow-500">Judgement</span>] to the dispelled enemies. [<span class="text-yellow-500">Judgement</span>] is a buff that increases damage taken by <span class="text-orange-500">10%</span> and cannot be dispelled or immunized.</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
+- [角色图鉴库/内尔伽勒 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%86%85%E5%B0%94%E4%BC%BD%E5%8B%92)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/606640.html)
