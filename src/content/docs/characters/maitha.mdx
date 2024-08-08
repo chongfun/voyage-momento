@@ -1,0 +1,109 @@
+---
+title: Maitha
+description: Sword of Convallaria Maitha Build
+titleImage: '../../../assets/characters/maitha/sprite.png'
+titleImageAlt: Mercenary Girl
+rarity: Legendary
+role: Defender
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+
+import skill_l1 from '../../../assets/skills/maitha_left_1.png';
+import skill_l2 from '../../../assets/skills/maitha_left_2.png';
+import skill_l3 from '../../../assets/skills/maitha_left_3.png';
+import skill_l4 from '../../../assets/skills/maitha_left_4.png';
+import skill_l5 from '../../../assets/skills/maitha_left_5.png';
+import skill_l6 from '../../../assets/skills/maitha_left_6.png';
+import skill_r1 from '../../../assets/skills/maitha_right_1.png';
+import skill_r2 from '../../../assets/skills/maitha_right_2.png';
+import skill_r3 from '../../../assets/skills/maitha_right_3.png';
+import skill_r4 from '../../../assets/skills/maitha_right_4.png';
+import skill_r5 from '../../../assets/skills/maitha_right_5.png';
+import skill_r6 from '../../../assets/skills/maitha_right_6.png';
+import tarot_fool from '../../../assets/tarot_whispers/tarot_fool.png'
+import tarot_hermit from '../../../assets/tarot_whispers/tarot_hermit.png'
+import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%AE%88%E6%8A%A4" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l1} alt="守护" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%A4%A7%E5%AE%B6%E5%8A%A0%E6%B2%B9%E5%93%A6%EF%BC%81" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l2} alt="大家加油哦！" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BF%80%E6%B4%BB%E8%80%90%E5%8A%9B" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l3} alt="激活耐力" width="100" class="rounded-full ring-4 ring-blue-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%93%83%E5%85%B0%E6%88%98%E6%97%97" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l4} alt="铃兰战旗" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A0%B4%E7%94%B2%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l5} alt="破甲击（剑）" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%BA%A6%E8%8E%8E%E8%BF%9E%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_l6} alt="麦莎连击" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8D%8F%E9%98%B2" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r1} alt="协防" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%BA%A6%E8%8E%8E%E5%86%B2%E9%94%8B" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r2} alt="麦莎冲锋" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%A0%BC%E6%8C%A1%E5%8F%8D%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r3} alt="格挡反击" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%BB%B7%E5%B8%A6" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r4} alt="绷带" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BC%BA%E5%8A%9B%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r5} alt="强力击（剑）" width="100" class="rounded-full" />
+    </a>
+    <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%97%A0%E6%87%88%E5%8F%AF%E5%87%BB" target="_blank" rel="noopener noreferrer">
+        <Image src={skill_r6} alt="无懈可击" width="100" class="rounded-full ring-4 ring-rose-500" />
+    </a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_fool} alt="The Fool's Naivety" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>The Fool's Naivety</h5>
+        <p>HP is increased by <span class="text-green-500">10%</span>. When initiating an active attack, if the character's max HP is greater than the target's, DMG dealt is increased by <span class="text-orange-500">10%</span>.</p>
+        <p>Exclusive effect: HP and DMG dealt is increased by an additional <span class="text-green-500">10%</span>.</p>
+        <p><em>Obtained from the Tower of Adversity.</em></p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_hermit} alt="Silence of The Hermit" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Silence of The Hermit</h5>
+        <p>Decreases DMG taken by <span class="text-orange-500">10%</span>.</p>
+        <p>Exclusive effect: Decreases DMG taken by <span class="text-orange-500">20%</span> instead of <span class="text-orange-500">10%</span>.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_wheeloffortune} alt="Course of Fortune" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Course of Fortune</h5>
+        <p>At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.</p>
+        <p>Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.</p>
+    </div>
+</HorizontalCard>
+
+## References
+- [Celion Journey's Pocket Guide for Maitha](https://www.patreon.com/posts/pocket-guide-for-109316913)
+- [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
+- [角色图鉴库/麦莎 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%BA%A6%E8%8E%8E)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/597395.html)
