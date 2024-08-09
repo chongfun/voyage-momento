@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://voyagemomento.com/sitemap-index.xml
