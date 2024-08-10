@@ -1,6 +1,8 @@
 ---
 title: Tarot Whispers
 description: Sword of Convallaria tarot whisper guide
+tableOfContents:
+  maxHeadingLevel: 5
 ---
 import { Image } from 'astro:assets';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -37,165 +39,204 @@ Tarot whispers with a legendary 4th row have a chance of rolling an exclusive ef
 <HorizontalCard>
     <Image src={tarot_chariot} alt="March of The Chariot" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>March of The Chariot</h5>
-        <p>Gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 1</span>] when not using any active skills and [<span class="text-yellow-500">Standby</span>], lasting for <span class="text-orange-500">2</span> turns.</p>
-        <p>Exclusive effect: Gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 2</span>] instead of [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 1</span>].</p>
+        ##### March of The Chariot
+
+        Gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 1</span>] when not using any active skills and [<span class="text-yellow-500">Standby</span>], lasting for <span class="text-orange-500">2</span> turns.
+
+        Exclusive effect: Gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 2</span>] instead of [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 1</span>].
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_hermit} alt="Silence of The Hermit" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Silence of The Hermit</h5>
-        <p>Decreases DMG taken by <span class="text-orange-500">10%</span>.</p>
-        <p>Exclusive effect: Decreases DMG taken by <span class="text-orange-500">20%</span> instead of <span class="text-orange-500">10%</span>.</p>
+        ##### Silence of The Hermit
+
+        Decreases DMG taken by <span class="text-orange-500">10%</span>.
+
+        Exclusive effect: Decreases DMG taken by <span class="text-orange-500">20%</span> instead of <span class="text-orange-500">10%</span>.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Dream of The Magician</h5>
-        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
-        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
+        ##### Dream of The Magician
+
+        Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.
+
+        Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Destruction of The Tower</h5>
-        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
-        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
+        ##### Destruction of The Tower
+
+        When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.
+
+        Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_wheeloffortune} alt="Course of Fortune" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Course of Fortune</h5>
-        <p>At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.</p>
-        <p>Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.</p>
+        ##### Course of Fortune
+
+        At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.
+
+        Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_highpriestess} alt="Mercy of The High Priestess" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Mercy of The High Priestess</h5>
-        <p>Increases healing effect by <span class="text-green-500">15%</span>.</p>
-        <p>Exclusive effect: Increases healing effect by an additional <span class="text-green-500">15%</span>. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect is increased by an additional <span class="text-green-500">15%</span> (for a total of <span class="text-green-500">45%</span>).</p>
+        ##### Mercy of The High Priestess
+
+        Increases healing effect by <span class="text-green-500">15%</span>.
+
+        Exclusive effect: Increases healing effect by an additional <span class="text-green-500">15%</span>. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect is increased by an additional <span class="text-green-500">15%</span> (for a total of <span class="text-green-500">45%</span>).
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
+        ##### Verdict of Justice
+
+        Increases crit rate by <span class="text-orange-500">15%</span>.
+
+        Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_judgement} alt="Redemption of The Judgment" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Redemption of The Judgment</h5>
-        <p>At the end of the turn, dispels <span class="text-orange-500">2</span> [<span class="text-yellow-500">Attribute Buff</span>]s from <span class="text-orange-500">1</span> random enemy within <span class="text-orange-500">2</span> tiles around the character.</p>
-        <p>Exclusive effect: Applies [<span class="text-yellow-500">Judgement</span>] to the dispelled enemies. [<span class="text-yellow-500">Judgement</span>] is a buff that increases damage taken by <span class="text-orange-500">10%</span> and cannot be dispelled or immunized.</p>
+        ##### Redemption of The Judgment
+
+        At the end of the turn, dispels <span class="text-orange-500">2</span> [<span class="text-yellow-500">Attribute Buff</span>]s from <span class="text-orange-500">1</span> random enemy within <span class="text-orange-500">2</span> tiles around the character.
+
+        Exclusive effect: Applies [<span class="text-yellow-500">Judgement</span>] to the dispelled enemies. [<span class="text-yellow-500">Judgement</span>] is a buff that increases damage taken by <span class="text-orange-500">10%</span> and cannot be dispelled or immunized.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_temperance} alt="Desire for Temperance" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Desire for Temperance</h5>
-        <p>At the start of the battle, gains a [physical shield] equal to <span class="text-orange-500">25%</span> of the character's P.ATK plus it's M.ATK. The shield cannot be dispelled.</p>
-        <p>Exclusive effect: While shielded, damage taken is reduced by <span class="text-orange-500">15%</span>.</p>
+        ##### Desire for Temperance
+
+        At the start of the battle, gains a [physical shield] equal to <span class="text-orange-500">25%</span> of the character's P.ATK plus it's M.ATK. The shield cannot be dispelled.
+
+        Exclusive effect: While shielded, damage taken is reduced by <span class="text-orange-500">15%</span>.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_sun} alt="Rays of the Sun" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Rays of the Sun</h5>
-        <p>When attacking [<span class="text-yellow-500">Injured</span>] enemies, ignore <span class="text-orange-500">20%</span> of their DEF.</p>
-        <p>Exclusive effect: Ignores an additional <span class="text-orange-500">20%</span> of their DEF.</p>
+        ##### Rays of the Sun
+
+        When attacking [<span class="text-yellow-500">Injured</span>] enemies, ignore <span class="text-orange-500">20%</span> of their DEF.
+
+        Exclusive effect: Ignores an additional <span class="text-orange-500">20%</span> of their DEF.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_world} alt="Guidance of the World" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Guidance of the World</h5>
-        <p>Recovers <span class="text-green-500">1</span> NRG additionally when not using any active skills and [<span class="text-yellow-500">Standby</span>].</p>
-        <p>Exclusive effect: Skill cooldowns are reduced by <span class="text-orange-500">1</span> turn.</p>
+        ##### Guidance of the World
+
+        Recovers <span class="text-green-500">1</span> NRG additionally when not using any active skills and [<span class="text-yellow-500">Standby</span>].
+
+        Exclusive effect: Skill cooldowns are reduced by <span class="text-orange-500">1</span> turn.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_emperor} alt="Majesty of the Emperor" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Majesty of the Emperor</h5>
-        <p>DMG increases by <span class="text-orange-500">10%</span> when attacking [<span class="text-yellow-500">Healthy</span>] enemies.</p>
-        <p>Exclusive effect: DMG is increased by an additional <span class="text-orange-500">15%</span> (for a total of <span class="text-orange-500">25%</span>) when attacking [<span class="text-yellow-500">Healthy</span>] enemies.</p>
+        ##### Majesty of the Emperor
+
+        DMG increases by <span class="text-orange-500">10%</span> when attacking [<span class="text-yellow-500">Healthy</span>] enemies.
+
+        Exclusive effect: DMG is increased by an additional <span class="text-orange-500">15%</span> (for a total of <span class="text-orange-500">25%</span>) when attacking [<span class="text-yellow-500">Healthy</span>] enemies.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_moon} alt="Gibbous Moon" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Gibbous Moon</h5>
-        <p>At the end of the turn, recovers <span class="text-green-500">20%</span> HP if the character is [<span class="text-yellow-500">Injured</span>].</p>
-        <p>Exclusive effect: When [<span class="text-yellow-500">Injured</span>], healing received is increased by <span class="text-green-500">15%</span>. When [<span class="text-yellow-500">Dying</span>], healing received is increased by an additional <span class="text-green-500">15%</span> (for a total for <span class="text-green-500">30%</span>).</p>
+        ##### Gibbous Moon
+
+        At the end of the turn, recovers <span class="text-green-500">20%</span> HP if the character is [<span class="text-yellow-500">Injured</span>].
+
+        Exclusive effect: When [<span class="text-yellow-500">Injured</span>], healing received is increased by <span class="text-green-500">15%</span>. When [<span class="text-yellow-500">Dying</span>], healing received is increased by an additional <span class="text-green-500">15%</span> (for a total for <span class="text-green-500">30%</span>).
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_empress} alt="Elegance of the Empress" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Elegance of the Empress</h5>
-        <p>After casting a skill on an ally, convert <span class="text-orange-500">1</span> [debuff] on the target into [<span class="text-yellow-500">Level 1 Buff</span>] that lasts for <span class="text-orange-500">2</span> turns.</p>
-        <p>Exclusive effect: Converts <span class="text-orange-500">2</span> [debuff] instead of <span class="text-orange-500">1</span> [debuff].</p>
+        ##### Elegance of the Empress
+
+        After casting a skill on an ally, convert <span class="text-orange-500">1</span> [debuff] on the target into [<span class="text-yellow-500">Level 1 Buff</span>] that lasts for <span class="text-orange-500">2</span> turns.
+
+        Exclusive effect: Converts <span class="text-orange-500">2</span> [debuff] instead of <span class="text-orange-500">1</span> [debuff].
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Temptation of The Devil</h5>
-        <p>For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.</p>
-        <p>Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.</p>
+        ##### Temptation of The Devil
+
+        For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.
+
+        Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_fool} alt="The Fool's Naivety" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>The Fool's Naivety</h5>
-        <p>HP is increased by <span class="text-green-500">10%</span>. When initiating an active attack, if the character's max HP is greater than the target's, DMG dealt is increased by <span class="text-orange-500">10%</span>.</p>
-        <p>Exclusive effect: HP and DMG dealt is increased by an additional <span class="text-green-500">10%</span>.</p>
-        <p><em>Obtained from the Tower of Adversity.</em></p>
+        ##### The Fool's Naivety
+
+        HP is increased by <span class="text-green-500">10%</span>. When initiating an active attack, if the character's max HP is greater than the target's, DMG dealt is increased by <span class="text-orange-500">10%</span>.
+
+        Exclusive effect: HP and DMG dealt is increased by an additional <span class="text-green-500">10%</span>.
+
+        <em>Obtained from the Tower of Adversity.</em>
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_strength} alt="Source of Strength" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Source of Strength</h5>
-        <p>When attacked by a character of [the character's Counter Role], DMG taken is decreased by <span class="text-orange-500">10%</span>. When attacking a character of [the character's Counter Role], ignores <span class="text-orange-500">15%</span> of the target's DEF.</p>
-        <p>Exclusive effect: Damage taken is decreased by an additional <span class="text-green-500">10%</span>.  Ignored defense is increased by an additional <span class="text-orange-500">20%</span>.</p>
-        <p><em>Obtained from the Tower of Adversity.</em></p>
+        ##### Source of Strength
+
+        When attacked by a character of [the character's Counter Role], DMG taken is decreased by <span class="text-orange-500">10%</span>. When attacking a character of [the character's Counter Role], ignores <span class="text-orange-500">15%</span> of the target's DEF.
+
+        Exclusive effect: Damage taken is decreased by an additional <span class="text-green-500">10%</span>.  Ignored defense is increased by an additional <span class="text-orange-500">20%</span>.
+
+        <em>Obtained from the Tower of Adversity.</em>
     </div>
 </HorizontalCard>
 
 <HorizontalCard>
     <Image src={tarot_hierophant} alt="Hierophant's Laws" class="object-contain" />
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Hierophant's Laws</h5>
-        <p>[AoE DMG] taken is decreased by <span class="text-orange-500">20%</span>.</p>
-        <p>Exclusive effect: When attacking a single target, DMG dealt is increased by <span class="text-orange-500">20%</span>.  When healing a single target, the healing effect is increased by <span class="text-green-500">20%</span>.</p>
-        <p><em>Obtained from the Tower of Adversity.</em></p>
+        ##### Hierophant's Laws
+
+        [AoE DMG] taken is decreased by <span class="text-orange-500">20%</span>.
+
+        Exclusive effect: When attacking a single target, DMG dealt is increased by <span class="text-orange-500">20%</span>.  When healing a single target, the healing effect is increased by <span class="text-green-500">20%</span>.
+
+        <em>Obtained from the Tower of Adversity.</em>
     </div>
 </HorizontalCard>
 
