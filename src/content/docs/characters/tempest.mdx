@@ -1,0 +1,92 @@
+---
+title: Tempest
+description: Sword of Convallaria Tempest Build
+titleImage: '../../../assets/characters/tempest/sprite.png'
+titleImageAlt: Tempest
+rarity: Epic
+role: Breaker
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/tempest_left_1.png';
+import skill_l2 from '../../../assets/skills/tempest_left_2.png';
+import skill_l3 from '../../../assets/skills/tempest_left_3.png';
+import skill_l4 from '../../../assets/skills/tempest_left_4.png';
+import skill_l5 from '../../../assets/skills/tempest_left_5.png';
+import skill_r1 from '../../../assets/skills/tempest_right_1.png';
+import skill_r2 from '../../../assets/skills/tempest_right_2.png';
+import skill_r3 from '../../../assets/skills/tempest_right_3.png';
+import skill_r4 from '../../../assets/skills/tempest_right_4.png';
+import skill_r5 from '../../../assets/skills/tempest_right_5.png';
+import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-5">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%AA%91%E5%A3%AB%E7%B2%BE%E7%A5%9E" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="骑士精神" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%80%92%E9%A3%8E%E5%BC%BA%E8%A2%AD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="怒风强袭" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E8%83%BD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="回能" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B1%82%E7%94%9F%E6%84%8F%E5%BF%97" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="求生意志" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%A9%B1%E6%95%A3%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="驱散击（剑）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%A1%BA%E5%8A%BF%E5%8A%88" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="顺势劈" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%AA%91%E5%A3%AB%E7%9A%84%E8%8D%A3%E8%80%80" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="骑士的荣耀" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9A%B4%E9%A3%8E%E8%B7%B5%E8%B8%8F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="暴风践踏" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%BD%BB%E9%87%8D%E8%BF%9E%E5%87%BB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="轻重连击" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%93%84%E5%8A%BF%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="蓄势击（剑）" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        ##### Dream of The Magician
+
+        Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.
+
+        Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        ##### Temptation of The Devil
+
+        For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.
+
+        Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.
+    </div>
+</HorizontalCard>
+
+## References
+- [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)
+- [角色图鉴库/枪骑士“怒风” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9E%AA%E9%AA%91%E5%A3%AB%E2%80%9C%E6%80%92%E9%A3%8E%E2%80%9D)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/599403.html)
