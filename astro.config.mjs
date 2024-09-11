@@ -68,6 +68,10 @@ export default defineConfig({
 					autogenerate: { directory: 'inventory' },
 				},
 				{
+					label: 'Guides',
+					autogenerate: { directory: 'guides' },
+				},
+				{
 					label: 'Characters',
 					autogenerate: { directory: 'characters' },
 				}

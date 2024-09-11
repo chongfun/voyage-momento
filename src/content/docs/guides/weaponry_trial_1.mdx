@@ -1,0 +1,535 @@
+---
+title: Weaponry Trial 1
+description: Weaponry Trial 1 Guide
+head:
+  - tag: script
+    attrs:
+      src: 'https://code.jquery.com/jquery-3.7.1.slim.min.js'
+  - tag: script
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.js'
+  - tag: link
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.css'
+      rel: 'stylesheet'
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import DataTable from '../../../components/DataTable.astro';
+
+This trial punishes melee damage. Ranged attacks from melee dps are fine (e.g. [Gloria](/characters/gloria)'s [Lance of Longinus] or [Sword - Full Moon]). Bring AOE heals and debuff cleansing for stigmata stacks.
+
+The boss has a three turn cycle:
+
+<Steps>
+
+1. Attacks the closest unit with a basic attack
+2. Charges a frontal AOE
+3. After the frontal AOE lands, charges a 3x3 AOE targeting the lowest HP% unit.
+
+</Steps>
+
+:::tip
+The damage from the 3x3 AOE can be split between up to 3 units. Magic tanks such as [Suppression](/characters/suppression) can tank it alone, or you can intentionally lower the HP of sacrificial units (e.g. Guarding Dummy Deployment, [Inanna](/characters/inanna)'s guard) in stigmata tiles so that they're targeted for the 3x3 AOE.
+:::
+
+:::caution
+If the boss kills a unit, it gets an extra turn.
+:::
+
+## Stage 10 - Level 65
+
+<table id="weaponry-trial-1-10" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/3BUvVl4ihUM">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/hNDBRclIxc8">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/obxVVgrjOP8">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Nungal" variant="tip" />
+            </td>
+            <td><a href="https://youtu.be/oogKlywKS0A">Exemplar</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/NfB8bilCLs8">Azer</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Samantha" variant="caution" />
+                <Badge text="Papal Ice Priest" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/QtCqziDkTn0">aMagicJo</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Dantalion" variant="tip" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Suppression" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/Vvbvd_c3sgo">FlinxRys</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Nungal" variant="tip" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/ye9SoLCDXck">Tea Lament</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Nungal" variant="tip" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/-U_Zzdq76Ck">Pendaring</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Edda" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/F9Cq30oxs70">Z808</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/clxg-X09nV8">Oomay</a></td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/GE2iivRTQ7E">WhatisaUsername</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/-ngRsMBEeJA">Axiom</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/XGlhVk_AuQ0">Elteivel</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/j0tDYM0HF6g">Steinway Gaming</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Outlaw Archer" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/zyOOONB3ErU">Steinway Gaming</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Edda" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/bTlSmrGfR00">Grafarya</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/ySGJOGhfouk">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/q0NgIsFSCFY">Ivar TheBoneless</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/FdJa5BKfWuM">Yojimbo</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="K.A. Archer" variant="caution" />
+                <Badge text="K.A. Fire Conjurer" variant="tip" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+                <Badge text="Recruited Assassin" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/1gBVj82Nki8">Nemi TV</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/UH78ZAOSom4">Dancer Jerome</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 9 - Level 60
+
+<table id="weaponry-trial-1-9" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Divine Grace" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/uyiEsfgObio">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Edda" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/xM-VVtgGXRY">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Divine Grace" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/gQdAoCzQ_LI">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Papal Ice Priest" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/a6UsHDFiong">aMagicJo</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Faycal" variant="caution" />
+                <Badge text="Outlaw Archer" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/iNihCOMgbJY">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/BVhBmI8jlF4">Azer</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Edda" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/unA5bL2p-K4">Grafarya</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Suppression" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/JzxZQziI7Wo">Lum Gaming</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Suppression" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/APrqtYoVfh8">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nightingale" variant="caution" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/XxW52rCEADo">havocka horizon</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 8 - Level 55
+
+<table id="weaponry-trial-1-8" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>38</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Divine Grace" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/9l4Zu_FQS3M">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Divine Grace" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/uYzA8UwWzSs">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="K.A. Light Conjurer" variant="caution" />
+                <Badge text="Nungal" variant="tip" />
+                <Badge text="Teadon" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/IUdkN1JmlZs">Auronnj Jayy</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Divine Grace" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/x8wIlHUINUU">Roboconn</a></td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Suppression" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/QhgFHVW8-9I">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Lightning" variant="note" />
+                <Badge text="Outlaw Archer" variant="caution" />
+                <Badge text="Papal Ice Priest" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/f44vRdZnHWY">Volkin Gacha</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Outlaw Crossbowman" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/F2eqTDNHL2Q">ShowtimeDr</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Faycal" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Suppression" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/GSPwR2N6xmE">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Flame Sorceress" variant="tip" />
+                <Badge text="K.A. Fire Conjurer" variant="tip" />
+            </td>
+            <td><a href="https://youtu.be/de0dWzGBHFA">havocka horizon</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<DataTable tableId="#weaponry-trial-1-10" />
+<DataTable tableId="#weaponry-trial-1-9" />
+<DataTable tableId="#weaponry-trial-1-8" />
