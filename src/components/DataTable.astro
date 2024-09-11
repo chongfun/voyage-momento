@@ -1,0 +1,11 @@
+---
+const { tableId } = Astro.props;
+---
+<script is:inline define:vars={{tableId}}>
+$(document).ready( function () {
+    $(tableId).DataTable({
+        stateSave: true,
+        paging: false
+    });
+} );
+</script>

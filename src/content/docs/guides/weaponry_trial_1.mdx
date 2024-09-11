@@ -1,0 +1,483 @@
+---
+title: Weaponry Trial 1
+description: Weaponry Trial 1 Guide
+head:
+  - tag: script
+    attrs:
+      src: 'https://code.jquery.com/jquery-3.7.1.slim.min.js'
+  - tag: script
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.js'
+  - tag: link
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.css'
+      rel: 'stylesheet'
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+import DataTable from '../../../components/DataTable.astro';
+
+## Stage 10 - Level 65
+
+<table id="weaponry-trial-1-10" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Edda" />
+                <Badge text="Inanna" />
+            </td>
+            <td><a href="https://www.youtube.com/watch?v=hNDBRclIxc8">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Edda" />
+                <Badge text="Inanna" />
+            </td>
+            <td><a href="https://www.youtube.com/watch?v=obxVVgrjOP8">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Nungal" variant="tip" />
+            </td>
+            <td><a href="https://www.youtube.com/watch?v=oogKlywKS0A">Exemplar</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Nightingale" />
+                <Badge text="Outlaw Crossbowman" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Azer</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Samantha" />
+                <Badge text="Papal Ice Priest" />
+            </td>
+            <td>aMagicJo</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Beryl " />
+                <Badge text="Edda" />
+                <Badge text="Dantalion" />
+                <Badge text="Inanna" />
+                <Badge text="Suppression" />
+            </td>
+            <td>FlinxRys</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" />
+                <Badge text="Edda" />
+                <Badge text="Gloria" />
+                <Badge text="Nungal" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Tea Lament</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Edda" />
+                <Badge text="Nungal" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Pendaring</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Gloria" />
+                <Badge text="Edda" />
+            </td>
+            <td>Z808</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Edda" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Oomay</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Nightingale" />
+                <Badge text="Outlaw Crossbowman" />
+                <Badge text="Stinger" />
+            </td>
+            <td>WhatisaUsername</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Edda" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Inanna" />
+                <Badge text="Nungal" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Wolfarya</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Edda" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Axiom</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Beryl" />
+                <Badge text="Blade" />
+                <Badge text="Edda" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Elteivel</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Nightingale" />
+                <Badge text="Outlaw Archer" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Steinway Gaming</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Butterfly" />
+                <Badge text="Edda" />
+            </td>
+            <td>Grafarya</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Gloria" />
+            </td>
+            <td>Spriyue</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Gloria" />
+                <Badge text="Outlaw Crossbowman" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Ivar TheBoneless</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Nightingale" />
+                <Badge text="Outlaw Crossbowman" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Yojimbo</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="K.A. Archer" />
+                <Badge text="K.A. Fire Conjurer" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Outlaw Crossbowman" />
+                <Badge text="Recruited Assassin" />
+            </td>
+            <td>Nemi TV</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Blade" />
+                <Badge text="Edda" />
+                <Badge text="K.A. Light Conjurer" />
+            </td>
+            <td>DancerJeromeSoC</td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 9 - Level 60
+
+<table id="weaponry-trial-1-9" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Divine Grace" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Narwhal</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Butterfly" />
+                <Badge text="Papal Ice Priest" />
+            </td>
+            <td>aMagicJo</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Faycal" />
+                <Badge text="Outlaw Archer" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Hawky SoC</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Ballista" />
+                <Badge text="Blade" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Nightingale" />
+                <Badge text="Stinger" />
+            </td>
+            <td>Azer</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Butterfly" />
+                <Badge text="Edda" />
+            </td>
+            <td>Grafarya</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Ballista" />
+                <Badge text="Beryl" />
+                <Badge text="Suppression" />
+            </td>
+            <td>Lum Gaming</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Gloria" />
+                <Badge text="Suppression" />
+            </td>
+            <td>Spriyue</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Flame Sorceress" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Lash" />
+            </td>
+            <td>Hawky SoC</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Blade" />
+                <Badge text="Edda" />
+                <Badge text="K.A. Light Conjurer" />
+            </td>
+            <td>DancerJeromeSoC</td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 8 - Level 55
+
+<table id="weaponry-trial-1-8" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>36</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Divine Grace" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Narwhal</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>
+                <Badge text="Beryl" />
+                <Badge text="Inanna" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Nungal" />
+                <Badge text="Teadon" />
+            </td>
+            <td>Auronnj Jayy</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Divine Grace" />
+                <Badge text="Inanna" />
+            </td>
+            <td>Roboconn</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Gloria" />
+                <Badge text="Suppression" />
+            </td>
+            <td>Spriyue</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Angel" />
+                <Badge text="Ballista" />
+                <Badge text="Lightning" />
+                <Badge text="Outlaw Archer" />
+                <Badge text="Papal Ice Priest" />
+            </td>
+            <td>Volkin Gacha</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Angel" />
+                <Badge text="Beryl" />
+                <Badge text="Butterfly" />
+                <Badge text="Outlaw Crossbowman" />
+            </td>
+            <td>ShowtimeDr</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Ballista" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Outlaw Archer" />
+                <Badge text="Suppression" />
+            </td>
+            <td>Narwhal</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" />
+                <Badge text="Beryl" />
+                <Badge text="Flame Sorceress" />
+                <Badge text="K.A. Light Conjurer" />
+                <Badge text="Lash" />
+            </td>
+            <td>Hawky SoC</td>
+        </tr>
+    </tbody>
+</table>
+
+<DataTable tableId="#weaponry-trial-1-10" />
+<DataTable tableId="#weaponry-trial-1-9" />
+<DataTable tableId="#weaponry-trial-1-8" />
