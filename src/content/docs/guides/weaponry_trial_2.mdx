@@ -1,0 +1,601 @@
+---
+title: Weaponry Trial 2
+description: Weaponry Trial 2 Guide
+head:
+  - tag: script
+    attrs:
+      src: 'https://code.jquery.com/jquery-3.7.1.slim.min.js'
+  - tag: script
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.js'
+  - tag: link
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.css'
+      rel: 'stylesheet'
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import DataTable from '../../../components/DataTable.astro';
+
+This trial punishes ranged damage, but AOE attacks are fine.
+
+The boss begins the battle by debuffing the two farthest targets with no healing. It then repeats the following pattern:
+
+<Steps>
+
+1. Attacks and knockbacks the target farthest from it
+2. Attacks the two closest targets (inflicting a thunder debuff that will do piercing damage in a cross shape on the subsequent turn)
+3. Attacks with frontal knockback AOE and spawns rocks that will explode if they're hit with piercing damage
+
+</Steps>
+
+:::tip
+Papal Guard is amazing for tanking the nuke in (1). He can sustain himself without support from your healer when equipped with the Cooling Powder trinket and the Gibbous Moon tarot whisper.
+:::
+
+:::caution
+If the boss kills a unit, it gets an extra turn.
+:::
+
+## Stage 10 - Level 65
+
+<table id="weaponry-trial-2-10" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/Lxq7MFSt_I8">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="NonoWill" variant="note" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/X1f1kC2eUhk">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Guzman" variant="tip" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/RuxCklydEEI">Yojimbo</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Xavier" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/-F6F7Clxt10">Tea Lament</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/M7FaaFCIkZw">ShowtimeDr</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/bTwM4ZTeJ6Q">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Col" variant="note" />
+                <Badge text="Dantalion" variant="note" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/foR8505Sl7s">Locke D</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/-66TF_RTAic">YAIBIG</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/0_nDJ9YrXGE">fonmasterloli</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/N5xOD7P2A5U">Z808</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/yiuo7e7aXqo">aMagicJo</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+                <Badge text="Samantha" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/OV_Kt_PcdTc">Drans Wakfu</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/Dx7rBU5aImg">lucas</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Might" variant="danger" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/32qwDxbp6cM">WhatisaUsername</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+                <Badge text="Recruited Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/BDDlAl9YIVg">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/VOWZSRS94dU">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Knighted Guard" variant="success" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/Mny6m688wls">Azer</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Knighted Guard" variant="success" />
+                <Badge text="Maitha" variant="success" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/S65Qf482D0o">Nemi TV</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/bOSBTQ4GLpY">Davis_gaming</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Knighted Guard" variant="success" />
+                <Badge text="Maitha" variant="success" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/kv18dRL5nQU">AmatureGacha</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Knighted Guard" variant="success" />
+                <Badge text="Maitha" variant="success" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/bDSb1Vlexns">DancerJeromeSoC</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 9 - Level 60
+
+<table id="weaponry-trial-2-9" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/oJyh23XnkB4">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="NonoWill" variant="note" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/9OfATVfNSlo">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/D51bx2Hf4T4">Yojimbo</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/YY-9k4sgjC8">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/qrafZuLGHSM">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Dantalion" variant="tip" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Xavier" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/7j8lKncAjVI">Tea Lament</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Maitha" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/apVUaNet_NI">ShowtimeDr</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Maitha" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+                <Badge text="Stormbreaker" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/ft8htz2FUgk">Exemplar</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/MlTG4YkkQAU">fonmasterloli</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Recruited Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/CCGnxYmiXoU">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/lWFP4Koo_fU">Locke D</a></td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Might" variant="danger" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/fLee_mX1suw">WhatisaUsername</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/o6e33ALYxOQ">AmatureGacha</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/zhZxPeTynb8">Omanko</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/TMBbTrNyLyM">Lum Gaming</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/2fAhzdQ7KxU">Leohart</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/x5RA0bCIv4c">Yos</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/txfUAj0xj1E">DancerJeromeSoC</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Garcia" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/zIl59owgYhA">havocka horizon</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 8 - Level 55
+
+<table id="weaponry-trial-2-8" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>36</td>
+            <td>
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/ZJrwWEEdQ5w">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/I63OggSCFPQ">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/e-FqgyepIjM">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Maitha" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/GtHUoNOh9PE">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Lightning" variant="note" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/BwBYtezqh-Y">Yos</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Lightning" variant="note" />
+                <Badge text="Maitha" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/bsjByIeUo9Y">DizzyTaro</a></td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/inrVEBo6f60">havocka horizon</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<DataTable tableId="#weaponry-trial-2-10" />
+<DataTable tableId="#weaponry-trial-2-9" />
+<DataTable tableId="#weaponry-trial-2-8" />
