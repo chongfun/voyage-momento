@@ -1,0 +1,557 @@
+---
+title: Weaponry Trial 3
+description: Weaponry Trial 3 Guide
+head:
+  - tag: script
+    attrs:
+      src: 'https://code.jquery.com/jquery-3.7.1.slim.min.js'
+  - tag: script
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.js'
+  - tag: link
+    attrs:
+      src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.css'
+      rel: 'stylesheet'
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import DataTable from '../../../components/DataTable.astro';
+
+Unlike WT1 and WT2, this boss does not punish melee or ranged damage. However, you will want to bring physical DPS to break the boss's physical shield.
+
+Boss pattern:
+
+<Steps>
+
+1. Attacks with [Ashes to Ashes] and summons a turret
+2. Attacks with [Omen of Doom] targeting the character with the highest M.DEF 
+3. Generates a physical shield with [Misfortune Cohesion] and summons turret(s)
+4. Attacks with [Misfortune Cohesion] AoE (enhanced damage if the shield is intact) and summons turret(s)
+5. Attacks with [Apocalypse] AoE
+6. Repeat from ②
+
+</Steps>
+
+:::tip
+This boss gets a 4% damage buff stack for each turret killed. Ensure that you dispel these stacks regularly. The [Redemption of The Judgment] tarot whisper or the [Tuning Hammer] axe are good options.
+:::
+
+:::tip
+The first [Apocalypse] AoE from the boss before you have many [<span class="text-blue-500">Devil</span>] stacks is the most dangerous. Underlevelled strategies rely on stacking debuffs (e.g. Outlaw Guard's [Intimidate] debuff, Gloria's [Solemnity] aura) and buffs (e.g. Gloria's [Longinus - Brilliance] buff, Angel's [M.DEF Command] aura) to survive.
+:::
+
+:::note
+The character with the highest M.DEF may not always be the same throughout the fight due to [<span class="text-blue-500">Devil</span>] tarot whisper stacks, Angel's MDEF aura, Angel's random MDEF buff from healing, Gloria's flag range, etc. 
+:::
+
+:::caution
+Like the other weaponry trial bosses, this boss gets an extra turn when it kills a unit. Fragile summons such as Inanna's Guard are a liability.
+:::
+
+## Stage 10 - Level 65
+
+<table id="weaponry-trial-3-10" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/rDZ5Bh0muAg">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="NonoWill" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/LzDJoyxAXBA">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/jbu94BLv_Rg">Yojimbo</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/tlDX_VzaSYU">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/y03lv6vLpiM">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/foR8505Sl7s">Locke D</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/U6Hc_jFJ-3Y">lucas</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/b3fF-ge0Xcc">Tea Lament</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/QbM49Ztxt6E">Z808</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/JHX6BCNBBNo">fonmasterloli</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="NonoWill" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Papal Ice Priest" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/nd0TqznoGrs">aMagicJo</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Knighted Guard" variant="success" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Papal Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/tQTOfwTffJM">Dusty</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+                <Badge text="Recruited Assassin" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/VpUfX9mpyC8">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/QJrwVhGQD9Y">Azer</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/xPOchnLCK80">Spriyue</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/GUJY54W_ziw">Yos</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="K.A. Fire Conjurer" variant="tip" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/tjVPVduzEh0">Nemi TV</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Stinger" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/jUoaqHXPLds">WhatisaUsername</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 9 - Level 60
+
+<table id="weaponry-trial-3-9" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/-yBTVwQQnkk">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="NonoWill" variant="note" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/ZrQhbZW6_L4">Chongfun</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/byxnyKEWRAY">Yojimbo</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/o-1bsC_69zc">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Inanna" variant="caution" />
+                <Badge text="Outlaw Archer" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/c75K0eCWIV4">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/WwZ0pFls-oc">fonmasterloli</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/k8Nq157j2XI">Lum Gaming</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/sLhQSR9khm8">Azer</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/EbwpzZafMCI">Exemplar</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Faycal" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/PtfBlkSeSzg">Exemplar</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/3XiWgswX6Ys">Yos</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Divine Grace" variant="caution" />
+                <Badge text="Guzman" variant="tip" />
+                <Badge text="Nightingale" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/OYaUTGRUFc0">Drans Wakfu</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Ballista" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/blGXfXO-3wg">WhatisaUsername</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/oUxUIA46Zog">Leohart</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Edda" variant="caution" />
+                <Badge text="Magnus" variant="success" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/1xIyIw8arQA">DancerJeromeSoC</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/VK-pGVSf9vE">havocka horizon</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Outlaw Guard" variant="success" />
+            </td>
+            <td><a href="https://youtu.be/clj3jyFY2us">Spriyue</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Stage 8 - Level 55
+
+<table id="weaponry-trial-3-8" class="w-full">
+    <thead>
+        <tr>
+            <th class="w-1/6">Team Level</th>
+            <th class="w-1/2" data-dt-order="disable">Units</th>
+            <th class="w-1/3">Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>39</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Butterfly" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/iBBhw7kQvZo">Grafarya</a></td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Blade" variant="note" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/xW4_Jgab3Zw">Narwhal</a></td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Beryl" variant="tip" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/DvBbUEWaB8Q">Hawky SoC</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Faycal" variant="caution" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/dGWxDD40pAk">Yos</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+            </td>
+            <td><a href="https://youtu.be/j1Ft9dhwMMc">Leohart</a></td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Col" variant="note" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Outlaw Guard" variant="success" />
+                <Badge text="Rawiyah" variant="danger" />
+            </td>
+            <td><a href="https://youtu.be/VK-pGVSf9vE">havocka horizon</a></td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>
+                <Badge text="Abyss" variant="tip" />
+                <Badge text="Angel" variant="caution" />
+                <Badge text="Crimson Falcon" variant="note" />
+                <Badge text="Gloria" variant="caution" />
+                <Badge text="Recruited Assassin" variant="note" />
+            </td>
+            <td><a href="https://youtu.be/wv7UBnSIzyo">Spriyue</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<DataTable tableId="#weaponry-trial-3-10" />
+<DataTable tableId="#weaponry-trial-3-9" />
+<DataTable tableId="#weaponry-trial-3-8" />
