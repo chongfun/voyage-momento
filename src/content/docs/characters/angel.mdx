@@ -6,7 +6,7 @@ titleImageAlt: Radiant Maidservant
 rarity: Epic
 role: Watcher
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,6 +20,7 @@ import skill_r2 from '../../../assets/skills/angel_right_2.png';
 import skill_r3 from '../../../assets/skills/angel_right_3.png';
 import skill_r4 from '../../../assets/skills/angel_right_4.png';
 import skill_r5 from '../../../assets/skills/angel_right_5.png';
+import ReorganizedCube from '../../../components/inventory/staff/ReorganizedCube.astro';
 import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
 import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriestess.png'
 
@@ -65,6 +66,12 @@ The left RK3 skill is great for bossing, but the right RK3 skill is better for g
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
 <Badge text="Castalia" variant="caution" />
+
+## Weapons
+
+<CardGrid>
+  <ReorganizedCube />
+</CardGrid>
 
 ## Tarot Whispers
 
