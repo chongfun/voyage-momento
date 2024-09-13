@@ -6,7 +6,7 @@ titleImageAlt: Claymore Warrior
 rarity: Legendary
 role: Breaker
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -23,6 +23,8 @@ import skill_r3 from '../../../assets/skills/rawiyah_right_3.png';
 import skill_r4 from '../../../assets/skills/rawiyah_right_4.png';
 import skill_r5 from '../../../assets/skills/rawiyah_right_5.png';
 import skill_r6 from '../../../assets/skills/rawiyah_right_6.png';
+import TuningHammer from '../../../components/inventory/axe/TuningHammer.astro';
+import FeastAxe from '../../../components/inventory/axe/FeastAxe.astro';
 import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 
@@ -70,6 +72,13 @@ import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
 
+## Weapons
+
+<CardGrid>
+  <TuningHammer />
+  <FeastAxe />
+</CardGrid>
+
 ## Tarot Whispers
 
 <HorizontalCard>
@@ -92,6 +101,7 @@ import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 
 ## References
 - [Celion Journey's Pocket Guide for Rawiyah](https://www.patreon.com/posts/pocket-guide-for-109317909)
+- [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
 - [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
 - [角色图鉴库/拉维耶 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%8B%89%E7%BB%B4%E8%80%B6)
 - [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/597410.html)
