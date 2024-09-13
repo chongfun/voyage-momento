@@ -6,7 +6,7 @@ titleImageAlt: Judge of Papal
 rarity: Legendary
 role: Seeker
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -23,6 +23,8 @@ import skill_r3 from '../../../assets/skills/garcia_right_3.png';
 import skill_r4 from '../../../assets/skills/garcia_right_4.png';
 import skill_r5 from '../../../assets/skills/garcia_right_5.png';
 import skill_r6 from '../../../assets/skills/garcia_right_6.png';
+import VoidStab from '../../../components/inventory/sword/VoidStab.astro';
+import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
 import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
 import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
@@ -69,6 +71,13 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 ---
 <Badge text="Recommended" variant="danger" />
 
+## Weapons
+
+<CardGrid stagger>
+  <VoidStab />
+  <NewbornBlade />
+</CardGrid>
+
 ## Tarot Whispers
 
 <HorizontalCard>
@@ -91,5 +100,6 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
 ## References
 - [Celion Journey's Pocket Guide for Garcia](https://www.patreon.com/posts/pocket-guide-for-109502694)
+- [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
 - [角色图鉴库/嘉西娅 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%98%89%E8%A5%BF%E5%A8%85)
 - [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/597421.html)
