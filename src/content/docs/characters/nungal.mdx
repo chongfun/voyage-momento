@@ -6,7 +6,7 @@ titleImageAlt: Nungal
 rarity: Legendary
 role: Destroyer
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -23,6 +23,7 @@ import skill_r3 from '../../../assets/skills/nungal_right_3.png';
 import skill_r4 from '../../../assets/skills/nungal_right_4.png';
 import skill_r5 from '../../../assets/skills/nungal_right_5.png';
 import skill_r6 from '../../../assets/skills/nungal_right_6.png';
+import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
 import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
@@ -71,6 +72,12 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 <Badge text="Recommended" variant="danger" />
 <Badge text="Castalia" variant="caution" />
 
+## Weapons
+
+<CardGrid>
+  <StarRaidCrossbow />
+</CardGrid>
+
 ## Tarot Whispers
 
 <HorizontalCard>
@@ -93,6 +100,7 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
 ## References
 - [Celion Journey's Pocket Guide for Nungal](https://www.patreon.com/posts/pocket-guide-for-109333080)
+- [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
 - [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
 - [角色图鉴库/伦伽勒 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BC%A6%E4%BC%BD%E5%8B%92)
 - [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/606559.html)
