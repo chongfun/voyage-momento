@@ -6,7 +6,7 @@ titleImageAlt: LilyWill
 rarity: Legendary
 role: Seeker
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -23,6 +23,8 @@ import skill_r3 from '../../../assets/skills/lilywill_right_3.png';
 import skill_r4 from '../../../assets/skills/lilywill_right_4.png';
 import skill_r5 from '../../../assets/skills/lilywill_right_5.png';
 import skill_r6 from '../../../assets/skills/lilywill_right_6.png';
+import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
+import WhaleHunter from '../../../components/inventory/bow/WhaleHunter.astro';
 import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
 import tarot_emperor from '../../../assets/tarot_whispers/tarot_emperor.png'
 import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
@@ -72,6 +74,13 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 <Badge text="Recommended" variant="danger" />
 <Badge text="Castalia" variant="caution" />
 
+## Weapons
+
+<CardGrid stagger>
+  <StarRaidCrossbow />
+  <WhaleHunter />
+</CardGrid>
+
 ## Tarot Whispers
 
 <HorizontalCard>
@@ -103,6 +112,7 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
 ## References
 - [Celion Journey's Pocket Guide for LilyWill](https://www.patreon.com/posts/pocket-guide-for-109502738)
+- [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
 - [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
 - [养成一图流——莉莉薇儿](https://www.taptap.cn/moment/498927199785585507)
 - [角色图鉴库/莉莉薇儿 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%8E%89%E8%8E%89%E8%96%87%E5%84%BF)
