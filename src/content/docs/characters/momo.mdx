@@ -6,7 +6,7 @@ titleImageAlt: Momo
 rarity: Legendary
 role: Destroyer
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -23,6 +23,8 @@ import skill_r3 from '../../../assets/skills/momo_right_3.png';
 import skill_r4 from '../../../assets/skills/momo_right_4.png';
 import skill_r5 from '../../../assets/skills/momo_right_5.png';
 import skill_r6 from '../../../assets/skills/momo_right_6.png';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
+import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
 import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
@@ -71,6 +73,13 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 <Badge text="Recommended" variant="danger" />
 <Badge text="Castalia" variant="caution" />
 
+## Weapons
+
+<CardGrid stagger>
+  <StarrySkyHeritage />
+  <ResentmentBroom />
+</CardGrid>
+
 ## Tarot Whispers
 
 <HorizontalCard>
@@ -93,6 +102,7 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
 ## References
 - [Celion Journey's Pocket Guide for Momo](https://www.patreon.com/posts/pocket-guide-for-109707123)
+- [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
 - [TimaeuSS - Sword of Convallaria CN/TW Veteran Info Sheet](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQaeGnBb3fFXHjofFFMgXSp1b2YmjgSIQJQcgPoSum3LdAcai1aw1aF_5YaBTxaJaWbb9xHzEw256X3/pubhtml)
 - [角色图鉴库/茉茉 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%8C%89%E8%8C%89)
 - [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/607413.html)
