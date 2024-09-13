@@ -6,7 +6,7 @@ titleImageAlt: K.A. Light Conjurer
 rarity: Rare
 role: Watcher
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -18,6 +18,7 @@ import skill_r1 from '../../../assets/skills/ka_light_conjurer_right_1.png';
 import skill_r2 from '../../../assets/skills/ka_light_conjurer_right_2.png';
 import skill_r3 from '../../../assets/skills/ka_light_conjurer_right_3.png';
 import skill_r4 from '../../../assets/skills/ka_light_conjurer_right_4.png';
+import ReorganizedCube from '../../../components/inventory/staff/ReorganizedCube.astro';
 import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
 import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriestess.png'
 
@@ -51,6 +52,12 @@ import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriest
 </SkillBuildGrid>
 ---
 <Badge text="Recommended" variant="danger" />
+
+## Weapons
+
+<CardGrid>
+  <ReorganizedCube />
+</CardGrid>
 
 ## Tarot Whispers
 
