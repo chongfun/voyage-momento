@@ -10,9 +10,10 @@ const { titleImageAlt } = Astro.props.entry.data
 const { rarity } = Astro.props.entry.data
 const { role } = Astro.props.entry.data
 
-import rarity_legendary from '../assets/characters/rarity_legendary.webp';
-import rarity_epic from '../assets/characters/rarity_epic.webp';
-import rarity_rare from '../assets/characters/rarity_rare.webp';
+import rarity_legendary from '../assets/characters/rarity_legendary.png';
+import rarity_epic from '../assets/characters/rarity_epic.png';
+import rarity_rare from '../assets/characters/rarity_rare.png';
+import rarity_common from '../assets/characters/rarity_common.png';
 import role_breaker from '../assets/characters/role_breaker.png';
 import role_seeker from '../assets/characters/role_seeker.png';
 import role_defender from '../assets/characters/role_defender.png';
@@ -28,6 +29,7 @@ import role_watcher from '../assets/characters/role_watcher.png';
 { rarity && rarity === 'Legendary' && <Image src={rarity_legendary} alt={rarity} height="30" class="float-right" /> }
 { rarity && rarity === 'Epic' && <Image src={rarity_epic} alt={rarity} height="30" class="float-right" /> }
 { rarity && rarity === 'Rare' && <Image src={rarity_rare} alt={rarity} height="30" class="float-right" /> }
+{ rarity && rarity === 'Common' && <Image src={rarity_common} alt={rarity} height="30" class="float-right" /> }
 <Default {...Astro.props}>
   <slot />
 </Default>
