@@ -12,6 +12,7 @@ hero:
 ---
 import { Image } from 'astro:assets';
 import abyss from '../../assets/character_select/abyss.png';
+import acambe from '../../assets/character_select/acambe.png';
 import alexei from '../../assets/character_select/alexei.png';
 import angel from '../../assets/character_select/angel.png';
 import auguste from '../../assets/character_select/auguste.png';
@@ -74,6 +75,10 @@ import teadon from '../../assets/character_select/teadon.png';
 import xavier from '../../assets/character_select/xavier.png';
 
 <div class="image-grid container m-auto grid grid-cols-5 md:grid-cols-7 lg:grid-cols-8 gap-1">
+    <a href="characters/acambe" class="no-underline text-center">
+        <Image src={acambe} alt="Acambe" />
+        <span class="bg-accent-200 text-accent-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-accent-900 dark:text-accent-300">Acambe</span>
+    </a>
     <a href="characters/alexei" class="no-underline text-center">
         <Image src={alexei} alt="Alexei" />
         <span class="bg-accent-200 text-accent-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-accent-900 dark:text-accent-300">Alexei</span>
