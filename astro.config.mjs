@@ -65,7 +65,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Inventory',
-					autogenerate: { directory: 'inventory' },
+					items: ['inventory/axes', 'inventory/bows', 'inventory/spears', 'inventory/staffs', 'inventory/swords', 'inventory/trinkets', 'inventory/tarot-whispers'],
 				},
 				{
 					label: 'Guides',
