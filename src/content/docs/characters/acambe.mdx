@@ -23,15 +23,20 @@ import skill_r4 from '../../../assets/skills/acambe_right_4.png';
 import skill_r5 from '../../../assets/skills/acambe_right_5.png';
 import skill_r6 from '../../../assets/skills/acambe_right_6.png';
 import CornucopiaStaff from '../../../components/inventory/staff/CornucopiaStaff.astro';
-import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
+import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
 import SkeletonStaff from '../../../components/inventory/staff/SkeletonStaff.astro';
 import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
+import OriginHourglass from '../../../components/inventory/trinket/OriginHourglass.astro';
+import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
+import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
 
 ## Skills
 
 <SkillBuildGrid grid="grid-cols-6">
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BD%9C%E8%83%BD%E6%BF%80%E5%8F%91" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l1} alt="潜能激发" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_l1} alt="潜能激发" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%B8%80%E6%8E%B7%E5%8D%83%E9%87%91" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l2} alt="一掷千金" width="100" class="rounded-full ring-4 ring-rose-500" />
@@ -40,10 +45,10 @@ import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
     <Image src={skill_l3} alt="特殊条款" width="100" class="rounded-full ring-4 ring-rose-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%B5%8F%E7%BD%9A%E5%88%86%E6%98%8E" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l4} alt="赏罚分明" width="100" class="rounded-full ring-4 ring-yellow-500" />
+    <Image src={skill_l4} alt="赏罚分明" width="100" class="rounded-full ring-4 ring-rose-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%BC%B4%E6%A2%B0%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l5} alt="缴械击（杖）" width="100" class="rounded-full" />
+    <Image src={skill_l5} alt="缴械击（杖）" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9E%81%E6%9A%97%E6%B3%A2%E5%8A%A8" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l6} alt="极暗波动" width="100" class="rounded-full ring-4 ring-blue-500" />
@@ -58,10 +63,10 @@ import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
     <Image src={skill_r3} alt="怒火" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8D%83%E9%87%91%E6%95%A3%E5%B0%BD" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r4} alt="千金散尽" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_r4} alt="千金散尽" width="100" class="rounded-full ring-4 ring-yellow-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%93%84%E5%8A%BF%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r5} alt="蓄势击（杖）" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_r5} alt="蓄势击（杖）" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9E%81%E6%9A%97%E9%99%A8%E7%81%AD" target="_blank" rel="noopener noreferrer">
     <Image src={skill_r6} alt="极暗陨灭" width="100" class="rounded-full" />
@@ -76,17 +81,59 @@ import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
 
 <CardGrid stagger>
   <CornucopiaStaff />
-  <ResentmentBroom />
+  <StarrySkyHeritage />
+  <DiffusingPrism />
   <SkeletonStaff />
 </CardGrid>
 
 ## Trinkets
 
+:::tip
+Fancy Hat is recommended to prevent the [🚫 <span class="text-yellow-500">NRG Restore</span>] debuff from [<span class="text-yellow-500">Burning Riches</span>].
+:::
+
 <CardGrid>
   <FancyHat />
+  <OriginHourglass />
 </CardGrid>
 
+## Tarot Whispers
+
+<HorizontalCard>
+    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        ##### Temptation of The Devil
+
+        For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.
+
+        Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        ##### Dream of The Magician
+
+        Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.
+
+        Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_wheeloffortune} alt="Course of Fortune" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        ##### Course of Fortune
+
+        At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.
+
+        Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.
+    </div>
+</HorizontalCard>
+
 ## References
+- [Celion Journey's Pocket Guide for Acambe](https://www.patreon.com/posts/pocket-guide-for-112877837)
 - [铃兰之剑SSR强度榜&升星推荐&配装推荐&加点推荐（更至sp索菲亚](https://www.taptap.cn/moment/544978986061530597)
 - [养成一图流——阿坎贝](https://www.taptap.cn/moment/517700178749163971)
 - [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
