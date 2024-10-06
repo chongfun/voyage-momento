@@ -13,8 +13,7 @@ head:
       src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.css'
       rel: 'stylesheet'
 ---
-import { Badge } from '@astrojs/starlight/components';
-import { Steps } from '@astrojs/starlight/components';
+import { Badge, Card, Steps } from '@astrojs/starlight/components';
 import DataTable from '../../../components/DataTable.astro';
 
 Unlike WT1 and WT2, this boss does not punish melee or ranged damage. However, you will want to bring physical DPS (and magical DPS in Stage 11) to break the boss's shield.
@@ -51,6 +50,13 @@ The character with the highest M.DEF may not always be the same throughout the f
 :::caution
 Like the other weaponry trial bosses, this boss gets an extra turn when it kills a unit. Fragile summons such as Inanna's Guard are a liability.
 :::
+
+<Card title="Searching" icon="seti:code-search">
+* Search for words in any order (e.g. Edda Nungal will result in the same data set as Nungal Edda).
+* Use double quotes to search for an exact phrase (e.g. "Outlaw Guard").
+* Negative search matching using an exclamation mark before a word (e.g. !Beryl will find all runs that do _not_ contain "Beryl").
+* You can search for 🇨🇳 or 🌐 runs (e.g. 🌐 Angel !Beryl).
+</Card>
 
 ## Stage 11 - Level 70
 

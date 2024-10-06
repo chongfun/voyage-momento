@@ -13,8 +13,14 @@ head:
       src: 'https://cdn.datatables.net/v/dt/dt-2.1.6/sr-1.4.1/datatables.min.css'
       rel: 'stylesheet'
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, Card } from '@astrojs/starlight/components';
 import DataTable from '../../../components/DataTable.astro';
+
+<Card title="Searching" icon="seti:code-search">
+* Search for words in any order (e.g. Edda Nungal will result in the same data set as Nungal Edda).
+* Use double quotes to search for an exact phrase (e.g. "Crimson Falcon").
+* Negative search matching using an exclamation mark before a word (e.g. !Gloria will find all runs that do _not_ contain "Gloria").
+</Card>
 
 ## Stage 9 - Level 65
 
