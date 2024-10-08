@@ -69,7 +69,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Guides',
-					autogenerate: { directory: 'guides' },
+					items: ['guides/weaponry_trial_1', 'guides/weaponry_trial_2', 'guides/weaponry_trial_3', 'guides/tarot_whisper_1', 'guides/tarot_whisper_2', 'guides/tarot_whisper_3', 'guides/talent_priority'],
 				},
 				{
 					label: 'Characters',
