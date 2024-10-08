@@ -5,7 +5,8 @@ const { tableId } = Astro.props;
 $(document).ready( function () {
     $(tableId).DataTable({
         stateSave: true,
-        paging: false
+        paging: false,
+        order: [[0, 'asc'], [1, 'asc']]
     });
 } );
 </script>
