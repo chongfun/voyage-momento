@@ -24,10 +24,14 @@ import skill_r5 from '../../../assets/skills/safiyyah_right_5.png';
 import skill_r6 from '../../../assets/skills/safiyyah_right_6.png';
 import EverBurningBlade from '../../../components/inventory/sword/EverBurningBlade.astro';
 import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
+import VoidStab from '../../../components/inventory/sword/VoidStab.astro';
+import FlyingBladeArmguard from '../../../components/inventory/trinket/FlyingBladeArmguard.astro';
+import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
 import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
+import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
 import tarot_world from '../../../assets/tarot_whispers/tarot_world.png'
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
 ## Skills
 
@@ -48,7 +52,7 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
     <Image src={skill_l5} alt="封印击（剑）" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A0%B4%E5%86%9B%E5%BC%BA%E8%A2%AD%E5%88%83" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l6} alt="破军强袭刃" width="100" class="rounded-full ring-4 ring-blue-500" />
+    <Image src={skill_l6} alt="破军强袭刃" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BD%B1%E8%A2%AD" target="_blank" rel="noopener noreferrer">
     <Image src={skill_r1} alt="影袭" width="100" class="rounded-full" />
@@ -66,7 +70,7 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
     <Image src={skill_r5} alt="连携攻击" width="100" class="rounded-full ring-4 ring-rose-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%85%90%E8%9A%80%E6%AD%A6%E5%99%A8" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r6} alt="腐蚀武器" width="100" class="rounded-full" />
+    <Image src={skill_r6} alt="腐蚀武器" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 </SkillBuildGrid>
 ---
@@ -79,6 +83,14 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 <CardGrid stagger>
   <EverBurningBlade />
   <NewbornBlade />
+  <VoidStab />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <FlyingBladeArmguard />
+  <RoaringFlint />
 </CardGrid>
 
 ## Tarot Whispers
@@ -89,6 +101,26 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
         <h5>Course of Fortune</h5>
         <p>At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.</p>
         <p>Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5>Dream of The Magician</h5>
+        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
+        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
+    </div>
+</HorizontalCard>
+
+<HorizontalCard>
+    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        ##### Destruction of The Tower
+
+        When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.
+
+        Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].
     </div>
 </HorizontalCard>
 
@@ -110,16 +142,8 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
     </div>
 </HorizontalCard>
 
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
-
 ## References
+- [Celion Journey's Pocket Guide for Safiyyah](https://www.patreon.com/posts/pocket-guide-for-113810382)
 - [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)
 - [养成一图流——索菲亚（已修正）](https://www.taptap.cn/moment/502516536125163352)
 - [角色图鉴库/索菲亚 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%B4%A2%E8%8F%B2%E4%BA%9A)
