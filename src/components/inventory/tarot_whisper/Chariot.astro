@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_chariot.png'
+---
+
+<ImageCard image={icon} title="March of The Chariot">
+<p>Gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Move 1</span>] when not using any active skills and [<span class="text-yellow-500">Standby</span>], lasting for <span class="text-orange-500">2</span> turns.</p>
+<h5>Super effect</h5>
+<p>Changes the effect of [Tarot Whisper Skill] into: Gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Move II</span>] when not using any active Skills and [Standby], lasting for <span class="text-orange-500">2</span> turns.</p>
+</ImageCard>

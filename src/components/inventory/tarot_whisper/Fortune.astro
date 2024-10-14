@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
+---
+
+<ImageCard image={icon} title="Course of Fortune">
+<p>At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of [<span class="text-blue-500">The Wheel of Fortune</span>].</p>
+<h5>Exclusive effect</h5>
+<p>At the start of the turn, gains <span class="text-orange-500">1</span> additional random [buff] of [<span class="text-blue-500">The Wheel of Fortune</span>].</p>
+</ImageCard>

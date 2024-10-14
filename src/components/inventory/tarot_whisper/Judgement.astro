@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_judgement.png'
+---
+
+<ImageCard image={icon} title="Redemption of The Judgment">
+<p>At the end of the turn, dispels <span class="text-orange-500">2</span> [<span class="text-yellow-500">Attribute Buff</span>]s from <span class="text-orange-500">1</span> random enemy within <span class="text-orange-500">2</span> tiles around the character.</p>
+<h5>Exclusive effect</h5>
+<p>Changes the effect of [Tarot Whisper Skill] into: At the end of the turn, dispels <span class="text-orange-500">2</span> [<span class="text-yellow-500">Attribute Buffs</span>] from <span class="text-orange-500">1</span> random enemy within <span class="text-orange-500">2</span> tiles of the character. Inflicts [<span class="text-yellow-500">Judgment</span>] for <span class="text-orange-500">2</span> turns.</p>
+</ImageCard>

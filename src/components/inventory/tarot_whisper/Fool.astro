@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_fool.png'
+---
+
+<ImageCard image={icon} title="The Fool's Naivety">
+<p>HP is increased by <span class="text-green-500">10%</span>. When initiating an active attack, if the character's max HP is greater than the target's, DMG dealt is increased by <span class="text-orange-500">10%</span>.</p>
+<h5>Exclusive effect</h5>
+<p>HP is additionally increased by <span class="text-green-500">10%</span>. When initiating an active attack, if the character's HP percentage is greater than the target's, DMG dealt is additionally increased by <span class="text-orange-500">10%</span>.</p>
+</ImageCard>

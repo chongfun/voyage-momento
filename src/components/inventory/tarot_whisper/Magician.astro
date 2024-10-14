@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_magician.png'
+---
+
+<ImageCard image={icon} title="Dream of The Magician">
+<p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
+<h5>Exclusive effect</h5>
+<p>Changes the effect of [Tarot Whisper Skill] into: Increases DMG by <span class="text-orange-500">16%</span>. When casting skills, for each additional enemy hit, the DMG is increased by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
+</ImageCard>

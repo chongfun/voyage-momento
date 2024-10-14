@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_hierophant.png'
+---
+
+<ImageCard image={icon} title="Hierophant's Laws">
+<p>[AoE DMG] taken is decreased by <span class="text-orange-500">20%</span>.</p>
+<h5>Exclusive effect</h5>
+<p>When initiating a single-target attack, DMG dealt is increased by <span class="text-orange-500">20%</span>. When initiating a single-target healing, the healing amount is increased by <span class="text-green-500">20%</span>.</p>
+</ImageCard>

@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_highpriestess.png'
+---
+
+<ImageCard image={icon} title="Mercy of The High Priestess">
+<p>Increases healing effect by <span class="text-green-500">15%</span>.</p>
+<h5>Exclusive effect</h5>
+<p>Increases healing effect by <span class="text-green-500">15%</span> additionally. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect further increases by <span class="text-green-500">15%</span>.</p>
+</ImageCard>

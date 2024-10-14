@@ -1,0 +1,12 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/tarot_whispers/tarot_moon.png'
+---
+
+<ImageCard image={icon} title="Gibbous Moon">
+<p>At the end of the turn, recovers <span class="text-green-500">20%</span> HP if the character is [<span class="text-yellow-500">Injured</span>].</p>
+<h5>Exclusive effect</h5>
+<p>When the character is injured, healing received increases by <span class="text-green-500">15%</span>, and further increases to <span class="text-green-500">30%</span> when in the [<span class="text-yellow-500">Dying</span>] state.</p>
+</ImageCard>
