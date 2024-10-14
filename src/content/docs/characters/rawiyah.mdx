@@ -25,8 +25,10 @@ import skill_r5 from '../../../assets/skills/rawiyah_right_5.png';
 import skill_r6 from '../../../assets/skills/rawiyah_right_6.png';
 import TuningHammer from '../../../components/inventory/axe/TuningHammer.astro';
 import FeastAxe from '../../../components/inventory/axe/FeastAxe.astro';
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
 
 ## Skills
 
@@ -81,23 +83,12 @@ import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Dream of The Magician</h5>
-        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
-        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Magician />
+  <Justice />
+  <Devil />
+  <Sun />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Rawiyah](https://www.patreon.com/posts/pocket-guide-for-109317909)

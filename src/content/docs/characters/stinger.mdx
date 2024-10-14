@@ -6,7 +6,7 @@ titleImageAlt: Seeker of the Hanged Men
 rarity: Epic
 role: Seeker
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,8 +20,8 @@ import skill_r2 from '../../../assets/skills/stinger_right_2.png';
 import skill_r3 from '../../../assets/skills/stinger_right_3.png';
 import skill_r4 from '../../../assets/skills/stinger_right_4.png';
 import skill_r5 from '../../../assets/skills/stinger_right_5.png';
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
-import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 
 ## Skills
 
@@ -64,27 +64,10 @@ import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Dream of The Magician
-
-        Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.
-
-        Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Temptation of The Devil
-
-        For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.
-
-        Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Magician />
+  <Devil />
+</CardGrid>
 
 ## References
 - [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)

@@ -6,7 +6,7 @@ titleImageAlt: Vlderian Scout
 rarity: Rare
 role: Seeker
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -18,6 +18,8 @@ import skill_r1 from '../../../assets/skills/vlderian_scout_right_1.png';
 import skill_r2 from '../../../assets/skills/vlderian_scout_right_2.png';
 import skill_r3 from '../../../assets/skills/vlderian_scout_right_3.png';
 import skill_r4 from '../../../assets/skills/vlderian_scout_right_4.png';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
+import Chariot from '../../../components/inventory/tarot_whisper/Chariot.astro';
 
 ## Skills
 
@@ -49,6 +51,13 @@ import skill_r4 from '../../../assets/skills/vlderian_scout_right_4.png';
 </SkillBuildGrid>
 ---
 <Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<CardGrid>
+  <Chariot />
+  <World />
+</CardGrid>
 
 ## References
 - [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)

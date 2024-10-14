@@ -6,7 +6,7 @@ titleImageAlt: Dawn Maidservant
 rarity: Epic
 role: Destroyer
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,6 +20,9 @@ import skill_r2 from '../../../assets/skills/abyss_right_2.png';
 import skill_r3 from '../../../assets/skills/abyss_right_3.png';
 import skill_r4 from '../../../assets/skills/abyss_right_4.png';
 import skill_r5 from '../../../assets/skills/abyss_right_5.png';
+import Judgement from '../../../components/inventory/tarot_whisper/Judgement.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
+import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
 
 ## Skills
 
@@ -58,6 +61,14 @@ import skill_r5 from '../../../assets/skills/abyss_right_5.png';
 ---
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<CardGrid>
+  <Judgement />
+  <World />
+  <Hermit />
+</CardGrid>
 
 ## References
 - [aMagicJo - Beginner Quick Guides For Non-Legendary Mages Units](https://youtu.be/gobQxEWYuOY?si=a0hRF7znuxqrW1Lz&t=641)

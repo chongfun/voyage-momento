@@ -6,7 +6,7 @@ titleImageAlt: Darklight Ice Priest
 rarity: Rare
 role: Destroyer
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -18,7 +18,8 @@ import skill_r1 from '../../../assets/skills/darklight_ice_priest_right_1.png';
 import skill_r2 from '../../../assets/skills/darklight_ice_priest_right_2.png';
 import skill_r3 from '../../../assets/skills/darklight_ice_priest_right_3.png';
 import skill_r4 from '../../../assets/skills/darklight_ice_priest_right_4.png';
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import World from '../../../components/inventory/tarot_whisper/World.astro';
+import Chariot from '../../../components/inventory/tarot_whisper/Chariot.astro';
 
 ## Skills
 
@@ -54,14 +55,10 @@ import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Dream of The Magician</h5>
-        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
-        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <World />
+  <Chariot />
+</CardGrid>
 
 ## References
 - [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)

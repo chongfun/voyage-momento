@@ -25,9 +25,9 @@ import skill_r5 from '../../../assets/skills/lilywill_right_5.png';
 import skill_r6 from '../../../assets/skills/lilywill_right_6.png';
 import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
 import WhaleHunter from '../../../components/inventory/bow/WhaleHunter.astro';
-import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
-import tarot_emperor from '../../../assets/tarot_whispers/tarot_emperor.png'
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import Emperor from '../../../components/inventory/tarot_whisper/Emperor.astro';
+import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
 
 ## Skills
 
@@ -83,32 +83,11 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_emperor} alt="Majesty of the Emperor" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Majesty of the Emperor</h5>
-        <p>DMG increases by <span class="text-orange-500">10%</span> when attacking [<span class="text-yellow-500">Healthy</span>] enemies.</p>
-        <p>Exclusive effect: DMG is increased by an additional <span class="text-orange-500">15%</span> (for a total of <span class="text-orange-500">25%</span>) when attacking [<span class="text-yellow-500">Healthy</span>] enemies.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Temptation of The Devil</h5>
-        <p>For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.</p>
-        <p>Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Justice />
+  <Emperor />
+  <Sun />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for LilyWill](https://www.patreon.com/posts/pocket-guide-for-109502738)

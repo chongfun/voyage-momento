@@ -27,11 +27,11 @@ import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro
 import VoidStab from '../../../components/inventory/sword/VoidStab.astro';
 import FlyingBladeArmguard from '../../../components/inventory/trinket/FlyingBladeArmguard.astro';
 import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
-import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
-import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
-import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
-import tarot_world from '../../../assets/tarot_whispers/tarot_world.png'
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
 
 ## Skills
 
@@ -95,52 +95,13 @@ import tarot_world from '../../../assets/tarot_whispers/tarot_world.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_wheeloffortune} alt="Course of Fortune" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Course of Fortune</h5>
-        <p>At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.</p>
-        <p>Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Dream of The Magician</h5>
-        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
-        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Destruction of The Tower
-
-        When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.
-
-        Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Temptation of The Devil</h5>
-        <p>For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.</p>
-        <p>Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_world} alt="Guidance of the World" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Guidance of the World</h5>
-        <p>Recovers <span class="text-green-500">1</span> NRG additionally when not using any active skills and [<span class="text-yellow-500">Standby</span>].</p>
-        <p>Exclusive effect: Skill cooldowns are reduced by <span class="text-orange-500">1</span> turn.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Fortune />
+  <Magician />
+  <Tower />
+  <Devil />
+  <World />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Safiyyah](https://www.patreon.com/posts/pocket-guide-for-113810382)

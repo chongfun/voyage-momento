@@ -6,7 +6,7 @@ titleImageAlt: Papal Radiant Assassin
 rarity: Epic
 role: Seeker
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,6 +20,10 @@ import skill_r2 from '../../../assets/skills/blade_right_2.png';
 import skill_r3 from '../../../assets/skills/blade_right_3.png';
 import skill_r4 from '../../../assets/skills/blade_right_4.png';
 import skill_r5 from '../../../assets/skills/blade_right_5.png';
+import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
+import Moon from '../../../components/inventory/tarot_whisper/Moon.astro';
+import Judgement from '../../../components/inventory/tarot_whisper/Judgement.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 
 ## Skills
 
@@ -58,6 +62,15 @@ import skill_r5 from '../../../assets/skills/blade_right_5.png';
 ---
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<CardGrid>
+  <Hermit />
+  <Moon />
+  <Judgement />
+  <Devil />
+</CardGrid>
 
 ## References
 - [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)

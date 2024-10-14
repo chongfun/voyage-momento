@@ -24,7 +24,10 @@ import skill_r5 from '../../../assets/skills/simona_right_5.png';
 import skill_r6 from '../../../assets/skills/simona_right_6.png';
 import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
 import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
 
 ## Skills
 
@@ -80,16 +83,12 @@ import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Dream of The Magician
-
-        Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.
-
-        Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Magician />
+  <Devil />
+  <Fortune />
+  <World />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Simona](https://www.patreon.com/posts/pocket-guide-for-111055345)

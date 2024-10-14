@@ -28,9 +28,9 @@ import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeri
 import SkeletonStaff from '../../../components/inventory/staff/SkeletonStaff.astro';
 import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
 import OriginHourglass from '../../../components/inventory/trinket/OriginHourglass.astro';
-import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
-import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
 
 ## Skills
 
@@ -99,38 +99,11 @@ Fancy Hat is recommended to prevent the [🚫 <span class="text-yellow-500">NRG 
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Temptation of The Devil
-
-        For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.
-
-        Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Dream of The Magician
-
-        Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.
-
-        Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_wheeloffortune} alt="Course of Fortune" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Course of Fortune
-
-        At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.
-
-        Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Devil />
+  <Magician />
+  <Fortune />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Acambe](https://www.patreon.com/posts/pocket-guide-for-112877837)

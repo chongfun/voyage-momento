@@ -24,8 +24,9 @@ import skill_r4 from '../../../assets/skills/samantha_right_4.png';
 import skill_r5 from '../../../assets/skills/samantha_right_5.png';
 import skill_r6 from '../../../assets/skills/samantha_right_6.png';
 import ReorganizedCube from '../../../components/inventory/staff/ReorganizedCube.astro';
-import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
-import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriestess.png'
+import Empress from '../../../components/inventory/tarot_whisper/Empress.astro';
+import Priestess from '../../../components/inventory/tarot_whisper/Priestess.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
 
 ## Skills
 
@@ -80,23 +81,11 @@ import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriest
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_highpriestess} alt="Mercy of The High Priestess" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Mercy of The High Priestess</h5>
-        <p>Increases healing effect by <span class="text-green-500">15%</span>.</p>
-        <p>Exclusive effect: Increases healing effect by an additional <span class="text-green-500">15%</span>. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect is increased by an additional <span class="text-green-500">15%</span> (for a total of <span class="text-green-500">45%</span>).</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_empress} alt="Elegance of the Empress" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Elegance of the Empress</h5>
-        <p>After casting a skill on an ally, convert <span class="text-orange-500">1</span> [debuff] on the target into [<span class="text-yellow-500">Level 1 Buff</span>] that lasts for <span class="text-orange-500">2</span> turns.</p>
-        <p>Exclusive effect: Converts <span class="text-orange-500">2</span> [debuff] instead of <span class="text-orange-500">1</span> [debuff].</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Empress />
+  <Priestess />
+  <World />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Samantha](https://www.patreon.com/posts/pocket-guide-for-109507237)

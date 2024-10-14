@@ -6,7 +6,7 @@ titleImageAlt: H.M. Dark Priest
 rarity: Epic
 role: Destroyer
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,6 +20,8 @@ import skill_r2 from '../../../assets/skills/night_raven_right_2.png';
 import skill_r3 from '../../../assets/skills/night_raven_right_3.png';
 import skill_r4 from '../../../assets/skills/night_raven_right_4.png';
 import skill_r5 from '../../../assets/skills/night_raven_right_5.png';
+import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 
 ## Skills
 
@@ -58,6 +60,13 @@ import skill_r5 from '../../../assets/skills/night_raven_right_5.png';
 ---
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<CardGrid>
+  <Hermit />
+  <Justice />
+</CardGrid>
 
 ## References
 - [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)

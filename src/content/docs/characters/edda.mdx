@@ -24,9 +24,9 @@ import skill_r5 from '../../../assets/skills/edda_right_5.png';
 import skill_r6 from '../../../assets/skills/edda_right_6.png';
 import MeteorLine from '../../../components/inventory/bow/MeteorLine.astro';
 import LongbowofMartyrs from '../../../components/inventory/bow/LongbowofMartyrs.astro';
-import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
-import tarot_world from '../../../assets/tarot_whispers/tarot_world.png'
-import tarot_sun from '../../../assets/tarot_whispers/tarot_sun.png'
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
+import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
 
 ## Skills
 
@@ -86,38 +86,11 @@ The left skill at RK7 is better for physical teams, while the right skill is use
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_world} alt="Guidance of the World" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Guidance of the World
-
-        Recovers <span class="text-green-500">1</span> NRG additionally when not using any active skills and [<span class="text-yellow-500">Standby</span>].
-
-        Exclusive effect: Skill cooldowns are reduced by <span class="text-orange-500">1</span> turn.
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Destruction of The Tower
-
-        When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.
-
-        Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_sun} alt="Rays of the Sun" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Rays of the Sun
-
-        When attacking [<span class="text-yellow-500">Injured</span>] enemies, ignore <span class="text-orange-500">20%</span> of their DEF.
-
-        Exclusive effect: Ignores an additional <span class="text-orange-500">20%</span> of their DEF.
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Tower />
+  <World />
+  <Sun />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Edda](https://www.patreon.com/posts/pocket-guide-for-110151579)

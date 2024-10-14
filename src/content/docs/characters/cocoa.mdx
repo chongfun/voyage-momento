@@ -24,8 +24,11 @@ import skill_r5 from '../../../assets/skills/cocoa_right_5.png';
 import skill_r6 from '../../../assets/skills/cocoa_right_6.png';
 import BrutalAxe from '../../../components/inventory/axe/BrutalAxe.astro';
 import HollowAxe from '../../../components/inventory/axe/HollowAxe.astro';
-import tarot_highpriestess from '../../../assets/tarot_whispers/tarot_highpriestess.png'
-import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
+import Fool from '../../../components/inventory/tarot_whisper/Fool.astro';
+import Priestess from '../../../components/inventory/tarot_whisper/Priestess.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
+import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
+import Empress from '../../../components/inventory/tarot_whisper/Empress.astro';
 
 ## Skills
 
@@ -81,27 +84,13 @@ import tarot_empress from '../../../assets/tarot_whispers/tarot_empress.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_highpriestess} alt="Mercy of The High Priestess" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Mercy of The High Priestess
-
-        Increases healing effect by <span class="text-green-500">15%</span>.
-
-        Exclusive effect: Increases healing effect by an additional <span class="text-green-500">15%</span>. If the target is [<span class="text-yellow-500">Dying</span>], the healing effect is increased by an additional <span class="text-green-500">15%</span> (for a total of <span class="text-green-500">45%</span>).
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_empress} alt="Elegance of the Empress" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Elegance of the Empress
-
-        After casting a skill on an ally, convert <span class="text-orange-500">1</span> [debuff] on the target into [<span class="text-yellow-500">Level 1 Buff</span>] that lasts for <span class="text-orange-500">2</span> turns.
-
-        Exclusive effect: Converts <span class="text-orange-500">2</span> [debuff] instead of <span class="text-orange-500">1</span> [debuff].
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Fool />
+  <Priestess />
+  <World />
+  <Hermit />
+  <Empress />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Cocoa](https://www.patreon.com/posts/pocket-guide-for-111890857)

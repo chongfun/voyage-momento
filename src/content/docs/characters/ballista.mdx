@@ -6,7 +6,7 @@ titleImageAlt: Knighted Crossbowman
 rarity: Epic
 role: Watcher
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,7 +20,8 @@ import skill_r2 from '../../../assets/skills/ballista_right_2.png';
 import skill_r3 from '../../../assets/skills/ballista_right_3.png';
 import skill_r4 from '../../../assets/skills/ballista_right_4.png';
 import skill_r5 from '../../../assets/skills/ballista_right_5.png';
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 
 ## Skills
 
@@ -59,6 +60,13 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 ---
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
+
+## Tarot Whispers
+
+<CardGrid>
+  <Magician />
+  <Justice />
+</CardGrid>
 
 ## References
 - [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)

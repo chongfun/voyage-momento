@@ -18,7 +18,7 @@ import skill_r1 from '../../../assets/skills/ka_fire_conjurer_right_1.png';
 import skill_r2 from '../../../assets/skills/ka_fire_conjurer_right_2.png';
 import skill_r3 from '../../../assets/skills/ka_fire_conjurer_right_3.png';
 import skill_r4 from '../../../assets/skills/ka_fire_conjurer_right_4.png';
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
+import Judgement from '../../../components/inventory/tarot_whisper/Judgement.astro';
 
 ## Skills
 
@@ -53,14 +53,7 @@ import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Dream of The Magician</h5>
-        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
-        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
-    </div>
-</HorizontalCard>
+<Judgement />
 
 ## References
 - [aMagicJo - Beginner Quick Guides For Non-Legendary Mages Units](https://youtu.be/gobQxEWYuOY?si=3-bE2n-1r1EakcFl&t=311)

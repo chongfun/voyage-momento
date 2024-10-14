@@ -25,8 +25,9 @@ import skill_r5 from '../../../assets/skills/garcia_right_5.png';
 import skill_r6 from '../../../assets/skills/garcia_right_6.png';
 import VoidStab from '../../../components/inventory/sword/VoidStab.astro';
 import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
-import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import Emperor from '../../../components/inventory/tarot_whisper/Emperor.astro';
 
 ## Skills
 
@@ -80,23 +81,11 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Temptation of The Devil</h5>
-        <p>For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.</p>
-        <p>Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Devil />
+  <Justice />
+  <Emperor />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Garcia](https://www.patreon.com/posts/pocket-guide-for-109502694)

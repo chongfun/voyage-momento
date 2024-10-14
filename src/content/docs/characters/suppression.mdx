@@ -6,7 +6,7 @@ titleImageAlt: Papal Radiant Guard
 rarity: Epic
 role: Defender
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,8 +20,8 @@ import skill_r2 from '../../../assets/skills/suppression_right_2.png';
 import skill_r3 from '../../../assets/skills/suppression_right_3.png';
 import skill_r4 from '../../../assets/skills/suppression_right_4.png';
 import skill_r5 from '../../../assets/skills/suppression_right_5.png';
-import tarot_hermit from '../../../assets/tarot_whispers/tarot_hermit.png'
-import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
+import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
 
 ## Skills
 
@@ -64,23 +64,10 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Destruction of The Tower</h5>
-        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
-        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_hermit} alt="Silence of The Hermit" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Silence of The Hermit</h5>
-        <p>Decreases DMG taken by <span class="text-orange-500">10%</span>.</p>
-        <p>Exclusive effect: Decreases DMG taken by <span class="text-orange-500">20%</span> instead of <span class="text-orange-500">10%</span>.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Hermit />
+  <Tower />
+</CardGrid>
 
 ## References
 - [角色图鉴库/光辉卫士“魔禁” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%89%E8%BE%89%E5%8D%AB%E5%A3%AB%E2%80%9C%E9%AD%94%E7%A6%81%E2%80%9D)

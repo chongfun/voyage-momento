@@ -24,8 +24,12 @@ import skill_r4 from '../../../assets/skills/nungal_right_4.png';
 import skill_r5 from '../../../assets/skills/nungal_right_5.png';
 import skill_r6 from '../../../assets/skills/nungal_right_6.png';
 import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
-import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
+import IrianCombatBow from '../../../components/inventory/bow/IrianCombatBow.astro';
+import WhaleHunter from '../../../components/inventory/bow/WhaleHunter.astro';
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
+import Emperor from '../../../components/inventory/tarot_whisper/Emperor.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
 
 ## Skills
 
@@ -76,27 +80,18 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
 <CardGrid>
   <StarRaidCrossbow />
+  <IrianCombatBow />
+  <WhaleHunter />
 </CardGrid>
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Destruction of The Tower</h5>
-        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
-        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Tower />
+  <Emperor />
+  <Justice />
+  <Sun />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Nungal](https://www.patreon.com/posts/pocket-guide-for-109333080)

@@ -6,7 +6,7 @@ titleImageAlt: Radiant Crossbowman
 rarity: Epic
 role: Watcher
 ---
-import { Badge } from '@astrojs/starlight/components';
+import { Badge, CardGrid } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
@@ -20,7 +20,8 @@ import skill_r2 from '../../../assets/skills/divine_grace_right_2.png';
 import skill_r3 from '../../../assets/skills/divine_grace_right_3.png';
 import skill_r4 from '../../../assets/skills/divine_grace_right_4.png';
 import skill_r5 from '../../../assets/skills/divine_grace_right_5.png';
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 
 ## Skills
 
@@ -62,14 +63,10 @@ import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Magician />
+  <Justice />
+</CardGrid>
 
 ## References
 - [角色图鉴库/光辉弩手“神恩” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%89%E8%BE%89%E5%BC%A9%E6%89%8B%E2%80%9C%E7%A5%9E%E6%81%A9%E2%80%9D)

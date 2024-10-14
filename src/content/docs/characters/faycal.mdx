@@ -25,9 +25,10 @@ import skill_r5 from '../../../assets/skills/faycal_right_5.png';
 import skill_r6 from '../../../assets/skills/faycal_right_6.png';
 import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
 import IrianCombatBow from '../../../components/inventory/bow/IrianCombatBow.astro';
-import tarot_justice from '../../../assets/tarot_whispers/tarot_justice.png'
-import tarot_magician from '../../../assets/tarot_whispers/tarot_magician.png'
-import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import Emperor from '../../../components/inventory/tarot_whisper/Emperor.astro';
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
 
 ## Skills
 
@@ -83,32 +84,12 @@ import tarot_tower from '../../../assets/tarot_whispers/tarot_tower.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_justice} alt="Verdict of Justice" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Verdict of Justice</h5>
-        <p>Increases crit rate by <span class="text-orange-500">15%</span>.</p>
-        <p>Exclusive effect: Also increases crit damage by <span class="text-orange-500">15%</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_magician} alt="Dream of The Magician" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Dream of The Magician</h5>
-        <p>Increases DMG dealt by <span class="text-orange-500">8%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>.</p>
-        <p>Exclusive effect: Increases DMG dealt by <span class="text-orange-500">16%</span>. When casting skills, for each additional hit on <span class="text-orange-500">1</span> enemy, the DMG dealt increases by <span class="text-orange-500">8%</span>, up to <span class="text-orange-500">24%</span>.</p>
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_tower} alt="Destruction of The Tower" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Destruction of The Tower</h5>
-        <p>When it's not the character's turn, DMG dealt increases by <span class="text-orange-500">20%</span>.</p>
-        <p>Exclusive effect: When it's not the character's turn, you also gain <span class="text-green-500">40%</span> [<span class="text-yellow-500">Life Steal</span>].</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Justice />
+  <Emperor />
+  <Tower />
+  <Magician />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Faycal](https://www.patreon.com/posts/pocket-guide-for-109318529)

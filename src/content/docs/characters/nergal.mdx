@@ -25,7 +25,8 @@ import skill_r5 from '../../../assets/skills/nergal_right_5.png';
 import skill_r6 from '../../../assets/skills/nergal_right_6.png';
 import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
 import SenatorSwiftSword from '../../../components/inventory/sword/SenatorSwiftSword.astro';
-import tarot_judgement from '../../../assets/tarot_whispers/tarot_judgement.png'
+import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
+import Judgement from '../../../components/inventory/tarot_whisper/Judgement.astro';
 
 ## Skills
 
@@ -79,14 +80,10 @@ import tarot_judgement from '../../../assets/tarot_whispers/tarot_judgement.png'
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_judgement} alt="Redemption of The Judgment" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5>Redemption of The Judgment</h5>
-        <p>At the end of the turn, dispels <span class="text-orange-500">2</span> [<span class="text-yellow-500">Attribute Buff</span>]s from <span class="text-orange-500">1</span> random enemy within <span class="text-orange-500">2</span> tiles around the character.</p>
-        <p>Exclusive effect: Applies [<span class="text-yellow-500">Judgement</span>] to the dispelled enemies. [<span class="text-yellow-500">Judgement</span>] is a buff that increases damage taken by <span class="text-orange-500">10%</span> and cannot be dispelled or immunized.</p>
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Hermit />
+  <Judgement />
+</CardGrid>
 
 ## References
 - [Sword of Convallaria | WEAPON RANKING for UPDATED CN Tier List (40 Characters)](https://youtu.be/3qWuxrPQ-Rc)

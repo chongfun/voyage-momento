@@ -24,9 +24,10 @@ import skill_r4 from '../../../assets/skills/dantalion_right_4.png';
 import skill_r5 from '../../../assets/skills/dantalion_right_5.png';
 import skill_r6 from '../../../assets/skills/dantalion_right_6.png';
 import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
-import tarot_devil from '../../../assets/tarot_whispers/tarot_devil.png'
-import tarot_fool from '../../../assets/tarot_whispers/tarot_fool.png'
-import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffortune.png'
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Emperor from '../../../components/inventory/tarot_whisper/Emperor.astro';
+import Sun from '../../../components/inventory/tarot_whisper/Emperor.astro';
+import Hierophant from '../../../components/inventory/tarot_whisper/Hierophant.astro';
 
 ## Skills
 
@@ -80,40 +81,12 @@ import tarot_wheeloffortune from '../../../assets/tarot_whispers/tarot_wheeloffo
 
 ## Tarot Whispers
 
-<HorizontalCard>
-    <Image src={tarot_devil} alt="Temptation of The Devil" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Temptation of The Devil
-
-        For each <span class="text-orange-500">1</span> character defeated in battle, gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Devil</span>]. The effect lasts until the end of the battle and cannot be dispelled or immunized. [<span class="text-blue-500">Devil</span>] is a buff that increases ATK and DEF by <span class="text-orange-500">3%</span>, up to <span class="text-orange-500">30%</span>.
-
-        Exclusive effect: Gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Devil</span>] instead of <span class="text-orange-500">1</span>.
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_fool} alt="The Fool's Naivety" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### The Fool's Naivety
-
-        HP is increased by <span class="text-green-500">10%</span>. When initiating an active attack, if the character's max HP is greater than the target's, DMG dealt is increased by <span class="text-orange-500">10%</span>.
-
-        Exclusive effect: HP and DMG dealt is increased by an additional <span class="text-green-500">10%</span>.
-
-        *Obtained from the Tower of Adversity or Unnamed Legendary Tarot Whisper boxes.*
-    </div>
-</HorizontalCard>
-
-<HorizontalCard>
-    <Image src={tarot_wheeloffortune} alt="Course of Fortune" class="object-contain" />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        ##### Course of Fortune
-
-        At the start of the turn, gains <span class="text-orange-500">1</span> random [buff] of <span class="text-sky-500">[The Wheel of Fortune]</span>.
-
-        Exclusive effect: You gain <span class="text-orange-500">2</span> random [buff]s instead.
-    </div>
-</HorizontalCard>
+<CardGrid>
+  <Devil />
+  <Emperor />
+  <Sun />
+  <Hierophant />
+</CardGrid>
 
 ## References
 - [Celion Journey's Pocket Guide for Dantalion](https://www.patreon.com/posts/pocket-guide-for-109502651)
