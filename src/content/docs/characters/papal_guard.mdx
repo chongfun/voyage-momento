@@ -18,13 +18,17 @@ import skill_r1 from '../../../assets/skills/papal_guard_right_1.png';
 import skill_r2 from '../../../assets/skills/papal_guard_right_2.png';
 import skill_r3 from '../../../assets/skills/papal_guard_right_3.png';
 import skill_r4 from '../../../assets/skills/papal_guard_right_4.png';
+import GuardiansWill from '../../../components/inventory/sword/GuardiansWill.astro';
+import DuelingDagger from '../../../components/inventory/sword/DuelingDagger.astro';
+import CoolingPowder from '../../../components/inventory/trinket/CoolingPowder.astro';
+import SpringPill from '../../../components/inventory/trinket/SpringPill.astro';
 import Hermit from '../../../components/inventory/tarot_whisper/Hermit.astro';
 import Moon from '../../../components/inventory/tarot_whisper/Moon.astro';
 
 ## Skills
 
 :::note
-The right RK7 skill lets you spam his shield, but the left one doesn't cost NRG and is often used in Weapon Trial II.
+At RK7 [Flagellant] enables shield spam, but [Invulnerable] doesn't cost NRG and is often used in Weapon Trial II. If you choose [Invulnerable] over [Flagellant], then choose [Defense (Ranged Attack)] over [Endurance Activation] at RK5 because the damage reduction buffs do not stack.
 :::
 
 <SkillBuildGrid grid="grid-cols-4">
@@ -35,7 +39,7 @@ The right RK7 skill lets you spam his shield, but the left one doesn't cost NRG 
     <Image src={skill_l2} alt="重甲" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BF%80%E6%B4%BB%E8%80%90%E5%8A%9B" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l3} alt="激活耐力" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_l3} alt="激活耐力" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%97%A0%E6%87%88%E5%8F%AF%E5%87%BB" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l4} alt="无懈可击" width="100" class="rounded-full" />
@@ -56,6 +60,26 @@ The right RK7 skill lets you spam his shield, but the left one doesn't cost NRG 
 ---
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
+
+## Weapons
+
+###note
+A low-investment [Dueling Dagger] (around level 40) is sufficient for stage 11 of Weaponry Trial 2 since you just want the defense buff.
+###
+
+<CardGrid stagger>
+  <GuardiansWill />
+  <DuelingDagger />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid stagger>
+  <CoolingPowder />
+  <SpringPill />
+</CardGrid>
+
+## Tarot Whispers
 
 <CardGrid>
   <Moon />
