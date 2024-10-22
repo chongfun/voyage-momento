@@ -24,8 +24,9 @@ import skill_r4 from '../../../assets/skills/Try This!.png';
 import skill_r5 from '../../../assets/skills/Bang!.png';
 import skill_r6 from '../../../assets/skills/First Aid.png';
 import FocusWand from '../../../components/inventory/staff/FocusWand.astro';
-import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
 import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
+import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
 import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 
@@ -78,13 +79,14 @@ import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 
 <CardGrid stagger>
   <FocusWand />
-  <ResentmentBroom />
   <DiffusingPrism />
+  <ResentmentBroom />
+  <StarrySkyHeritage />
 </CardGrid>
 
 ## Tarot Whispers
 
-<CardGrid>
+<CardGrid stagger>
   <Magician />
   <Devil />
 </CardGrid>
