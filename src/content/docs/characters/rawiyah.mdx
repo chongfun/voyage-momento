@@ -25,10 +25,12 @@ import skill_r5 from '../../../assets/skills/rawiyah_right_5.png';
 import skill_r6 from '../../../assets/skills/rawiyah_right_6.png';
 import TuningHammer from '../../../components/inventory/axe/TuningHammer.astro';
 import FeastAxe from '../../../components/inventory/axe/FeastAxe.astro';
+import CrystalBurstArmor from '../../../components/inventory/trinket/CrystalBurstArmor.astro';
+import EvergreenPendent from '../../../components/inventory/trinket/EvergreenPendent.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
 import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
-import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
 
 ## Skills
 
@@ -81,13 +83,24 @@ import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
   <FeastAxe />
 </CardGrid>
 
+## Trinkets
+
+<CardGrid>
+  <CrystalBurstArmor />
+  <EvergreenPendent />
+</CardGrid>
+
 ## Tarot Whispers
+
+:::note
+[Course of Fortune] can give you a heal buff that procs [Evergreen Pendent].
+:::
 
 <CardGrid>
   <Magician />
-  <Justice />
+  <Fortune />
   <Devil />
-  <Sun />
+  <Justice />
 </CardGrid>
 
 ## References
