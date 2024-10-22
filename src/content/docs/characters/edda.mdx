@@ -22,8 +22,11 @@ import skill_r3 from '../../../assets/skills/edda_right_3.png';
 import skill_r4 from '../../../assets/skills/edda_right_4.png';
 import skill_r5 from '../../../assets/skills/edda_right_5.png';
 import skill_r6 from '../../../assets/skills/edda_right_6.png';
-import MeteorLine from '../../../components/inventory/bow/MeteorLine.astro';
 import LongbowofMartyrs from '../../../components/inventory/bow/LongbowofMartyrs.astro';
+import MeteorLine from '../../../components/inventory/bow/MeteorLine.astro';
+import IrianCombatBow from '../../../components/inventory/bow/IrianCombatBow.astro';
+import FlyingBladeArmguard from '../../../components/inventory/trinket/FlyingBladeArmguard.astro';
+import DisasterBottle from '../../../components/inventory/trinket/DisasterBottle.astro';
 import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
 import World from '../../../components/inventory/tarot_whisper/World.astro';
 import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
@@ -31,7 +34,7 @@ import Sun from '../../../components/inventory/tarot_whisper/Sun.astro';
 ## Skills
 
 :::note
-The left skill at RK7 is better for physical teams, while the right skill is useful for personal mobility and damage. Celion Journey recommends the left skill.
+At RK7, [Rupture Armor] is only useful for physical teams while [Barricade Armor] improves personal mobility and damage. Celion Journey recommends [Rupture Armor].
 :::
 
 <SkillBuildGrid grid="grid-cols-6">
@@ -79,9 +82,21 @@ The left skill at RK7 is better for physical teams, while the right skill is use
 
 ## Weapons
 
-<CardGrid stagger>
-  <MeteorLine />
+:::note
+[Longbow of Martyrs] is a superior debuff than those from [Meteor Line], but it requires active attacks to be applied. [Meteor Line] or [Irian Combat Bow] are better if you mainly rely on assist attacks.
+:::
+
+<CardGrid>
   <LongbowofMartyrs />
+  <MeteorLine />
+  <IrianCombatBow />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <FlyingBladeArmguard />
+  <DisasterBottle />
 </CardGrid>
 
 ## Tarot Whispers
