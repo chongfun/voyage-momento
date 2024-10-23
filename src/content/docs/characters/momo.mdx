@@ -23,10 +23,16 @@ import skill_r3 from '../../../assets/skills/momo_right_3.png';
 import skill_r4 from '../../../assets/skills/momo_right_4.png';
 import skill_r5 from '../../../assets/skills/momo_right_5.png';
 import skill_r6 from '../../../assets/skills/momo_right_6.png';
+import FocusWand from '../../../components/inventory/staff/FocusWand.astro';
 import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
 import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
+import HuntersIntuition from '../../../components/inventory/trinket/HuntersIntuition.astro';
+import CrystalBurstArmor from '../../../components/inventory/trinket/CrystalBurstArmor.astro';
+import FlyingBladeArmguard from '../../../components/inventory/trinket/FlyingBladeArmguard.astro';
+import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
 import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
 
 ## Skills
 
@@ -74,10 +80,23 @@ import Magician from '../../../components/inventory/tarot_whisper/Magician.astro
 <Badge text="Castalia" variant="caution" />
 
 ## Weapons
+:::tip
+Focus Wand extends the range of Momo's alert.
+:::
 
 <CardGrid stagger>
+  <FocusWand />
   <StarrySkyHeritage />
   <ResentmentBroom />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <HuntersIntuition />
+  <CrystalBurstArmor />
+  <FlyingBladeArmguard />
+  <FancyHat />
 </CardGrid>
 
 ## Tarot Whispers
@@ -85,6 +104,7 @@ import Magician from '../../../components/inventory/tarot_whisper/Magician.astro
 <CardGrid>
   <Tower />
   <Magician />
+  <Fortune />
 </CardGrid>
 
 ## References
