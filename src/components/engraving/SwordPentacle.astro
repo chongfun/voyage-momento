@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Sword' second_engraving='Pentacle'>
+<p>When [unharmed], increases ATK and DEF by <span class="text-orange-500">12%</span>.</p>
+<slot />
+</EngravingCard>

@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Sword' second_engraving='Wand'>
+<p>Before actively attacking, for each <span class="text-orange-500">1</span> tile traversed, increases ATK and DEF by <span class="text-orange-500">4%</span>, up to <span class="text-orange-500">12%</span>. The effect lasts till the start of the next turn.</p>
+<slot />
+</EngravingCard>

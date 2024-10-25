@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Wand' second_engraving='Wand'>
+<p>After using a [basic attack], [skill], [strike back], or [assisting attack], gains 1 random [<span class="text-yellow-500">Level 2 Attribute Buff</span>].</p>
+<slot />
+</EngravingCard>

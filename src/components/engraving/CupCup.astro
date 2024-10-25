@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Cup' second_engraving='Cup'>
+<p>Increases healing effect by <span class="text-green-500">10%</span> and healing received by <span class="text-green-500">10%</span>.</p>
+<slot />
+</EngravingCard>

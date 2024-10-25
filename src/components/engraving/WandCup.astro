@@ -1,0 +1,11 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Wand' second_engraving='Cup'>
+<p>At the end of the turn, there is a <span class="text-orange-500">50%</span> chance to gain [Engraving Resonance]. Effect: When using an [active skill] next time, refunds the NRG consumed and resets the CD. The skill effect has a CD of <span class="text-orange-500">4</span> turns.</p>
+<p></p>(Does not trigger in real-time combat. The effect changes to increasing HP, ATK and DEF by <span class="text-orange-500">5%</span>)</p>
+<slot />
+</EngravingCard>

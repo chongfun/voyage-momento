@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Pentacle' second_engraving='Pentacle'>
+<p>When [<span class="text-orange-500">Injured</span>], increases DMG by <span class="text-orange-500">5%</span> and decreases the DMG taken by <span class="text-orange-500">5%</span>. When [<span class="text-orange-500">Dying</span>], increases DMG by an additional <span class="text-orange-500">10%</span> and decreases the DMG taken by an additional <span class="text-orange-500">10%</span>.</p>
+<slot />
+</EngravingCard>

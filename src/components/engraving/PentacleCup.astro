@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import EngravingCard from '../EngravingCard.astro';
+---
+
+<EngravingCard first_engraving='Pentacle' second_engraving='Cup'>
+<p>Decreases magical DMG taken by <span class="text-purple-500">15%</span>.</p>
+<slot />
+</EngravingCard>
