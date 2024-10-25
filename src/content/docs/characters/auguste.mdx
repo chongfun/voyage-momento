@@ -22,12 +22,13 @@ import skill_r3 from '../../../assets/skills/auguste_right_3.png';
 import skill_r4 from '../../../assets/skills/auguste_right_4.png';
 import skill_r5 from '../../../assets/skills/auguste_right_5.png';
 import skill_r6 from '../../../assets/skills/auguste_right_6.png';
-import TuningHammer from '../../../components/inventory/axe/TuningHammer.astro';
 import FeastAxe from '../../../components/inventory/axe/FeastAxe.astro';
+import TuningHammer from '../../../components/inventory/axe/TuningHammer.astro';
 import FlyingBladeArmguard from '../../../components/inventory/trinket/FlyingBladeArmguard.astro';
 import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
 import HollowAxe from '../../../components/inventory/axe/HollowAxe.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 
 ## Skills
@@ -43,7 +44,7 @@ import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
     <Image src={skill_l3} alt="激活力量" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%94%BB%E5%87%BB%E6%8C%87%E6%8C%A5" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l4} alt="攻击指挥" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_l4} alt="攻击指挥" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%93%84%E5%8A%BF%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l5} alt="蓄势击（剑）" width="100" class="rounded-full ring-4 ring-rose-500" />
@@ -71,14 +72,15 @@ import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 </a>
 </SkillBuildGrid>
 ---
+<Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
 <Badge text="Castalia" variant="caution" />
 
 ## Weapons
 
 <CardGrid stagger>
-  <TuningHammer />
   <FeastAxe />
+  <TuningHammer />
   <HollowAxe />
 </CardGrid>
 
@@ -97,6 +99,7 @@ Trinkets that do damage allow you to build [Rage] stacks.
 
 <CardGrid>
   <Magician />
+  <Justice />
   <Devil />
 </CardGrid>
 
