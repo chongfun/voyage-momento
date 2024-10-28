@@ -23,9 +23,13 @@ import skill_r3 from '../../../assets/skills/nonowill_right_3.png';
 import skill_r4 from '../../../assets/skills/nonowill_right_4.png';
 import skill_r5 from '../../../assets/skills/nonowill_right_5.png';
 import skill_r6 from '../../../assets/skills/nonowill_right_6.png';
+import EverBurningBlade from '../../../components/inventory/sword/EverBurningBlade.astro';
+import SenatorSwiftSword from '../../../components/inventory/sword/SenatorSwiftSword.astro';
+import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
 import VoidStab from '../../../components/inventory/sword/VoidStab.astro';
 import Judgement from '../../../components/inventory/tarot_whisper/Judgement.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
 import SwordWand from '../../../components/engraving/SwordWand.astro';
 
 ## Skills
@@ -79,7 +83,10 @@ TimaeuSS suggests using the infection skills at RK1 and RK7, but I don't have a 
 
 ## Weapons
 
-<CardGrid>
+<CardGrid stagger>
+  <EverBurningBlade />
+  <SenatorSwiftSword />
+  <NewbornBlade />
   <VoidStab />
 </CardGrid>
 
@@ -88,6 +95,7 @@ TimaeuSS suggests using the infection skills at RK1 and RK7, but I don't have a 
 <CardGrid>
   <Judgement />
   <Magician />
+  <Fortune />
 </CardGrid>
 
 ## Engravings
