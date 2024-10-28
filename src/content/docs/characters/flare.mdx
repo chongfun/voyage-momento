@@ -1,0 +1,71 @@
+---
+title: Flare
+description: Sword of Convallaria Flare Build
+titleImage: '../../../assets/characters/flare/sprite.png'
+titleImageAlt: Radiant Knight
+rarity: Epic
+role: Watcher
+---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/flare_left_1.png';
+import skill_l2 from '../../../assets/skills/flare_left_2.png';
+import skill_l3 from '../../../assets/skills/flare_left_3.png';
+import skill_l4 from '../../../assets/skills/flare_left_4.png';
+import skill_l5 from '../../../assets/skills/flare_left_5.png';
+import skill_r1 from '../../../assets/skills/flare_right_1.png';
+import skill_r2 from '../../../assets/skills/flare_right_2.png';
+import skill_r3 from '../../../assets/skills/flare_right_3.png';
+import skill_r4 from '../../../assets/skills/flare_right_4.png';
+import skill_r5 from '../../../assets/skills/flare_right_5.png';
+import Priestess from '../../../components/inventory/tarot_whisper/Priestess.astro';
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-5">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8E%8B%E5%88%B6%E9%87%8D%E5%87%BB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="压制重击" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%A5%89%E7%8C%AE" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="奉献" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%88%98%E5%9C%B0%E6%B2%BB%E7%96%97" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="战地治疗" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%AA%91%E5%A3%AB%E5%90%8C%E7%9B%9F%E6%88%98%E6%97%97" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="骑士同盟战旗" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%82%E7%83%AD%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="狂热击（剑）" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A5%9D%E7%A6%8F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="祝福" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B1%82%E7%94%9F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="求生" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%AD%A3%E9%9D%A2%E9%98%B2%E5%BE%A1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="正面防御" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%9B%B7%E9%9C%86%E4%B8%80%E5%87%BB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="雷霆一击" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BB%81%E5%BF%83%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="仁心击（剑）" width="100" class="rounded-full" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Tarot Whispers
+
+<Priestess />
+
+## References
+- [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)
+- [角色图鉴库/光术骑士“耀光” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%89%E6%9C%AF%E9%AA%91%E5%A3%AB%E2%80%9C%E8%80%80%E5%85%89%E2%80%9D)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/599486.html)
