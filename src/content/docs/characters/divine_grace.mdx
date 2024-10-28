@@ -20,6 +20,9 @@ import skill_r2 from '../../../assets/skills/divine_grace_right_2.png';
 import skill_r3 from '../../../assets/skills/divine_grace_right_3.png';
 import skill_r4 from '../../../assets/skills/divine_grace_right_4.png';
 import skill_r5 from '../../../assets/skills/divine_grace_right_5.png';
+import LongbowofMartyrs from '../../../components/inventory/bow/LongbowofMartyrs.astro';
+import MeteorLine from '../../../components/inventory/bow/MeteorLine.astro';
+import IrianCombatBow from '../../../components/inventory/bow/IrianCombatBow.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
 import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 
@@ -27,31 +30,31 @@ import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 
 <SkillBuildGrid grid="grid-cols-5">
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%88%86%E7%83%88%E5%B0%84%E5%87%BB" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l1} alt="爆烈射击" width="100" class="rounded-full ring-4 ring-blue-500" />
+    <Image src={skill_l1} alt="爆烈射击" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8F%97%E5%BA%87%E6%8A%A4%E8%80%85" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l2} alt="受庇护者" width="100" class="rounded-full ring-4 ring-blue-500" />
+    <Image src={skill_l2} alt="受庇护者" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%98%B2%E5%BE%A1%E6%BA%85%E5%B0%84" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l3} alt="防御溅射" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9A%B4%E9%A3%8E%E7%8B%99%E5%87%BB" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l4} alt="暴风狙击" width="100" class="rounded-full" />
+    <Image src={skill_l4} alt="暴风狙击" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%B4%E5%91%BD%E5%87%BB%EF%BC%88%E5%BC%A9%EF%BC%89" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l5} alt="致命击（弩）" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%8E%A9%E6%8A%A4%E5%B0%84%E5%87%BB" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r1} alt="掩护射击" width="100" class="rounded-full" />
+    <Image src={skill_r1} alt="掩护射击" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BA%87%E6%8A%A4%E4%B9%8B%E5%85%892" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r2} alt="庇护之光2" width="100" class="rounded-full" />
+    <Image src={skill_r2} alt="庇护之光2" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BF%80%E6%B4%BB%E5%8A%9B%E9%87%8F" target="_blank" rel="noopener noreferrer">
     <Image src={skill_r3} alt="激活力量" width="100" class="rounded-full ring-4 ring-rose-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9A%B4%E5%87%BB%E6%8C%87%E6%8C%A5" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r4} alt="暴击指挥" width="100" class="rounded-full ring-4 ring-blue-500" />
+    <Image src={skill_r4} alt="暴击指挥" width="100" class="rounded-full" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BC%9A%E5%BF%83%E5%87%BB%EF%BC%88%E5%BC%A9%EF%BC%89" target="_blank" rel="noopener noreferrer">
     <Image src={skill_r5} alt="会心击（弩）" width="100" class="rounded-full ring-4 ring-rose-500" />
@@ -61,6 +64,14 @@ import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 <Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
 
+## Weapons
+
+<CardGrid>
+  <LongbowofMartyrs />
+  <MeteorLine />
+  <IrianCombatBow />
+</CardGrid>
+
 ## Tarot Whispers
 
 <CardGrid>
@@ -69,5 +80,6 @@ import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 </CardGrid>
 
 ## References
+- [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)
 - [角色图鉴库/光辉弩手“神恩” - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%89%E8%BE%89%E5%BC%A9%E6%89%8B%E2%80%9C%E7%A5%9E%E6%81%A9%E2%80%9D)
 - [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/599417.html)
