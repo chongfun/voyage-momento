@@ -22,12 +22,16 @@ import skill_r3 from '../../../assets/skills/simona_right_3.png';
 import skill_r4 from '../../../assets/skills/simona_right_4.png';
 import skill_r5 from '../../../assets/skills/simona_right_5.png';
 import skill_r6 from '../../../assets/skills/simona_right_6.png';
+import FocusWand from '../../../components/inventory/staff/FocusWand.astro';
+import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
 import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
 import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
 import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
 import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
 import World from '../../../components/inventory/tarot_whisper/World.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+import WandCup from '../../../components/engraving/WandCup.astro';
 
 ## Skills
 
@@ -77,8 +81,10 @@ import World from '../../../components/inventory/tarot_whisper/World.astro';
 ## Weapons
 
 <CardGrid stagger>
+  <DiffusingPrism />
   <ResentmentBroom />
   <StarrySkyHeritage />
+  <FocusWand />
 </CardGrid>
 
 ## Tarot Whispers
@@ -89,6 +95,11 @@ import World from '../../../components/inventory/tarot_whisper/World.astro';
   <Fortune />
   <World />
 </CardGrid>
+
+## Engravings
+
+<SwordWand />
+<WandCup />
 
 ## References
 - [Celion Journey's Pocket Guide for Simona](https://www.patreon.com/posts/pocket-guide-for-111055345)
