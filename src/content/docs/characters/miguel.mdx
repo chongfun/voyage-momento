@@ -1,0 +1,101 @@
+---
+title: Miguel
+description: Sword of Convallaria Miguel Build
+titleImage: '../../../assets/characters/miguel/sprite.png'
+titleImageAlt: Miguel
+rarity: Legendary
+role: Watcher
+---
+import { Badge, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/miguel_left_1.png';
+import skill_l2 from '../../../assets/skills/miguel_left_2.png';
+import skill_l3 from '../../../assets/skills/miguel_left_3.png';
+import skill_l4 from '../../../assets/skills/miguel_left_4.png';
+import skill_l5 from '../../../assets/skills/miguel_left_5.png';
+import skill_l6 from '../../../assets/skills/miguel_left_6.png';
+import skill_r1 from '../../../assets/skills/miguel_right_1.png';
+import skill_r2 from '../../../assets/skills/miguel_right_2.png';
+import skill_r3 from '../../../assets/skills/miguel_right_3.png';
+import skill_r4 from '../../../assets/skills/miguel_right_4.png';
+import skill_r5 from '../../../assets/skills/miguel_right_5.png';
+import skill_r6 from '../../../assets/skills/miguel_right_6.png';
+import LongbowofMartyrs from '../../../components/inventory/bow/LongbowofMartyrs.astro';
+import MeteorLine from '../../../components/inventory/bow/MeteorLine.astro';
+import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+:::note
+There isn't much consensus on Miguel's best skills.
+:::
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A6%81%E7%96%97" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="禁疗" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%88%86%E7%83%88%E5%B0%84%E5%87%BB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="爆烈射击" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%8A%A4%E8%BA%AB%E5%89%83%E5%88%80" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="护身剃刀" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%B4%E7%9B%B2%E7%B2%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="致盲粉" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%B8%8D%E5%87%80%E5%88%A9%E5%88%83" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="不净利刃" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%AF%B1%E6%8D%95%E9%99%B7%E9%98%B1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="诱捕陷阱" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%9B%B4%E8%A7%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="直觉" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%87%8D%E9%87%8D%E6%9C%89%E8%B5%8F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="重重有赏" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%AB%98%E5%9C%B0%E4%BC%98%E5%8A%BF" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="高地优势" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BC%82%E6%B3%8A%E5%A4%A9%E6%B6%AF" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="漂泊天涯" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%87%83%E7%83%A7%E5%BC%B9" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="燃烧弹" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%80%81%E8%91%AC" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="送葬" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+
+## Weapons
+
+<CardGrid stagger>
+  <LongbowofMartyrs />
+  <MeteorLine />
+  <StarRaidCrossbow />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Magician />
+  <Justice />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## References
+- [【角色攻略】鈴蘭之劍 米格爾詳盡介紹 有助了解角色特性 新手必看](https://youtu.be/B02TA5vMPbA?si=K4rhbsafswEJznnw&t=488)
+- [角色图鉴库/米格尔 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%B1%B3%E6%A0%BC%E5%B0%94)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/606611.html)
