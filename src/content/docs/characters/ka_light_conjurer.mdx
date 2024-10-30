@@ -26,15 +26,19 @@ import CupCup from '../../../components/engraving/CupCup.astro';
 
 ## Skills
 
+:::note
+If you plan on only using this character for [Weaponry Trial 1](/guides/weaponry_trial_1), then the [Endure] reaction is better than [Defender] at RK5.
+:::
+
 <SkillBuildGrid grid="grid-cols-4">
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%80%E5%8C%96" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l1} alt="净化" width="100" class="rounded-full ring-4 ring-rose-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%84%88%E5%90%88" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l2} alt="愈合" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_l2} alt="愈合" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%98%B2%E5%BE%A1%E8%80%85" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_l3} alt="防御者" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_l3} alt="防御者" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%80%E5%8C%96%E4%B9%8B%E5%85%89" target="_blank" rel="noopener noreferrer">
     <Image src={skill_l4} alt="净化之光" width="100" class="rounded-full ring-4 ring-rose-500" />
@@ -53,20 +57,19 @@ import CupCup from '../../../components/engraving/CupCup.astro';
 </a>
 </SkillBuildGrid>
 ---
+<Badge text="Optional" variant="note" />
 <Badge text="Recommended" variant="danger" />
 
 ## Weapons
 
-<CardGrid>
-  <ReorganizedCube />
-</CardGrid>
+<ReorganizedCube />
 
 ## Tarot Whispers
 
 <CardGrid>
   <Empress />
-  <Priestess />
   <World />
+  <Priestess />
 </CardGrid>
 
 ## Engravings
@@ -74,5 +77,5 @@ import CupCup from '../../../components/engraving/CupCup.astro';
 <CupCup />
 
 ## References
-- [aMagicJo - Beginner Quick Guides For Non-Legendary Healer Units](https://youtu.be/hhavGO0y_a8?si=eWE2aOnpEQziRIpR&t=275)
+- [Evaneris - Sword of Covallaria CN/TW Low Rarity Units](https://docs.google.com/spreadsheets/d/1GJb-JNgNDPY6dBp4WuZCv_KENpn-_z_oDXmRM8VRB_A/edit?usp=sharing)
 - [角色图鉴库/王国军光术师 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8E%8B%E5%9B%BD%E5%86%9B%E5%85%89%E6%9C%AF%E5%B8%88)
