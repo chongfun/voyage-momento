@@ -25,13 +25,20 @@ import skill_r5 from '../../../assets/skills/faycal_right_5.png';
 import skill_r6 from '../../../assets/skills/faycal_right_6.png';
 import StarRaidCrossbow from '../../../components/inventory/bow/StarRaidCrossbow.astro';
 import IrianCombatBow from '../../../components/inventory/bow/IrianCombatBow.astro';
+import HuntersIntuition from '../../../components/inventory/trinket/HuntersIntuition.astro';
+import TrueLens from '../../../components/inventory/trinket/TrueLens.astro';
 import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
 import Emperor from '../../../components/inventory/tarot_whisper/Emperor.astro';
 import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
 import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import WandWand from '../../../components/engraving/WandWand.astro';
 import SwordWand from '../../../components/engraving/SwordWand.astro';
 
 ## Skills
+
+:::note
+This is Celion's hybrid build. If you want to specialize in burst, then I would take [Precise Shot] instead of [Arrow of Guardian Convallaria] at RK3. If you want to specialize in alert, then I would take [Alert Shot] instead of [Cloud-Piercing Arrow] at RK7 and take [Heart of Alert] instead of [Gale-Billow Volley] at RK11.
+:::
 
 <SkillBuildGrid grid="grid-cols-6">
     <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%87%9D%E7%A5%9E" target="_blank" rel="noopener noreferrer">
@@ -50,13 +57,13 @@ import SwordWand from '../../../components/engraving/SwordWand.astro';
         <Image src={skill_l5} alt="连射" width="100" class="rounded-full ring-4 ring-rose-500" />
     </a>
     <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%96%BE%E9%A3%8E%E6%80%92%E6%B6%9B%E4%B9%B1%E5%B0%84" target="_blank" rel="noopener noreferrer">
-        <Image src={skill_l6} alt="疾风怒涛乱射" width="100" class="rounded-full ring-4 ring-rose-500" />
+        <Image src={skill_l6} alt="疾风怒涛乱射" width="100" class="rounded-full ring-4 ring-blue-500" />
     </a>
     <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%94%80%E5%B2%A9" target="_blank" rel="noopener noreferrer">
         <Image src={skill_r1} alt="攀岩" width="100" class="rounded-full ring-4 ring-blue-500" />
     </a>
     <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%AE%88%E6%8A%A4%E9%93%83%E5%85%B0%E4%B9%8B%E7%AE%AD" target="_blank" rel="noopener noreferrer">
-        <Image src={skill_r2} alt="守护铃兰之箭" width="100" class="rounded-full ring-4 ring-rose-500" />
+        <Image src={skill_r2} alt="守护铃兰之箭" width="100" class="rounded-full ring-4 ring-blue-500" />
     </a>
     <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%84%B1%E5%85%94" target="_blank" rel="noopener noreferrer">
         <Image src={skill_r3} alt="脱兔" width="100" class="rounded-full" />
@@ -68,7 +75,7 @@ import SwordWand from '../../../components/engraving/SwordWand.astro';
         <Image src={skill_r5} alt="致命击（箭）" width="100" class="rounded-full" />
     </a>
     <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%AD%A6%E6%88%92%E4%B9%8B%E5%BF%83" target="_blank" rel="noopener noreferrer">
-        <Image src={skill_r6} alt="警戒之心" width="100" class="rounded-full ring-4 ring-yellow-500" />
+        <Image src={skill_r6} alt="警戒之心" width="100" class="rounded-full" />
     </a>
 </SkillBuildGrid>
 ---
@@ -78,22 +85,29 @@ import SwordWand from '../../../components/engraving/SwordWand.astro';
 
 ## Weapons
 
-<CardGrid stagger>
-  <StarRaidCrossbow />
+<CardGrid>
   <IrianCombatBow />
+  <StarRaidCrossbow />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <HuntersIntuition />
+  <TrueLens />
 </CardGrid>
 
 ## Tarot Whispers
 
 <CardGrid>
-  <Justice />
-  <Emperor />
   <Tower />
   <Magician />
+  <Justice />
 </CardGrid>
 
 ## Engravings
 
+<WandWand />
 <SwordWand />
 
 ## References
