@@ -15,6 +15,13 @@ export default defineConfig({
 			favicon: '/favicon.ico',
 			head: [
 			  {
+				tag: 'meta',
+				attrs: {
+				  name: 'google-adsense-account',
+				  content: 'ca-pub-5109837472698973'
+				},
+			  },
+			  {
 				tag: 'link',
 				attrs: {
 				  rel: 'apple-touch-icon',
