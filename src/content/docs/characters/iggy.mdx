@@ -25,6 +25,8 @@ import skill_r6 from '../../../assets/skills/iggy_right_6.png';
 import TheSilentGuard from '../../../components/inventory/spear/TheSilentGuard.astro';
 import PendantHalberd from '../../../components/inventory/spear/PendantHalberd.astro';
 import SkeletonSpear from '../../../components/inventory/spear/SkeletonSpear.astro';
+import TrueLens from '../../../components/inventory/trinket/TrueLens.astro';
+import HuntersIntuition from '../../../components/inventory/trinket/HuntersIntuition.astro';
 import SwordWand from '../../../components/engraving/SwordWand.astro';
 
 ## Skills
@@ -52,7 +54,7 @@ import SwordWand from '../../../components/engraving/SwordWand.astro';
     <Image src={skill_r1} alt="山地民族" width="100" class="rounded-full ring-4 ring-rose-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%A9%E7%8C%8E%E5%87%86%E5%A4%87" target="_blank" rel="noopener noreferrer">
-    <Image src={skill_r2} alt="狩猎准备" width="100" class="rounded-full ring-4 ring-rose-500" />
+    <Image src={skill_r2} alt="狩猎准备" width="100" class="rounded-full ring-4 ring-blue-500" />
 </a>
 <a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%BC%E4%B9%8B%E8%AD%A6%E8%A7%89" target="_blank" rel="noopener noreferrer">
     <Image src={skill_r3} alt="狼之警觉" width="100" class="rounded-full ring-blue-500" />
@@ -75,9 +77,16 @@ import SwordWand from '../../../components/engraving/SwordWand.astro';
 ## Weapons
 
 <CardGrid stagger>
+  <SkeletonSpear />
   <TheSilentGuard />
   <PendantHalberd />
-  <SkeletonSpear />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <TrueLens />
+  <HuntersIntuition />
 </CardGrid>
 
 ## Engravings
