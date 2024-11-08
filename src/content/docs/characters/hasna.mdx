@@ -1,0 +1,108 @@
+---
+title: Hasna
+description: Sword of Convallaria Hasna Build
+titleImage: '../../../assets/characters/hasna/sprite.png'
+titleImageAlt: Hasna
+rarity: Legendary
+role: Seeker
+---
+import { Badge, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import skill_l1 from '../../../assets/skills/hasna_left_1.png';
+import skill_l2 from '../../../assets/skills/hasna_left_2.png';
+import skill_l3 from '../../../assets/skills/hasna_left_3.png';
+import skill_l4 from '../../../assets/skills/hasna_left_4.png';
+import skill_l5 from '../../../assets/skills/hasna_left_5.png';
+import skill_l6 from '../../../assets/skills/hasna_left_6.png';
+import skill_r1 from '../../../assets/skills/hasna_right_1.png';
+import skill_r2 from '../../../assets/skills/hasna_right_2.png';
+import skill_r3 from '../../../assets/skills/hasna_right_3.png';
+import skill_r4 from '../../../assets/skills/hasna_right_4.png';
+import skill_r5 from '../../../assets/skills/hasna_right_5.png';
+import skill_r6 from '../../../assets/skills/hasna_right_6.png';
+import FocusWand from '../../../components/inventory/staff/FocusWand.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
+import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
+import DisasterBottle from '../../../components/inventory/trinket/DisasterBottle.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+:::note
+潘潘葱鸭 has been a reliable source of builds for many characters, but this character was not liked by the author. Perhaps a different build could provide more utility for your roster.
+:::
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%82%AC%E7%9C%A0" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="催眠" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%83%88%E9%A6%99%E5%86%B2%E5%87%BB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="烈香冲击" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%8B%A5%E8%8A%B1%E8%BD%AF%E9%AA%A8" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="若花软骨" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%AA%81%E8%A2%AD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="突袭" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%82%AC%E7%9C%A0%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="催眠击（杖）" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BD%BB%E9%AA%A8%E6%B2%81%E9%AB%93" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="彻骨沁髓" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%88%98%E6%96%97%E5%85%B4%E5%A5%8B" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="战斗兴奋" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%A6%99%E5%BE%84%E5%BD%B1%E8%B8%AA" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="香径影踪" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%80%92%E7%81%AB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="怒火" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%97%BB%E9%A6%99%E8%AF%86%E4%BA%BA" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="闻香识人" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%89%94%E9%AA%A8%E9%AD%85%E5%BD%B1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="剔骨魅影" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%94%9F%E5%91%BD%E5%90%9E%E5%99%AC" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="生命吞噬" width="100" class="rounded-full" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+
+## Weapons
+
+<CardGrid>
+  <FocusWand />
+  <StarrySkyHeritage />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <RoaringFlint />
+  <DisasterBottle />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Magician />
+  <Justice />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## References
+- [铃兰之剑SSR强度榜&升星推荐&配装推荐&加点推荐（更至sp索菲亚](https://www.taptap.cn/moment/544978986061530597)
+- [角色图鉴库/哈斯娜 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%93%88%E6%96%AF%E5%A8%9C)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/616326.html)
