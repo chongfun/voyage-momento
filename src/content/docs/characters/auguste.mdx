@@ -6,10 +6,12 @@ titleImageAlt: Auguste
 rarity: Legendary
 role: Breaker
 ---
-import { Badge, CardGrid } from '@astrojs/starlight/components';
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/auguste/trait.png';
 import skill_l1 from '../../../assets/skills/auguste_left_1.png';
 import skill_l2 from '../../../assets/skills/auguste_left_2.png';
 import skill_l3 from '../../../assets/skills/auguste_left_3.png';
@@ -127,6 +129,18 @@ An option to proc the [Strength Activation] reaction skill.
 Only useful in fights where Auguste cannot move enough to use Sword + Wand.
 :::
 </SwordPentacle>
+
+## Trait
+
+<ImageCard image={trait} title="Sword of Wrath">
+<Tabs>
+  <TabItem label="1">Auguste ignores [<span class="text-yellow-500">Block</span>]. After initiating an active attack or entering [<span class="text-yellow-500">Standby</span>], he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Rage</span>], up to <span class="text-orange-500">6</span> stacks. When having <span class="text-orange-500">6</span> stacks of [<span class="text-blue-500">Rage</span>], after actively using a Skill or Basic Attack, Auguste removes all stacks and he can [<span class="text-yellow-500">Act Again</span>], gaining [<span class="text-blue-500">Rage Outburst I</span>] for <span class="text-orange-500">2</span> turns.</TabItem>
+  <TabItem label="2">Auguste ignores [<span class="text-yellow-500">Block</span>]. After initiating an active attack or entering [<span class="text-yellow-500">Standby</span>], he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Rage</span>], up to <span class="text-orange-500">6</span> stacks. When having <span class="text-orange-500">6</span> stacks of [<span class="text-blue-500">Rage</span>], after actively using a Skill or Basic Attack, Auguste removes all stacks and he can [<span class="text-yellow-500">Act Again</span>], gaining [<span class="text-blue-500">Rage Outburst I</span>] for <span class="text-orange-500">2</span> turns. At the start of the battle, he also gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Rage</span>].</TabItem>
+  <TabItem label="3">Auguste ignores [<span class="text-yellow-500">Block</span>]. After initiating an active attack or entering [<span class="text-yellow-500">Standby</span>], he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Rage</span>], up to <span class="text-orange-500">6</span> stacks. When having <span class="text-orange-500">6</span> stacks of [<span class="text-blue-500">Rage</span>], after actively using a Skill or Basic Attack, Auguste removes all stacks and he can [<span class="text-yellow-500">Act Again</span>], gaining [<span class="text-blue-500"><span class="text-blue-500">Rage Outburst I</span>I</span>] for <span class="text-orange-500">2</span> turns and recovering <span class="text-green-500">1</span> NRG. At the start of the battle, he also gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Rage</span>].</TabItem>
+  <TabItem label="4" icon="star">Auguste ignores [<span class="text-yellow-500">Block</span>]. After initiating an active attack or entering [<span class="text-yellow-500">Standby</span>], he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Rage</span>], up to <span class="text-orange-500">6</span> stacks. When having <span class="text-orange-500">6</span> stacks of [<span class="text-blue-500">Rage</span>], after actively using a Skill or Basic Attack, Auguste removes all stacks and he can [<span class="text-yellow-500">Act Again</span>], gaining [<span class="text-blue-500"><span class="text-blue-500">Rage Outburst I</span>I</span>] for <span class="text-orange-500">2</span> turns and recovering <span class="text-green-500">1</span> NRG. At the start of the battle, he also gains <span class="text-orange-500">4</span> stacks of [<span class="text-blue-500">Rage</span>].</TabItem>
+  <TabItem label="5" icon="heart">Auguste ignores [<span class="text-yellow-500">Block</span>]. After initiating an active attack or entering [<span class="text-yellow-500">Standby</span>], he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Rage</span>], up to <span class="text-orange-500">6</span> stacks. When having <span class="text-orange-500">6</span> stacks of [<span class="text-blue-500">Rage</span>], after actively using a Skill or Basic Attack, Auguste removes all stacks and he can [<span class="text-yellow-500">Act Again</span>], gaining [<span class="text-blue-500"><span class="text-blue-500"><span class="text-blue-500">Rage Outburst I</span>I</span>I</span>] for <span class="text-orange-500">2</span> turns and recovering <span class="text-green-500">2</span> NRG. At the start of the battle, he also gains <span class="text-orange-500">4</span> stacks of [<span class="text-blue-500">Rage</span>].</TabItem>
+</Tabs>
+</ImageCard>
 
 ## References
 - [铃兰之剑SSR强度榜&升星推荐&配装推荐&加点推荐（更至sp索菲亚](https://www.taptap.cn/moment/544978986061530597)
