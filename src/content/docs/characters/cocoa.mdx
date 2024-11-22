@@ -6,10 +6,12 @@ titleImageAlt: Marvelous Adventurer
 rarity: Legendary
 role: Defender
 ---
-import { Badge, CardGrid } from '@astrojs/starlight/components';
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/cocoa/trait.png';
 import skill_l1 from '../../../assets/skills/cocoa_left_1.png';
 import skill_l2 from '../../../assets/skills/cocoa_left_2.png';
 import skill_l3 from '../../../assets/skills/cocoa_left_3.png';
@@ -98,6 +100,18 @@ import CupCup from '../../../components/engraving/CupCup.astro';
 
 <WandCup />
 <CupCup />
+
+## Trait
+
+<ImageCard image={trait} title="Breakfast Happiness">
+<Tabs>
+  <TabItem label="1">Cocoa possesses [<span class="text-yellow-500">Block</span>]. At the start of each round, she grants [<span class="text-blue-500">Breakfast</span>] to the ally with the lowest HP percentage within <span class="text-orange-500">2</span> tiles of herself. After a [<span class="text-blue-500">Breakfast</span>] or [<span class="text-blue-500">Bento</span>] effect is triggered, the target has a <span class="text-orange-500">30%</span> chance to gain [<span class="text-blue-500">Happiness</span>].</TabItem>
+  <TabItem label="2">Cocoa possesses [<span class="text-yellow-500">Block</span>]. Her HP is increased by <span class="text-green-500">10%</span>. At the start of each round, she grants [<span class="text-blue-500">Breakfast</span>] to the ally with the lowest HP percentage within <span class="text-orange-500">2</span> tiles of herself. After a [<span class="text-blue-500">Breakfast</span>] or [<span class="text-blue-500">Bento</span>] effect is triggered, the target has a <span class="text-orange-500">30%</span> chance to gain [<span class="text-blue-500">Happiness</span>].</TabItem>
+  <TabItem label="3">Cocoa possesses [<span class="text-yellow-500">Block</span>]. Her HP is increased by <span class="text-green-500">10%</span>. At the start of each round, she grants [<span class="text-blue-500">Breakfast</span>] to the <span class="text-orange-500">2</span> allies with the lowest HP percentage within <span class="text-orange-500">2</span> tiles of herself. After a [<span class="text-blue-500">Breakfast</span>] or [<span class="text-blue-500">Bento</span>] effect is triggered, the target has a <span class="text-orange-500">30%</span> chance to gain [<span class="text-blue-500">Happiness</span>].</TabItem>
+  <TabItem label="4">Cocoa possesses [<span class="text-yellow-500">Block</span>]. Her HP is increased by <span class="text-green-500">20%</span>. At the start of each round, she grants [<span class="text-blue-500">Breakfast</span>] to the <span class="text-orange-500">2</span> allies with the lowest HP percentage within <span class="text-orange-500">2</span> tiles of herself. After a [<span class="text-blue-500">Breakfast</span>] or [<span class="text-blue-500">Bento</span>] effect is triggered, the target has a <span class="text-orange-500">30%</span> chance to gain [<span class="text-blue-500">Happiness</span>].</TabItem>
+  <TabItem label="5" icon="star">Cocoa possesses [<span class="text-yellow-500">Block</span>]. Her HP is increased by <span class="text-green-500">20%</span>. At the start of each round, she grants [<span class="text-blue-500">Breakfast</span>] to the <span class="text-orange-500">2</span> allies with the lowest HP percentage within <span class="text-orange-500">2</span> tiles of herself. After a [<span class="text-blue-500">Breakfast</span>] or [<span class="text-blue-500">Bento</span>] effect is triggered, the target gains [<span class="text-blue-500">Happiness</span>].</TabItem>
+</Tabs>
+</ImageCard>
 
 ## References
 - [Celion Journey's Pocket Guide for Cocoa](https://www.patreon.com/posts/pocket-guide-for-111890857)
