@@ -1,0 +1,124 @@
+---
+title: Caris
+description: Sword of Convallaria Caris Build
+titleImage: '../../../assets/characters/caris/sprite.png'
+titleImageAlt: Caris
+rarity: Legendary
+role: Destroyer
+---
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/auguste/trait.png';
+import skill_l1 from '../../../assets/skills/caris_left_1.png';
+import skill_l2 from '../../../assets/skills/caris_left_2.png';
+import skill_l3 from '../../../assets/skills/caris_left_3.png';
+import skill_l4 from '../../../assets/skills/caris_left_4.png';
+import skill_l5 from '../../../assets/skills/caris_left_5.png';
+import skill_l6 from '../../../assets/skills/caris_left_6.png';
+import skill_r1 from '../../../assets/skills/caris_right_1.png';
+import skill_r2 from '../../../assets/skills/caris_right_2.png';
+import skill_r3 from '../../../assets/skills/caris_right_3.png';
+import skill_r4 from '../../../assets/skills/caris_right_4.png';
+import skill_r5 from '../../../assets/skills/caris_right_5.png';
+import skill_r6 from '../../../assets/skills/caris_right_6.png';
+import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
+import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
+import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
+import OriginHourglass from '../../../components/inventory/trinket/OriginHourglass.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BA%87%E6%8A%A4%E4%B9%8B%E5%85%892" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="庇护之光2" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%80%80%E6%8A%A4%E4%BC%97%E7%94%9F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="耀护众生" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9A%97%E4%B9%8B%E5%BA%87%E6%8A%A4" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="暗之庇护" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%89%E8%BE%89%E7%9A%84%E6%8C%87%E5%BC%95" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="光辉的指引" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%93%84%E5%8A%BF%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="蓄势击（杖）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8F%97%E5%BA%87%E6%8A%A4%E8%80%85" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="受庇护者" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%94%9F%E5%91%BD%E5%90%9E%E5%99%AC" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="生命吞噬" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%AF%B8%E7%BD%AA%E5%B9%B6%E7%BD%9A" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="诸罪并罚" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E8%83%BD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="回能" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%82%83%E6%B8%85%E4%B8%87%E6%81%B6" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="肃清万恶" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%83%A9%E6%81%B6" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="惩恶" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%99%B6%E8%83%BD%E6%B3%A2%E5%8A%A8%E7%82%AE" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="晶能波动炮" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Weapons
+
+<CardGrid stagger>
+  <DiffusingPrism />
+  <StarrySkyHeritage />
+  <ResentmentBroom />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <OriginHourglass />
+  <RoaringFlint />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Magician />
+  <Devil />
+  <Justice />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## Trait
+
+<ImageCard image={trait} title="Light Oracle">
+<Tabs>
+  <TabItem label="1">Caris's trait affects a range of <span class="text-orange-500">4</span> tiles. When an ally within a certain range of Caris casts a [non-instant] skill, she gains <span class="text-orange-500">1</span> stack of [Revelation]. Can be triggered up to <span class="text-orange-500">5</span> times per round. At the start of the turn, if she has <span class="text-orange-500">9</span> or more stacks of [Revelation], she consumes <span class="text-orange-500">9</span> stacks and gains [Light Oracle].</TabItem>
+  <TabItem label="2">Caris's M.ATK increases by <span class="text-purple-500">5%</span>. The trait affects a range of <span class="text-orange-500">4</span> tiles. When an ally within a certain range of Caris casts a [non-instant] skill, she gains <span class="text-orange-500">1</span> stack of [Revelation]. Can be triggered up to <span class="text-orange-500">5</span> times per round. At the start of the turn, if she has <span class="text-orange-500">9</span> or more stacks of [Revelation], she consumes <span class="text-orange-500">9</span> stacks and gains [Light Oracle].</TabItem>
+  <TabItem label="3" icon="star">Caris's M.ATK increases by <span class="text-purple-500">10%</span>. The trait affects a range of <span class="text-orange-500">5</span> tiles. At the start of the battle, she gains <span class="text-orange-500">6</span> stacks of [Revelation]. When an ally within a certain range of Caris casts a [non-instant] skill, she gains <span class="text-orange-500">1</span> stack of [Revelation]. Can be triggered up to <span class="text-orange-500">5</span> times per round. At the start of the turn, if she has <span class="text-orange-500">9</span> or more stacks of [Revelation], she consumes <span class="text-orange-500">9</span> stacks and gains [Light Oracle].</TabItem>
+  <TabItem label="4">Caris's M.ATK increases by <span class="text-purple-500">15%</span>. The trait affects a range of <span class="text-orange-500">5</span> tiles. At the start of the battle, she gains <span class="text-orange-500">6</span> stacks of [Revelation]. When an ally within a certain range of Caris casts a [non-instant] skill, she gains <span class="text-orange-500">1</span> stack of [Revelation]. Can be triggered up to <span class="text-orange-500">5</span> times per round. At the start of the turn, if she has <span class="text-orange-500">9</span> or more stacks of [Revelation], she consumes <span class="text-orange-500">9</span> stacks and gains [Light Oracle].</TabItem>
+  <TabItem label="5" icon="heart">Caris's M.ATK increases by <span class="text-purple-500">15%</span>. The trait affects a range of <span class="text-orange-500">5</span> tiles. At the start of the battle, she gains <span class="text-orange-500">8</span> stacks of [Revelation]. At the end of the turn, she additionally gains <span class="text-orange-500">3</span> stacks of [Revelation]. When an ally within a certain range of Caris casts a [non-instant] skill, she gains <span class="text-orange-500">1</span> stack of [Revelation]. Can be triggered up to <span class="text-orange-500">5</span> times per round. At the start of the turn, if having <span class="text-orange-500">9</span> or more stacks of [Revelation], she consumes <span class="text-orange-500">9</span> stacks and gains [Light Oracle] and <span class="text-green-500">1</span> NRG.</TabItem>
+</Tabs>
+</ImageCard>
+
+## References
+- [铃兰之剑SSR强度榜&升星推荐&配装推荐&加点推荐（更至sp索菲亚](https://www.taptap.cn/moment/544978986061530597)
+- [角色图鉴库/卡丽丝 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8D%A1%E4%B8%BD%E4%B8%9D)
+- [为这和平的世界wiki|GameKee](https://www.gamekee.com/soc/607860.html)
