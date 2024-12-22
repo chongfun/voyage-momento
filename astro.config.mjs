@@ -65,6 +65,15 @@ export default defineConfig({
 			  },
 			  {
 				tag: 'script',
+				attrs: {
+				  src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5109837472698973',
+				  async: true,
+				  crossorigin: 'anonymous',
+				  type: "text/partytown"
+				},
+			  },
+			  {
+				tag: 'script',
 				attrs: { type: "text/partytown" },
 				content: "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-4JSTJYBDHH');"
 			  },
