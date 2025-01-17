@@ -1,15 +1,17 @@
 ---
-title: Taiir
-description: Sword of Convallaria Taiir Build
+title: Taair
+description: Sword of Convallaria Taair Build
 titleImage: '../../../assets/characters/taiir/sprite.png'
-titleImageAlt: Taiir
+titleImageAlt: Taair
 rarity: Legendary
 role: Watcher
 ---
-import { Badge, CardGrid } from '@astrojs/starlight/components';
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
 import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/taiir/trait.png';
 import skill_l1 from '../../../assets/skills/taiir_left_1.png';
 import skill_l2 from '../../../assets/skills/taiir_left_2.png';
 import skill_l3 from '../../../assets/skills/taiir_left_3.png';
@@ -27,6 +29,9 @@ import OldScrollsofAuguste from '../../../components/inventory/trinket/OldScroll
 import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
 import Empress from '../../../components/inventory/tarot_whisper/Empress.astro';
 import Priestess from '../../../components/inventory/tarot_whisper/Priestess.astro';
+import World from '../../../components/inventory/tarot_whisper/World.astro';
+import WandCup from '../../../components/engraving/WandCup.astro';
+import CupCup from '../../../components/engraving/CupCup.astro';
 
 ## Skills
 
@@ -91,7 +96,25 @@ import Priestess from '../../../components/inventory/tarot_whisper/Priestess.ast
 <CardGrid>
   <Empress />
   <Priestess />
+  <World />
 </CardGrid>
+
+## Engravings
+
+<WandCup />
+<CupCup />
+
+## Trait
+
+<ImageCard image={trait} title="Historian">
+<Tabs>
+  <TabItem label="1">Taair's [<span class="text-blue-500">Knowledge</span>] stacks max at <span class="text-orange-500">2</span>. He gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>] at the start of the battle. When casting healing and supporting skills, Taair's maximum range is increased by <span class="text-orange-500">1</span> tile. Upon casting the skill, he additionally heals the target by <span class="text-green-500">15%</span> of M.ATK. At the start of the turn, Taair discovers <span class="text-orange-500">1</span> [<span class="text-blue-500">Scroll</span>] on a random [empty tile] within <span class="text-orange-500">3</span> tiles of himself. Upon picking it up, he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>] and then gains <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 2 Buff</span>], lasting for <span class="text-orange-500">2</span> turns, and can move an additional <span class="text-orange-500">3</span> tiles. For every <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Knowledge</span>], he can use [<span class="text-blue-500">Historical Skills</span>] <span class="text-orange-500">1</span> time.</TabItem>
+  <TabItem label="2" icon="star">Taair's [<span class="text-blue-500">Knowledge</span>] stacks max at <span class="text-orange-500">4</span>. He gains <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Knowledge</span>] at the start of the battle. When casting healing and supporting skills, Taair's maximum range is increased by <span class="text-orange-500">1</span> tile. Upon casting the skill, he additionally heals the target by <span class="text-green-500">20%</span> of M.ATK. At the start of the turn, Taair discovers <span class="text-orange-500">1</span> [<span class="text-blue-500">Scroll</span>] on a random [empty tile] within <span class="text-orange-500">3</span> tiles of himself. Upon picking it up, he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>] and then gains <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 2 Buff</span>], lasting for <span class="text-orange-500">2</span> turns, and can move an additional <span class="text-orange-500">3</span> tiles. For every <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Knowledge</span>], he can use [<span class="text-blue-500">Historical Skills</span>] <span class="text-orange-500">1</span> time.</TabItem>
+  <TabItem label="3">Taair's [<span class="text-blue-500">Knowledge</span>] stacks max at <span class="text-orange-500">4</span>. He gains <span class="text-orange-500">3</span> stacks of [<span class="text-blue-500">Knowledge</span>] at the start of the battle, with Movement increased by <span class="text-orange-500">1</span> tile. When casting healing and supporting skills, Taair's maximum range is increased by <span class="text-orange-500">1</span> tile. Upon casting the skill, he additionally heals the target by <span class="text-green-500">20%</span> of M.ATK. At the start of the turn, Taair discovers <span class="text-orange-500">1</span> [<span class="text-blue-500">Scroll</span>] on a random [empty tile] within <span class="text-orange-500">3</span> tiles of himself. Upon picking it up, he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>] and then gains <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 2 Buff</span>], lasting for <span class="text-orange-500">2</span> turns, and can move an additional <span class="text-orange-500">3</span> tiles. For every <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Knowledge</span>], he can use [<span class="text-blue-500">Historical Skills</span>] <span class="text-orange-500">1</span> time.</TabItem>
+  <TabItem label="4" icon="heart">Taair's [<span class="text-blue-500">Knowledge</span>] stacks max at <span class="text-orange-500">6</span>. He gains <span class="text-orange-500">4</span> stacks of [<span class="text-blue-500">Knowledge</span>] at the start of the battle, with Movement increased by <span class="text-orange-500">1</span> tile. When casting healing and supporting skills, Taair's maximum range is increased by <span class="text-orange-500">1</span> tile. Upon casting the skill, he additionally heals the target by <span class="text-green-500">25%</span> of M.ATK. At the start of the turn, Taair discovers <span class="text-orange-500">1</span> [<span class="text-blue-500">Scroll</span>] on a random [empty tile] within <span class="text-orange-500">3</span> tiles of himself. Upon picking it up, he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>] and then gains <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 2 Buff</span>], lasting for <span class="text-orange-500">2</span> turns, and can move an additional <span class="text-orange-500">3</span> tiles. For every <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Knowledge</span>], he can use [<span class="text-blue-500">Historical Skills</span>] <span class="text-orange-500">1</span> time.</TabItem>
+  <TabItem label="5">Taair's [<span class="text-blue-500">Knowledge</span>] stacks max at <span class="text-orange-500">6</span>. He gains <span class="text-orange-500">5</span> stacks of [<span class="text-blue-500">Knowledge</span>] at the start of the battle, with Movement increased by <span class="text-orange-500">1</span> tile. When casting healing and supporting skills, Taair's maximum range is increased by <span class="text-orange-500">2</span> tiles. Upon casting the skill, he additionally heals the target by <span class="text-green-500">25%</span> of M.ATK. At the start of the turn, he also gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>]. At the start of the turn, Taair discovers <span class="text-orange-500">1</span> [<span class="text-blue-500">Scroll</span>] on a random [empty tile] within <span class="text-orange-500">3</span> tiles of himself. Upon picking it up, he gains <span class="text-orange-500">1</span> stack of [<span class="text-blue-500">Knowledge</span>] and then gains <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 2 Buff</span>], lasting for <span class="text-orange-500">2</span> turns, and can move an additional <span class="text-orange-500">3</span> tiles. For every <span class="text-orange-500">2</span> stacks of [<span class="text-blue-500">Knowledge</span>], he can use [<span class="text-blue-500">Historical Skills</span>] <span class="text-orange-500">1</span> time.</TabItem>
+</Tabs>
+</ImageCard>
 
 ## References
 - [铃兰之剑SSR强度榜&升星推荐&配装推荐&加点推荐（更至sp索菲亚](https://www.taptap.cn/moment/544978986061530597)
