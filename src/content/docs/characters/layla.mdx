@@ -1,0 +1,124 @@
+---
+title: Layla
+description: Sword of Convallaria Layla Build
+titleImage: '../../../assets/characters/layla/sprite.png'
+titleImageAlt: Mobile Squad Captain
+rarity: Legendary
+role: Defender
+---
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/layla/trait.png';
+import skill_l1 from '../../../assets/skills/layla_left_1.png';
+import skill_l2 from '../../../assets/skills/layla_left_2.png';
+import skill_l3 from '../../../assets/skills/layla_left_3.png';
+import skill_l4 from '../../../assets/skills/layla_left_4.png';
+import skill_l5 from '../../../assets/skills/layla_left_5.png';
+import skill_l6 from '../../../assets/skills/layla_left_6.png';
+import skill_r1 from '../../../assets/skills/layla_right_1.png';
+import skill_r2 from '../../../assets/skills/layla_right_2.png';
+import skill_r3 from '../../../assets/skills/layla_right_3.png';
+import skill_r4 from '../../../assets/skills/layla_right_4.png';
+import skill_r5 from '../../../assets/skills/layla_right_5.png';
+import skill_r6 from '../../../assets/skills/layla_right_6.png';
+import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
+import CornucopiaDagger from '../../../components/inventory/sword/CornucopiaDagger.astro';
+import HuntersIntuition from '../../../components/inventory/trinket/HuntersIntuition.astro';
+import FancyHat from '../../../components/inventory/trinket/FancyHat.astro';
+import EvergreenPendent from '../../../components/inventory/trinket/EvergreenPendent.astro';
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
+import Judgement from '../../../components/inventory/tarot_whisper/Judgement.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+import SwordCup from '../../../components/engraving/SwordCup.astro';
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%8D%8F%E9%98%B2" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="协防" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%A3%8E%E6%B5%AA%E5%90%8C%E8%88%9F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="风浪同舟" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%80%9F%E6%B5%AA%E6%AD%A2%E6%BE%9C" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="借浪止澜" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%BB%AF%E7%BA%A2%E4%B9%8B%E5%A4%9C" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="绯红之夜" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%A9%B1%E6%95%A3%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="驱散击（剑）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%88%98%E5%9C%BA%E7%A9%BF%E8%A1%8C" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="战场穿行" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%AD%A6%E7%94%A8%E5%A5%97%E7%B4%A2" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="警用套索" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%81%BF%E9%A3%8E%E6%B8%AF%E6%B9%BE" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="避风港湾" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%AD%A3%E9%9D%A2%E9%98%B2%E5%BE%A1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="正面防御" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%96%A9%E5%B0%BD%E4%BA%91%E7%BF%B3" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="斩尽云翳" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9D%96%E4%B8%AD%E5%89%91" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="杖中剑" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%BF%8E%E5%87%BB%E5%A7%BF%E6%80%81" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="迎击姿态" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Weapons
+
+<CardGrid>
+  <CornucopiaDagger />
+  <NewbornBlade />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <HuntersIntuition />
+  <FancyHat />
+  <EvergreenPendent />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Tower />
+  <Judgement />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+<SwordCup />
+
+## Trait
+
+<ImageCard image={trait} title="Iris Vanguard">
+<Tabs>
+  <TabItem label="1">Increases M.DEF by 15%. [Preempt] can deal 40% physical DMG and can be triggered up to 2 times per round. Gains [Block], can also block [magical attacks]. Performs [Preempt] on enemies in [front or side] within 2 tiles of the character before they actively attack. At the end of the turn, if the character is within an enemy's [threat range], gains [Iris Vanguard], lasting until the start of the next turn.</TabItem>
+  <TabItem label="2" icon="star">Increases M.DEF by 15%. [Preempt] can deal 40% physical DMG and can be triggered up to 4 times per round. Gains [Block], can also block [magical attacks]. Performs [Preempt] on enemies in [front or side] within 2 tiles of the character before they actively attack. At the end of the turn, if the character is within an enemy's [threat range], gains [Iris Vanguard], lasting until the start of the next turn.</TabItem>
+  <TabItem label="3">Increases M.DEF by 15%. [Preempt] can deal 40% physical DMG. The trigger range changes to within 3 tiles of the character and can be triggered up to 4 times per round. Gains [Block], can also block [magical attacks]. Performs [Preempt] on enemies in [front or side] within 2 tiles of the character before they actively attack. At the end of the turn, if the character is within an enemy's [threat range], gains [Iris Vanguard], lasting until the start of the next turn.</TabItem>
+  <TabItem label="4" icon="heart">Increases M.DEF by 25%. [Preempt] can deal 60% physical DMG. The trigger range changes to within 3 tiles of the character and can be triggered up to 6 times per round. Gains [Block], can also block [magical attacks]. Performs [Preempt] on enemies in [front or side] within 2 tiles of the character before they actively attack. At the end of the turn, if the character is within an enemy's [threat range], gains [Iris Vanguard], lasting until the start of the next turn.</TabItem>
+  <TabItem label="5">Increases M.DEF by 25%. [Preempt] can deal 60% physical DMG. The trigger range changes to within 3 tiles of the character and can be triggered up to 6 times per round. At the start of the turn, gains 1 NRG. Gains [Block], can also block [magical attacks]. Performs [Preempt] on enemies in [front or side] within 2 tiles of the character before they actively attack. At the end of the turn, if the character is within an enemy's [threat range], gains [Iris Vanguard], lasting until the start of the next turn.</TabItem>
+</Tabs>
+</ImageCard>
+
+## References
+- [铃兰之剑SSR强度榜&升星推荐&配装推荐&加点推荐（更至sp索菲亚](https://www.taptap.cn/moment/544978986061530597)
+- [养成一图流——莉拉](https://www.taptap.cn/moment/570977404256781451)
+- [角色图鉴库/莉拉 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%8E%89%E6%8B%89)
