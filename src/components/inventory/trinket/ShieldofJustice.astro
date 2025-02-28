@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/inventory/trinket/Shield of Justice.png'
+---
+
+<ImageCard image={icon} title="Shield of Justice">
+<p>When having [<span class="text-yellow-500">Physical Shield</span>], increases ATK and DEF by <span class="text-orange-500">6</span>-<span class="text-orange-500">12%</span>. At the start of the turn, gains a [physical shield] equal to <span class="text-orange-500">50</span>-<span class="text-orange-500">120%</span> of the character's P.DEF. CD: <span class="text-orange-500">3</span>-<span class="text-orange-500">2</span> turns.</p>
+</ImageCard>
