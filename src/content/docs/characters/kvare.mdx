@@ -1,0 +1,128 @@
+---
+title: Kvare
+description: Sword of Convallaria Kvare Build
+titleImage: '../../../assets/characters/kvare/sprite.png'
+titleImageAlt: The Finance Minister of Iria
+rarity: Legendary
+role: Destroyer
+---
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/kvare/trait.png';
+import skill_l1 from '../../../assets/skills/kvare_left_1.png';
+import skill_l2 from '../../../assets/skills/kvare_left_2.png';
+import skill_l3 from '../../../assets/skills/kvare_left_3.png';
+import skill_l4 from '../../../assets/skills/kvare_left_4.png';
+import skill_l5 from '../../../assets/skills/kvare_left_5.png';
+import skill_l6 from '../../../assets/skills/kvare_left_6.png';
+import skill_r1 from '../../../assets/skills/kvare_right_1.png';
+import skill_r2 from '../../../assets/skills/kvare_right_2.png';
+import skill_r3 from '../../../assets/skills/kvare_right_3.png';
+import skill_r4 from '../../../assets/skills/kvare_right_4.png';
+import skill_r5 from '../../../assets/skills/kvare_right_5.png';
+import skill_r6 from '../../../assets/skills/kvare_right_6.png';
+import NightmarePuppet from '../../../components/inventory/staff/NightmarePuppet.astro';
+import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
+import OriginHourglass from '../../../components/inventory/trinket/OriginHourglass.astro';
+import ShieldofJustice from '../../../components/inventory/trinket/ShieldofJustice.astro';
+import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%86%B3%E8%83%9C%E4%B9%8B%E6%84%8F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="决胜之意" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%85%88%E8%83%9C%E8%80%8C%E5%90%8E%E6%88%98" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="先胜而后战" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9A%97%E6%89%8B" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="暗手" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%BE%B5%E8%9A%80%E7%A7%98%E6%9C%AF" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="侵蚀秘术" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%84%9F%E6%9F%93%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="感染击（杖）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%AD%A4%E5%88%BB%E6%AD%A3%E6%98%AF%E8%B5%8F%E9%9B%A8%E4%B9%8B%E6%97%B6" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="此刻正是赏雨之时" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%88%BB%E9%AA%A8%E4%B9%8B%E8%9A%80" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="刻骨之蚀" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9F%AF%E7%93%A6%E9%9B%B7%E7%9A%84%E9%A6%88%E8%B5%A0" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="柯瓦雷的馈赠" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%BA%87%E6%8A%A4%E5%BE%BD%E8%AE%B0" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="庇护徽记" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%85%90%E8%B4%A5%E5%87%8B%E9%9B%B6" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="腐败凋零" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B2%89%E9%BB%98%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="沉默击（杖）" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%BB%88%E7%84%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="终焉" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+
+## Weapons
+
+<CardGrid stagger>
+  <NightmarePuppet />
+  <DiffusingPrism />
+  <StarrySkyHeritage />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <OriginHourglass />
+  <ShieldofJustice />
+  <RoaringFlint />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Devil />
+  <Fortune />
+  <Magician />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## Trait
+
+<ImageCard image={trait} title="Roster">
+<Tabs>
+  <TabItem label="1">HP and M.ATK are increased by <span class="text-orange-500">3%</span>. Gains an additional skill [<span class="text-blue-500">Roster</span>]. Effect: [<span class="text-yellow-500">Instant</span>] Inflicts [<span class="text-blue-500">Roster</span>] and [<span class="text-yellow-500">Life Loss</span>] equal to <span class="text-purple-500">30%</span> of the character's M.ATK on enemies without [<span class="text-blue-500">Roster</span>] for <span class="text-orange-500">3</span> turns. Can be used up to <span class="text-orange-500">1</span> time per round. When removing [<span class="text-blue-500">Roster</span>] from the target, increases the character's ATK and DEF by <span class="text-orange-500">5%</span>, up to <span class="text-orange-500">20%</span>, lasting until the end of the battle. Cannot be dispelled or immunized. At the end of the turn, casts the [<span class="text-blue-500">Roster</span>] skill on the closest enemy without [<span class="text-blue-500">Roster</span>] within <span class="text-orange-500">5</span> tiles around the character.</TabItem>
+  <TabItem label="2">HP and M.ATK are increased by <span class="text-orange-500">6%</span>. Gains an additional skill [<span class="text-blue-500">Roster</span>]. Effect: [<span class="text-yellow-500">Instant</span>] Inflicts [<span class="text-blue-500">Roster</span>] and [<span class="text-yellow-500">Life Loss</span>] equal to <span class="text-purple-500">30%</span> of the character's M.ATK on enemies without [<span class="text-blue-500">Roster</span>] for <span class="text-orange-500">3</span> turns. Can be used up to <span class="text-orange-500">1</span> time per round. When removing [<span class="text-blue-500">Roster</span>] from the target, increases the character's ATK and DEF by <span class="text-orange-500">5%</span>, up to <span class="text-orange-500">20%</span>, lasting until the end of the battle. Cannot be dispelled or immunized. At the end of the turn, casts the [<span class="text-blue-500">Roster</span>] skill on the closest enemy without [<span class="text-blue-500">Roster</span>] within <span class="text-orange-500">5</span> tiles around the character.</TabItem>
+  <TabItem label="3" icon="star">HP and M.ATK are increased by <span class="text-orange-500">9%</span>. Gains an additional skill [<span class="text-blue-500">Roster</span>]. Effect: [<span class="text-yellow-500">Instant</span>] Inflicts [<span class="text-blue-500">Roster</span>] and [<span class="text-yellow-500">Life Loss</span>] equal to <span class="text-purple-500">40%</span> of the character's M.ATK on enemies without [<span class="text-blue-500">Roster</span>] for <span class="text-orange-500">3</span> turns. Can be used up to <span class="text-orange-500">1</span> time per round. When using the skill [<span class="text-blue-500">Roster</span>] for the first time each turn, refunds <span class="text-green-500">1</span> NRG. When removing [<span class="text-blue-500">Roster</span>] from the target, increases the character's ATK and DEF by <span class="text-orange-500">5%</span>, up to <span class="text-orange-500">20%</span>, lasting until the end of the battle. Cannot be dispelled or immunized. At the end of the turn, casts the [<span class="text-blue-500">Roster</span>] skill on the closest enemy without [<span class="text-blue-500">Roster</span>] within <span class="text-orange-500">5</span> tiles around the character.</TabItem>
+  <TabItem label="4">HP and M.ATK are increased by <span class="text-orange-500">12%</span>. Gains an additional skill [<span class="text-blue-500">Roster</span>]. Effect: [<span class="text-yellow-500">Instant</span>] Inflicts [<span class="text-blue-500">Roster</span>] and [<span class="text-yellow-500">Life Loss</span>] equal to <span class="text-purple-500">50%</span> of the character's M.ATK on enemies without [<span class="text-blue-500">Roster</span>] for <span class="text-orange-500">3</span> turns. Can be used up to <span class="text-orange-500">1</span> time per round. When using the skill [<span class="text-blue-500">Roster</span>] for the first time each turn, refunds <span class="text-green-500">1</span> NRG. When removing [<span class="text-blue-500">Roster</span>] from the target, increases the character's ATK and DEF by <span class="text-orange-500">5%</span>, up to <span class="text-orange-500">20%</span>, lasting until the end of the battle. Cannot be dispelled or immunized. At the end of the turn, casts the [<span class="text-blue-500">Roster</span>] skill on the closest enemy without [<span class="text-blue-500">Roster</span>] within <span class="text-orange-500">5</span> tiles around the character.</TabItem>
+  <TabItem label="5" icon="heart">HP and M.ATK are increased by <span class="text-orange-500">15%</span>. Gains an additional skill [<span class="text-blue-500">Roster</span>]. Effect: [<span class="text-yellow-500">Instant</span>] Inflicts [<span class="text-blue-500">Roster</span>] and [<span class="text-yellow-500">Life Loss</span>] equal to <span class="text-purple-500">60%</span> of the character's M.ATK on enemies without [<span class="text-blue-500">Roster</span>] for <span class="text-orange-500">3</span> turns. Can be used up to <span class="text-orange-500">2</span> times per round. Refunds the consumed NRG the first time each turn when using the skill [<span class="text-blue-500">Roster</span>]. When removing [<span class="text-blue-500">Roster</span>] from the target, increases the character's ATK and DEF by <span class="text-orange-500">5%</span>, up to <span class="text-orange-500">20%</span>, lasting until the end of the battle. Cannot be dispelled or immunized. At the end of the turn, casts the [<span class="text-blue-500">Roster</span>] skill on the closest enemy without [<span class="text-blue-500">Roster</span>] within <span class="text-orange-500">5</span> tiles around the character.</TabItem>
+</Tabs>
+</ImageCard>
+
+## References
+
+- [Axiom's Kvare Quick Guide](https://discord.gg/GCDSXub8xY)
+- [【短的攻略】柯瓦雷（debuff王者）加点+装备+塔罗](https://www.taptap.cn/moment/586264340533873881)
+- [角色图鉴库/柯瓦雷 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9F%AF%E7%93%A6%E9%9B%B7)
