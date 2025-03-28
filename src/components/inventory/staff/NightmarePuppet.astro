@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/inventory/staff/Nightmare Puppet.png'
+---
+
+<ImageCard image={icon} title="Nightmare Puppet">
+<p>Increases M.ATK and HP by <span class="text-orange-500">4</span>-<span class="text-orange-500">10%</span>. After dealing DMG, inflicts <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 1 Debuff</span>] on the target. If using a [debuff] skill, the effect changes: After attacking, inflicts <span class="text-orange-500">1</span> random [<span class="text-yellow-500">Level 2 Debuff</span>] and [<span class="text-blue-500">Nightmare Puppet I</span>]-[<span class="text-blue-500">Nightmare Puppet III</span>] for <span class="text-orange-500">2</span> turns.</p>
+</ImageCard>
