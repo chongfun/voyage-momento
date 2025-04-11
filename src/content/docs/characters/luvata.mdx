@@ -1,0 +1,131 @@
+---
+title: Luvata
+description: Sword of Convallaria Luvata Build
+titleImage: '../../../assets/characters/luvata/sprite.png'
+titleImageAlt: Legendary Sorceress
+rarity: Legendary
+role: Breaker
+---
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/luvata/trait.png';
+import skill_l1 from '../../../assets/skills/luvata_left_1.png';
+import skill_l2 from '../../../assets/skills/luvata_left_2.png';
+import skill_l3 from '../../../assets/skills/luvata_left_3.png';
+import skill_l4 from '../../../assets/skills/luvata_left_4.png';
+import skill_l5 from '../../../assets/skills/luvata_left_5.png';
+import skill_l6 from '../../../assets/skills/luvata_left_6.png';
+import skill_r1 from '../../../assets/skills/luvata_right_1.png';
+import skill_r2 from '../../../assets/skills/luvata_right_2.png';
+import skill_r3 from '../../../assets/skills/luvata_right_3.png';
+import skill_r4 from '../../../assets/skills/luvata_right_4.png';
+import skill_r5 from '../../../assets/skills/luvata_right_5.png';
+import skill_r6 from '../../../assets/skills/luvata_right_6.png';
+import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
+import ResentmentBroom from '../../../components/inventory/staff/ResentmentBroom.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
+import RoaringFlint from '../../../components/inventory/trinket/RoaringFlint.astro';
+import BloodLuxiteAmulet from '../../../components/inventory/trinket/BloodLuxiteAmulet.astro';
+import OriginHourglass from '../../../components/inventory/trinket/OriginHourglass.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+:::note
+The rank 7 right skill [NRG Restoration] can help with NRG issues if you don't run her with a battery like Taair.
+:::
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%82%99%E7%83%AD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="炙热" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%82%BD%E7%84%B0%E9%80%90%E8%B7%83" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="炽焰逐跃" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%83%AC%E7%81%AB%E4%B9%8B%E5%A3%81" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="烬火之壁" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%AA%E7%94%B1%E4%B9%8B%E7%83%88%E7%BF%BC" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="自由之烈翼" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%81%BC%E7%83%A7%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="灼烧击（杖）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%83%88%E7%BF%BC%E2%80%A2%E7%82%BD%E7%84%B0%E6%B6%85%E6%A7%83" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="烈翼•炽焰涅槃" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%9C%B2%E7%BB%B4%E5%A1%94%E7%9A%84%E6%81%B6%E6%AF%92%E8%AF%85%E5%92%92" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="露维塔的恶毒诅咒" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%83%88%E6%84%8F%E7%81%BC%E5%BF%83" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="烈意灼心" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B5%B4%E7%81%AB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="浴火" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%99%B6%E8%83%BD%E4%BA%B2%E5%92%8C" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="晶能亲和" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%83%88%E7%BF%BC" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="烈翼" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%98%9F%E9%99%A8%E4%B9%8B%E7%82%8E" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="星陨之炎" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Weapons
+
+:::note
+Her signature should be BIS, but I need to see it ingame before I can add here.
+:::
+
+<CardGrid>
+  <DiffusingPrism />
+  <StarrySkyHeritage />
+  <ResentmentBroom />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <RoaringFlint />
+  <BloodLuxiteAmulet />
+  <OriginHourglass />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Magician />
+  <Devil />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## Trait
+
+<ImageCard image={trait} title="Firebird in Nirvana">
+<Tabs>
+  <TabItem label="1">Increases M.ATK by <span class="text-purple-500">5%</span>; when dealing Crit DMG, inflicts <span class="text-orange-500">1</span> stack of [<span class="text-yellow-500">Ignition</span>] on the target, lasting for <span class="text-orange-500">2</span> turns. Can be triggered up to <span class="text-orange-500">1</span> time per round. At the start of the battle, grants all allies in battle [<span class="text-yellow-500">Burning Tile Immunity</span>].</TabItem>
+  <TabItem label="2" icon="star">Increases M.ATK by <span class="text-purple-500">10%</span>; when dealing Crit DMG, inflicts <span class="text-orange-500">1</span> stack of [<span class="text-yellow-500">Ignition</span>] on the target, lasting for <span class="text-orange-500">2</span> turns. Can be triggered up to <span class="text-orange-500">2</span> times per round. After casting [<span class="text-yellow-500">Fire</span>] skills, the character gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Crit I</span>] for <span class="text-orange-500">2</span> turns. At the start of the battle, grants all allies in battle [<span class="text-yellow-500">Burning Tile Immunity</span>].</TabItem>
+  <TabItem label="3">Increases M.ATK by <span class="text-purple-500">10%</span>; when dealing Crit DMG, inflicts <span class="text-orange-500">1</span> stack of [<span class="text-yellow-500">Ignition</span>] on the target, lasting for <span class="text-orange-500">2</span> turns. Can be triggered up to <span class="text-orange-500">2</span> times per round. After casting [<span class="text-yellow-500">Fire</span>] skills, the character gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Crit II</span>] for <span class="text-orange-500">2</span> turns. At the start of the battle, grants all allies in battle [<span class="text-yellow-500">Burning Tile Immunity</span>].</TabItem>
+  <TabItem label="4">Increases M.ATK by <span class="text-purple-500">15%</span>; when dealing Crit DMG, inflicts <span class="text-orange-500">1</span> stack of [<span class="text-yellow-500">Ignition</span>] on the target, lasting for <span class="text-orange-500">2</span> turns. Can be triggered up to <span class="text-orange-500">3</span> times per round. After casting [<span class="text-yellow-500">Fire</span>] skills, the character gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Crit II</span>] and [<span class="text-green-500">△</span> <span class="text-yellow-500">Crit DMG I</span>] for <span class="text-orange-500">2</span> turns. At the start of the battle, grants all allies in battle [<span class="text-yellow-500">Burning Tile Immunity</span>].</TabItem>
+  <TabItem label="5" icon="heart">Increases M.ATK by <span class="text-purple-500">20%</span>; when dealing Crit DMG, inflicts <span class="text-orange-500">1</span> stack of [<span class="text-yellow-500">Ignition</span>] on the target, lasting for <span class="text-orange-500">2</span> turns. Can be triggered up to <span class="text-orange-500">4</span> times per round. After casting [<span class="text-yellow-500">Fire</span>] skills, the character gains [<span class="text-green-500">△</span> <span class="text-yellow-500">Crit III</span>] and [<span class="text-green-500">△</span> <span class="text-yellow-500">Crit DMG III</span>] for <span class="text-orange-500">2</span> turns. At the start of the battle, grants all allies in battle [<span class="text-yellow-500">Burning Tile Immunity</span>].</TabItem>
+</Tabs>
+</ImageCard>
+
+## References
+- [【短的攻略】露维塔（定点炮台）加点+装备+塔罗](https://www.taptap.cn/moment/591294596500162606)
+- [角色图鉴库/露维塔 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%9C%B2%E7%BB%B4%E5%A1%94)
