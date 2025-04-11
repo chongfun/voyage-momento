@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+
+import ImageCard from '../../ImageCard.astro';
+import icon from '../../../assets/inventory/staff/Nirvana.png'
+---
+
+<ImageCard image={icon} title="Nirvana">
+<p>[AoE DMG] increases by <span class="text-orange-500">10</span>-<span class="text-orange-500">20%</span>, when dealing DMG and scoring a critical hit, there is a <span class="text-orange-500">0</span>-<span class="text-orange-500">100%</span> chance to inflict [<span class="text-yellow-500">Ignition</span>] on the target, lasting for <span class="text-orange-500">2</span> turn, each target can only be affected once per turn. At the start of the turn, force the tiles of the closest enemies within <span class="text-orange-500">3</span>-<span class="text-orange-500">5</span> tiles to become [<span class="text-yellow-500">Burning</span>], lasting for <span class="text-orange-500">2</span> turns, with a CD of <span class="text-orange-500">3</span>-<span class="text-orange-500">2</span> turns.</p>
+</ImageCard>
