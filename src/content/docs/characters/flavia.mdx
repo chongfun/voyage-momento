@@ -1,0 +1,127 @@
+---
+title: Flavia
+description: Sword of Convallaria Flavia Build
+titleImage: '../../../assets/characters/flavia/sprite.png'
+titleImageAlt: The Flourishing Sorceress
+rarity: Legendary
+role: Defender
+---
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import trait from '../../../assets/characters/flavia/trait.png';
+import skill_l1 from '../../../assets/skills/flavia_left_1.png';
+import skill_l2 from '../../../assets/skills/flavia_left_2.png';
+import skill_l3 from '../../../assets/skills/flavia_left_3.png';
+import skill_l4 from '../../../assets/skills/flavia_left_4.png';
+import skill_l5 from '../../../assets/skills/flavia_left_5.png';
+import skill_l6 from '../../../assets/skills/flavia_left_6.png';
+import skill_r1 from '../../../assets/skills/flavia_right_1.png';
+import skill_r2 from '../../../assets/skills/flavia_right_2.png';
+import skill_r3 from '../../../assets/skills/flavia_right_3.png';
+import skill_r4 from '../../../assets/skills/flavia_right_4.png';
+import skill_r5 from '../../../assets/skills/flavia_right_5.png';
+import skill_r6 from '../../../assets/skills/flavia_right_6.png';
+import LifeFondness from '../../../components/inventory/staff/LifeFondness.astro';
+import StarrySkyHeritage from '../../../components/inventory/staff/StarrySkyHeritage.astro';
+import DiffusingPrism from '../../../components/inventory/staff/DiffusingPrism.astro';
+import CornucopiaStaff from '../../../components/inventory/staff/CornucopiaStaff.astro';
+import OriginHourglass from '../../../components/inventory/trinket/OriginHourglass.astro';
+import ShieldofJustice from '../../../components/inventory/trinket/ShieldofJustice.astro';
+import OldScrollsofAuguste from '../../../components/inventory/trinket/OldScrollsofAuguste.astro';
+import Fool from '../../../components/inventory/tarot_whisper/Fool.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Fortune from '../../../components/inventory/tarot_whisper/Fortune.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%A4%A7%E5%9C%B0%E7%9A%84%E7%A5%9D%E7%A6%8F" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="大地的祝福" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%A4%A7%E5%9C%B0%E7%9A%84%E6%8C%9A%E7%88%B1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="大地的挚爱" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%B9%81%E8%8C%82%E7%94%9F%E6%9C%BA" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="繁茂生机" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%A0%B4%E5%9C%9F%E4%B8%B0%E8%8C%82" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="破土丰茂" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%BF%A0%E7%BB%BF%E4%B9%8B%E7%AE%AD" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="翠绿之箭" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E4%B8%B0%E9%A5%B6%E4%B9%8B%E6%81%AF" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="丰饶之息" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%BB%8B%E5%85%BB%E9%9C%B2%E6%BB%B4" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="滋养露滴" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%87%AA%E7%84%B6%E6%8C%87%E5%BC%95" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="自然指引" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%94%9F%E5%AD%98%E5%A4%A7%E5%B8%88" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="生存大师" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E5%BA%87%E6%8A%A4" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="大自然的庇护" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E8%83%BD%E5%87%BB%EF%BC%88%E6%9D%96%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="回能击（杖）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%A4%8D%E7%89%A9%E6%89%80%E7%88%B1%E4%B9%8B%E4%BA%BA" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="植物所爱之人" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Weapons
+
+<CardGrid stagger>
+  <LifeFondness />
+  <StarrySkyHeritage />
+  <DiffusingPrism />
+  <CornucopiaStaff />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <ShieldofJustice />
+  <OriginHourglass />
+  <OldScrollsofAuguste />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Fool />
+  <Magician />
+  <Fortune />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## Trait
+
+<ImageCard image={trait} title="Abundance">
+<Tabs>
+  <TabItem label="1">At the start of the battle, turns all tiles within <span class="text-orange-500">2</span> tiles of the character into [<span class="text-blue-500">Flower Field</span>], lasting for <span class="text-orange-500">2</span> turns. At the start of the battle, summons 1 [<span class="text-blue-500">Thorniflora</span>], and up to 1 [<span class="text-blue-500">Plant Buddy</span>] is allowed at a time. [<span class="text-blue-500">Plant Buddy</span>] inherits <span class="text-orange-500">100%</span> Basic ATK and DEF and <span class="text-green-500">120%</span> Basic HP from the character. When [Flavia] is present: [<span class="text-blue-500">Plant Buddy</span>] has their ATK and DEF increased by <span class="text-orange-500">10%</span>; allies on [<span class="text-blue-500">Flower Field</span>] gain [<span class="text-yellow-500">DMG Reduction I</span>].</TabItem>
+  <TabItem label="2">At the start of the battle, turns all tiles within <span class="text-orange-500">2</span> tiles of the character into [<span class="text-blue-500">Flower Field</span>], lasting for <span class="text-orange-500">2</span> turns. At the start of the battle, summons 1 [<span class="text-blue-500">Thorniflora</span>], and up to 1 [<span class="text-blue-500">Plant Buddy</span>] is allowed at a time. [<span class="text-blue-500">Plant Buddy</span>] inherits <span class="text-orange-500">100%</span> Basic ATK and DEF and <span class="text-green-500">120%</span> Basic HP from the character. When [Flavia] is present: [<span class="text-blue-500">Plant Buddy</span>] has their ATK and DEF increased by <span class="text-orange-500">15%</span>; allies on [<span class="text-blue-500">Flower Field</span>] gain [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG I</span>] and [<span class="text-yellow-500">DMG Reduction I</span>].</TabItem>
+  <TabItem label="3" icon="star">At the start of the battle, turns all tiles within <span class="text-orange-500">2</span> tiles of the character into [<span class="text-blue-500">Flower Field</span>], lasting for <span class="text-orange-500">2</span> turns. At the start of the battle, summons 1 [<span class="text-blue-500">Thorniflora</span>], and up to 1 [<span class="text-blue-500">Plant Buddy</span>] is allowed at a time. [<span class="text-blue-500">Plant Buddy</span>] inherits <span class="text-orange-500">100%</span> Basic ATK and DEF and <span class="text-green-500">120%</span> Basic HP from the character. When [Flavia] is present: [<span class="text-blue-500">Plant Buddy</span>] has their ATK and DEF increased by <span class="text-orange-500">15%</span>; allies on [<span class="text-blue-500">Flower Field</span>] gain [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG I</span>] and [<span class="text-yellow-500">DMG Reduction I</span>]; [Plant] receives double effects from [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG</span>] and [<span class="text-yellow-500">DMG Reduction</span>] series buffs.</TabItem>
+  <TabItem label="4">At the start of the battle, turns all tiles within <span class="text-orange-500">2</span> tiles of the character into [<span class="text-blue-500">Flower Field</span>], lasting for <span class="text-orange-500">2</span> turns. At the start of the battle, summons 1 [<span class="text-blue-500">Thorniflora</span>], and up to 1 [<span class="text-blue-500">Plant Buddy</span>] is allowed at a time. [<span class="text-blue-500">Plant Buddy</span>] inherits <span class="text-orange-500">100%</span> Basic ATK and DEF and <span class="text-green-500">120%</span> Basic HP from the character. When [Flavia] is present: [<span class="text-blue-500">Plant Buddy</span>] has their ATK and DEF increased by <span class="text-orange-500">25%</span>; allies on [<span class="text-blue-500">Flower Field</span>] gain [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG I</span>] and [<span class="text-yellow-500">DMG Reduction II</span>]; [Plant] receives double effects from [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG</span>] and [<span class="text-yellow-500">DMG Reduction</span>] series buffs.</TabItem>
+  <TabItem label="5" icon="heart">At the start of the battle, turns all tiles within <span class="text-orange-500">2</span> tiles of the character into [<span class="text-blue-500">Flower Field</span>], lasting for <span class="text-orange-500">2</span> turns. At the start of the battle, summons 1 [<span class="text-blue-500">Thorniflora</span>], and up to 1 [<span class="text-blue-500">Plant Buddy</span>] is allowed at a time. [<span class="text-blue-500">Plant Buddy</span>] inherits <span class="text-orange-500">100%</span> Basic ATK and DEF and <span class="text-green-500">120%</span> Basic HP from the character. When [Flavia] is present: [<span class="text-blue-500">Plant Buddy</span>] has their ATK and DEF increased by <span class="text-orange-500">25%</span>; allies on [<span class="text-blue-500">Flower Field</span>] gain [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG II</span>] and [<span class="text-yellow-500">DMG Reduction II</span>]; [Plant] receives double effects from [<span class="text-green-500">△</span> <span class="text-yellow-500">DMG</span>] and [<span class="text-yellow-500">DMG Reduction</span>] series buffs; enemies on [<span class="text-blue-500">Flower Field</span>] take <span class="text-orange-500">20%</span> more DMG when attacked by [Flavia] and [<span class="text-blue-500">Plant Buddy</span>].</TabItem>
+</Tabs>
+</ImageCard>
+
+## References
+- [【短的攻略】芙拉维娅（多面手）加点+装备+塔罗](https://www.taptap.cn/moment/601503731531382948)
+- [角色图鉴库/芙拉维娅 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E8%8A%99%E6%8B%89%E7%BB%B4%E5%A8%85)
