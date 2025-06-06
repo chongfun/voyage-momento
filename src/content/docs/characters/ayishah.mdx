@@ -1,0 +1,121 @@
+---
+title: Ayishah
+description: Sword of Convallaria Ayishah Build
+titleImage: '../../../assets/characters/ayishah/sprite.png'
+titleImageAlt: Ayishah
+rarity: Legendary
+role: Defender
+---
+import { Badge, CardGrid, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import SkillBuildGrid from '../../../components/SkillBuildGrid.astro';
+import HorizontalCard from '../../../components/HorizontalCard.astro';
+import ImageCard from '../../../components/ImageCard.astro';
+import skill_l1 from '../../../assets/skills/ayishah_left_1.png';
+import skill_l2 from '../../../assets/skills/ayishah_left_2.png';
+import skill_l3 from '../../../assets/skills/ayishah_left_3.png';
+import skill_l4 from '../../../assets/skills/ayishah_left_4.png';
+import skill_l5 from '../../../assets/skills/ayishah_left_5.png';
+import skill_l6 from '../../../assets/skills/ayishah_left_6.png';
+import skill_r1 from '../../../assets/skills/ayishah_right_1.png';
+import skill_r2 from '../../../assets/skills/ayishah_right_2.png';
+import skill_r3 from '../../../assets/skills/ayishah_right_3.png';
+import skill_r4 from '../../../assets/skills/ayishah_right_4.png';
+import skill_r5 from '../../../assets/skills/ayishah_right_5.png';
+import skill_r6 from '../../../assets/skills/ayishah_right_6.png';
+import Dawnlight from '../../../components/inventory/sword/Dawnlight.astro';
+import NewbornBlade from '../../../components/inventory/sword/NewbornBlade.astro';
+import GuardiansWill from '../../../components/inventory/sword/GuardiansWill.astro';
+import VoidStab from '../../../components/inventory/sword/VoidStab.astro';
+import MavericksCloak from '../../../components/inventory/trinket/MavericksCloak.astro';
+import ShieldofJustice from '../../../components/inventory/trinket/ShieldofJustice.astro';
+import CrystalBurstArmor from '../../../components/inventory/trinket/CrystalBurstArmor.astro';
+import Tower from '../../../components/inventory/tarot_whisper/Tower.astro';
+import Magician from '../../../components/inventory/tarot_whisper/Magician.astro';
+import Justice from '../../../components/inventory/tarot_whisper/Justice.astro';
+import Devil from '../../../components/inventory/tarot_whisper/Devil.astro';
+import SwordWand from '../../../components/engraving/SwordWand.astro';
+
+## Skills
+
+<SkillBuildGrid grid="grid-cols-6">
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%B8%85%E8%BE%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l1} alt="清辉" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9B%99%E6%9C%88%E2%80%A2%E6%9C%88%E5%87%BA%E6%98%9F%E9%9A%90" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l2} alt="曙月•月出星隐" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9B%9E%E5%87%BB" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l3} alt="回击" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9B%99%E6%9C%88" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l4} alt="曙月" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E9%A9%B1%E6%95%A3%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l5} alt="驱散击（剑）" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9B%99%E6%9C%88%C2%B7%E6%9C%88%E7%9B%88" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_l6} alt="曙月·月盈" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%90%8C%E8%A2%8D%E7%9A%84%E9%81%97%E5%BF%97" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r1} alt="同袍的遗志" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9C%88%E5%BB%93%E6%88%90%E5%BD%B1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r2} alt="月廓成影" width="100" class="rounded-full ring-4 ring-yellow-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E5%9C%86%E6%9C%88%E4%B9%8B%E5%9E%8B" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r3} alt="圆月之型" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%98%8E%E6%9C%88%E6%8B%82%E5%B1%B1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r4} alt="明月拂山" width="100" class="rounded-full ring-4 ring-rose-500" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%8B%82%E7%83%AD%E5%87%BB%EF%BC%88%E5%89%91%EF%BC%89" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r5} alt="狂热击（剑）" width="100" class="rounded-full" />
+</a>
+<a href="https://wiki.biligame.com/llzj/%E6%8A%80%E8%83%BD%E5%9B%BE%E9%89%B4%E5%BA%93/%E6%9C%88%E5%BD%B1" target="_blank" rel="noopener noreferrer">
+    <Image src={skill_r6} alt="月影" width="100" class="rounded-full ring-4 ring-blue-500" />
+</a>
+</SkillBuildGrid>
+---
+<Badge text="Optional" variant="note" />
+<Badge text="Recommended" variant="danger" />
+<Badge text="Castalia" variant="caution" />
+
+## Weapons
+
+:::note
+Guardian's Will should be paired with Shield of Justice.
+:::
+
+<CardGrid stagger>
+  <Dawnlight />
+  <GuardiansWill />
+  <NewbornBlade />
+  <VoidStab />
+</CardGrid>
+
+## Trinkets
+
+<CardGrid>
+  <ShieldofJustice />
+  <CrystalBurstArmor />
+  <MavericksCloak />
+</CardGrid>
+
+## Tarot Whispers
+
+<CardGrid>
+  <Tower />
+  <Magician />
+  <Devil />
+  <Justice />
+</CardGrid>
+
+## Engravings
+
+<SwordWand />
+
+## References
+- [【短的攻略】爱莎（暖心守护者）加点+装备+塔罗](https://www.taptap.cn/moment/621785116464646400)
+- [【全技能解析】暖心侍卫-爱莎（防御者）](https://www.taptap.cn/moment/621684392955219142)
+- [角色图鉴库/爱莎 - 铃兰之剑WIKI_BWIKI_哔哩哔哩](https://wiki.biligame.com/llzj/%E8%A7%92%E8%89%B2%E5%9B%BE%E9%89%B4%E5%BA%93/%E7%88%B1%E8%8E%8E)
