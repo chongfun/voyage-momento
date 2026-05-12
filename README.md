@@ -1,56 +1,88 @@
-# Starlight Starter Kit: Tailwind
+# <img src="./src/assets/logo-128x128.png" alt="Voyage Momento Logo" width="48" align="center" /> Voyage Momento
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+**[Voyage Momento](https://voyagemomento.com)** is a comprehensive, distilled guide and wiki for the tactical RPG *Sword of Convallaria*. Built using [Astro](https://astro.build/) and [Starlight](https://starlight.astro.build/), the project aims to help players optimize their journey by providing clear, accessible information on characters, inventory, weapons, tarot whispers, and gameplay strategies.
 
+Check out the live site at: **[https://voyagemomento.com](https://voyagemomento.com)**
+
+## 📸 Screenshots & Visuals
+
+### Character Guides
+Detailed analysis and optimal builds for each character.
+<img src="./public/cocoa-guide.jpg" alt="Cocoa Character Guide" width="800" />
+
+### Content Guides
+<img src="./public/wt1-guide.jpg" alt="Weaponry Trial 1 Guide" width="800" />
+
+### Features
+- **Character Database**: Full roster details, including stats, skills, and tier insights.
+- **Inventory & Weapons**: Extensive information on Axes, Bows, Spears, Staffs, Swords, and Trinkets.
+- **Comprehensive Guides**: Strategies for Weaponry Trials, Tarot Whispers, Engraving, Memory Shard Priorities, and more.
+- **Fast & Responsive**: Built with Astro + Tailwind for a blazing-fast, mobile-friendly user experience.
+
+---
+
+## 🚀 How to Run Locally
+
+If you'd like to run Voyage Momento locally or contribute to the project, follow these steps:
+
+### Prerequisites
+Make sure you have Node.js installed (the project uses Node `23.10.0` as specified in `.mise.toml`).
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/chongfun/voyage-momento.git
+cd voyage-momento
 ```
-npm create astro@latest -- --template starlight/tailwind
+
+### 2. Install dependencies
+Run the following command in the root of the project to install all required packages:
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/tailwind)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/tailwind)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/tailwind)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Ftailwind&project-name=my-starlight-docs&repository-name=my-starlight-docs)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
+### 3. Start the local development server
+```bash
+npm run dev
 ```
+This will start the local development server, typically at `http://localhost:4321`.
+
+### 4. Build for production
+To build the static site for production deployment:
+```bash
+npm run build
+```
+The output will be generated in the `./dist/` directory. You can preview the production build using:
+```bash
+npm run preview
+```
+
+---
+
+## 🧞 Project Structure
+
+The project follows a standard Astro + Starlight structure:
+
+```text
 .
-├── public/
+├── public/                 # Static assets (favicons, manifests, etc.)
 ├── src/
-│   ├── assets/
+│   ├── assets/             # Images, logos, and UI graphics
+│   ├── components/         # Custom Astro components (e.g., PageTitle)
 │   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-├── tailwind.config.mjs
-└── tsconfig.json
+│   │   └── docs/           # Markdown & MDX content (the actual wiki pages)
+│   ├── styles/             # Custom CSS and Tailwind styles
+│   └── tailwind.css        # Base Tailwind entry
+├── astro.config.mjs        # Main Astro configuration (integrations, sidebar setup)
+└── package.json            # Scripts and dependencies
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+All content routes are dynamically generated based on the file names inside the `src/content/docs/` directory.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+---
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 🛠️ Tech Stack
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+- **Framework**: [Astro](https://astro.build/)
+- **Documentation Theme**: [Starlight](https://starlight.astro.build/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Analytics**: Google Analytics
