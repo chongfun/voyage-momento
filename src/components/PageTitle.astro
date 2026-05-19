@@ -4,11 +4,8 @@ import Default from '@astrojs/starlight/components/PageTitle.astro';
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 
-const { title } = Astro.props.entry.data
-const { titleImage } = Astro.props.entry.data
-const { titleImageAlt } = Astro.props.entry.data
-const { rarity } = Astro.props.entry.data
-const { role } = Astro.props.entry.data
+const { entry } = Astro.locals.starlightRoute;
+const { title, titleImage, titleImageAlt, rarity, role } = entry.data;
 
 import rarity_legendary from '../assets/characters/rarity_legendary.png';
 import rarity_epic from '../assets/characters/rarity_epic.png';

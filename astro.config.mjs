@@ -89,7 +89,9 @@ export default defineConfig({
 				},
 				{
 					label: 'Characters',
-					autogenerate: { directory: 'characters' },
+					items: [
+						{ autogenerate: { directory: 'characters' } },
+					],
 				}
 			],
 			customCss: ['./src/tailwind.css','./src/styles/custom.css'],
