@@ -22,6 +22,7 @@
   "overrides": {
     "@astrojs/tailwind": {
       "astro": "$astro"
-    }
+    },
+    "vite": "7.3.5"
   }
 }
