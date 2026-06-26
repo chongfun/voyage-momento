@@ -23,6 +23,7 @@
     "@astrojs/tailwind": {
       "astro": "$astro"
     },
-    "vite": "7.3.5"
+    "vite": "7.3.5",
+    "esbuild": "0.28.1"
   }
 }
